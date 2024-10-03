@@ -41,7 +41,7 @@ function CountDown() {
   }, []);
 
   return (
-    <div className="mx-20 p-16 flex justify-between items-center">
+    <div className="mx-28 flex justify-between items-center mb-20 p-5">
       <div>
         <p className="text-[45px] font-medium mb-1 tracking-tighter">Commencing In</p>
         <Link href="" className="bg-r rounded-full py-1 pl-1.5 pr-5 text-xl gap-2 text-white items-center pr inline-flex">
