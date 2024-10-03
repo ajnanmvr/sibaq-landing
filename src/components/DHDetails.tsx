@@ -13,11 +13,11 @@ function DHDetails() {
                 <div className="flex items-center justify-center gap-10">
                     <h3 className="text-dh-blue font-regular text-[3.1rem] leading-[3rem] text-right tracking-tighter w-96">Darul Huda <br /> National Arts fest</h3>
                     <Image src={DHLogo} alt="Darul Huda Logo" className="scale-[85%] shadow-logo-round rounded-full" />
-                    <p className="w-96 text-black text-3xl font-light opacity-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p className="w-96 text-black text-3xl font-light opacity-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
                 </div>
                 <Image src={DHIU} alt="Darul Huda Islamic Univerity PG Block Building" className="scale-[83%]" />
                 <div className="flex items-center justify-center gap-10">
-                    <p className="w-96 text-black text-3xl font-light opacity-80 text-right ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p className="w-96 text-black text-3xl font-light opacity-80 text-right ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
                     <Image src={RubyLogo} alt="Darul Huda Rubee Jubilee Fortieth Anniversary Celebrations Logo" className="scale-[85%] shadow-logo-round rounded-full" />
                     <h3 className="text-ruby-red font-regular text-[3.1rem] leading-[3rem] tracking-tighter w-96">Celebrating Forty <br />
                         Years of Legacy</h3>
