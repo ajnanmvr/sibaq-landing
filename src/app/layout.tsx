@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dm_sans.variable} select-none font-sans tracking-tighter pointer-events-none`}>{children}</body>
+      <body className={`${dm_sans.variable} text-black select-none font-sans tracking-tighter pointer-events-none`}>{children}</body>
     </html>
   );
 }

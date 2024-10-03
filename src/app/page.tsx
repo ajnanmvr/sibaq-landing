@@ -2,6 +2,7 @@ import CountDown from "@/components/CountDown";
 import CounterCards from "@/components/CounterCards";
 import DHDetails from "@/components/DHDetails";
 import Notifications from "@/components/Notifications";
+import TimeLine from "@/components/TimeLine";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Notifications />
       <CounterCards />
       <DHDetails />
-
+      <TimeLine />
       <div className="h-screen">
 
       </div>

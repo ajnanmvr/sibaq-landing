@@ -4,7 +4,7 @@ import DHIU from "@/assets/logo/dhiu.png"
 import RubyLogo from "@/assets/logo/ruby-logo.png"
 function DHDetails() {
     return (
-        <div className="relative ">
+        <div className="relative mb-28">
             <div className="flex absolute inset-0 ">
                 <div className="opacity-10 bg-gradient-to-t from-[#91B8B4] via-ruby-red to-50% rounded-br-[200px] h-full w-full"></div>
                 <div className="opacity-10 bg-gradient-to-b from-[#E0CDA2] via-dh-blue to-50% rounded-tl-[200px] h-full w-full"></div>
