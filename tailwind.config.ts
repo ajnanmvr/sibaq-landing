@@ -16,6 +16,7 @@ const config: Config = {
         y: "#EA8F23",
         b: "#2075BC",
         g: "#09ABB1",
+        black: "#3F3F40",
       },
     },
   },
