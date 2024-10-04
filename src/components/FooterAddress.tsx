@@ -11,7 +11,7 @@ const FooterAddress = () => {
             alt="Sibaq Logo"
             className="w-44 h-auto"
           />
-          <p className="text-gray-600 text-sm leading-relaxed">
+          <p className="text-gray-600 text-sm leading-relaxed tracking-normal">
             Darul Huda Islamic University,
             <br />
             Hidaya Nagar, Chemmad,
@@ -21,7 +21,7 @@ const FooterAddress = () => {
             Pin: 676306, Kerala, India
           </p>
 
-          <div className="flex gap-4 mt-4">
+          <div className="flex gap-0.5 mt-4">
             <a href="#" style={{backgroundImage:'url(Bgrectangle1.png)'}} className="h-12 w-12 bg-cover grid place-items-center">
               <img src="fbicon.png" alt="Sibaq-2025 @fb" />
             </a>
@@ -39,7 +39,7 @@ const FooterAddress = () => {
             </a>
           </div>
 
-          <p className="text-gray-500 text-xs mt-4">
+          <p className="text-gray-500 text-xs mt-4 tracking-tight">
             © All rights reserved | Sibaq Committee 2024
           </p>
         </div>

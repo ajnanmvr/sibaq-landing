@@ -5,6 +5,7 @@ import FooterAddress from "@/components/FooterAddress";
 import FooterContact from "@/components/FooterContact";
 import Notifications from "@/components/Notifications";
 import TimeLine from "@/components/TimeLine";
+import LiveSection from "@/components/LiveSection";
 
 export default function Home() {
   return (
@@ -15,9 +16,11 @@ export default function Home() {
       <CounterCards />
       <DHDetails />
       <TimeLine />
+      <LiveSection />
       <FooterContact />
       <FooterAddress />
       <div className="h-screen"></div>
     </div>
   );
 }
+
