@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ArrowDown from "@/assets/vector/arrow-down.svg";
-import { relative } from "path";
 export default function TimeLine() {
   return (
     <div className="flex justify-center flex-col gap-2">

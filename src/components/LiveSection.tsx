@@ -1,6 +1,3 @@
-// LiveSection.tsx
-import React from "react";
-
 const LiveSection = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center py-12">
