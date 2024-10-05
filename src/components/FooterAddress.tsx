@@ -1,10 +1,12 @@
-import React from "react";
+import Image from "next/image";
+import FBIcon from "@/assets/vector/fb.svg"
+import Link from "next/link";
 
 const FooterAddress = () => {
   return (
     <div className="w-full bg-white py-10 flex justify-center items-center">
       <div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between items-start gap-10 px-4 sm:px-0">
-        
+
         <div className="flex flex-col gap-4">
           <img
             src="Logo.png"
@@ -22,9 +24,9 @@ const FooterAddress = () => {
           </p>
 
           <div className="flex gap-0.5 mt-4">
-            <a href="#" style={{backgroundImage:'url(Bgrectangle1.png)'}} className="h-12 w-12 bg-cover grid place-items-center">
-              <img src="fbicon.png" alt="Sibaq-2025 @fb" />
-            </a>
+            <Link href="#">
+              <Image src={FBIcon} alt="Sibaq Facebook Page Link Icon" />
+            </Link>
             <a href="#">
               <img src="Insticon.png" alt="Sibaq-2025 @fb" />
             </a>

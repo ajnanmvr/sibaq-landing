@@ -31,7 +31,6 @@ export default function TimeLine() {
         <div className="flex justify-center items-center my-10">
          
           <div className="flex flex-col md:flex-row justify-center items-center gap-10">
-            {/* First Date Block */}
             <div className="flex flex-col items-center">
               <div className="relative flex justify-center items-center w-32 h-32 rounded-full border-8 bg-white border-b1">
                 <span className="text-gray-700 text-lg font-bold text-center">
