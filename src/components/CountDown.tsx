@@ -41,16 +41,16 @@ function CountDown() {
   }, []);
 
   return (
-    <div className="mx-28 flex justify-between items-center mb-20 p-5">
-      <div>
-        <p className="text-[45px] font-medium mb-1 tracking-tighter">Commencing In</p>
+    <div className="md:mx-28 flex flex-col md:flex-row justify-between items-center mb-20 p-5">
+      <div className="flex flex-col justify-center items-center md:items-start">
+        <p className="text-4xl text-center md:text-left md:text-[45px] font-medium mb-1 tracking-tighter">Commencing In</p>
         <Link href="" className="bg-r rounded-full py-1 pl-1.5 pr-5 text-xl gap-2 text-white items-center pr inline-flex">
           <Image src={CalenderIcon} className="scale-90" alt="Calendar Icon" />
           Add to Calendar
         </Link>
       </div>
 
-      <div className="flex gap-5 items-center justify-center">
+      <div className="flex gap-5 items-center justify-center flex-wrap">
         <div className="text-center">
           <div className="bg-g text-[48px] mb-2 rounded-full w-28 h-28 inline-flex items-center justify-center text-white font-bold p-1">
             {timeLeft.days}

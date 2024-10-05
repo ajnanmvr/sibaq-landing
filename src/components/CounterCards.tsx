@@ -6,8 +6,7 @@ import School from "@/assets/vector/school.svg"
 
 export default function CounterCards() {
     return (
-
-        <div className="flex justify-center gap-4 items-center my-10">
+        <div className="flex justify-center gap-4 items-center my-10 flex-wrap">
             <div className="bg-y transition-all duration-300 hover:bg-opacity-20 hover:scale-[102%] gap-4 bg-opacity-10 flex flex-col rounded-[70px] justify-between w-[19rem] h-[23rem]">
                 <div className="mt-16 ml-10">
                     <p className="text-[75px] text-y leading-[35px] font-extrabold">10k</p>
