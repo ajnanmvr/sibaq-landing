@@ -4,8 +4,8 @@ import DHDetails from "@/components/DHDetails";
 import FooterAddress from "@/components/FooterAddress";
 import FooterContact from "@/components/FooterContact";
 import Notifications from "@/components/Notifications";
-import TimeLine from "@/components/TimeLine";
-import LiveSection from "@/components/LiveSection";
+// import TimeLine from "@/components/TimeLine";
+// import LiveSection from "@/components/LiveSection";
 import AboutSibaq from "@/components/AboutSibaq";
 
 export default function Home() {
@@ -17,11 +17,10 @@ export default function Home() {
       <AboutSibaq />
       <CounterCards />
       <DHDetails />
-      <TimeLine />
-      <LiveSection />
+      {/* <TimeLine /> */}
+      {/* <LiveSection /> */}
       <FooterContact />
       <FooterAddress />
-      <div className="h-screen"></div>
     </div>
   );
 }

@@ -31,7 +31,7 @@ export default function CounterCards() {
                     <p className="text-4xl tracking-tighter font-light mt-2">Programs</p>
                 </div>
                 <div className="flex justify-end">
-                    <Image src={Mic} alt="Icon of a microphone" className="scale-[85%] mr-4 -mb-2" />
+                    <Image src={Mic} alt="Icon of a microphone" className="scale-85 mr-4 -mb-2" />
                 </div>
             </div>
             <div className="bg-r transition-all duration-300 hover:bg-opacity-20 hover:scale-[102%] gap-4 bg-opacity-10 flex flex-col rounded-[70px] justify-between w-[19rem] h-[23rem]">
@@ -40,7 +40,7 @@ export default function CounterCards() {
                     <p className="text-4xl tracking-tighter font-light mt-2">States</p>
                 </div>
                 <div className="flex justify-end">
-                    <Image src={Map} alt="Icon of map indicating states" className="scale-[85%] -mr-16 -mb-12" />
+                    <Image src={Map} alt="Icon of map indicating states" className="scale-85 -mr-16 -mb-12" />
                 </div>
             </div>
 

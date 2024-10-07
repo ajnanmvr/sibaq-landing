@@ -1,34 +1,30 @@
 import Image from 'next/image';
-import RedShape from '@/assets/vector/RedShape.svg';
-import BlueShape from '@/assets/vector/BlueShape.svg';
-import TealShape from '@/assets/vector/TealShape.svg';
-import OrangeShape from '@/assets/vector/OrangeShape.svg';
-import SibaQLogo from '@/assets/vector/SBQABLogo.svg'; 
+import RedShape from '@/assets/vector/red-shape.svg';
+import BlueShape from '@/assets/vector/blue-shape.svg';
+import TealShape from '@/assets/vector/teal-shape.svg';
+import OrangeShape from '@/assets/vector/orange-shape.svg';
+import SibaqLogo from '@/assets/vector/sibaq-logo-without-text.svg';
 
 const AboutSibaq = () => {
   return (
-    <div className="relative flex justify-center items-center py-40 bg-white">
-      <div className="absolute top-0 left-0">
-        <Image src={RedShape} alt="Red Shape" className="w-16 h-16" />
+    <div className="flex justify-center min-h-screen flex-col items-between px-32 my-24 bg-white">
+      <div className="flex justify-between">
+        <Image src={RedShape} alt="Red Shape" className="scale-85" />
+        <Image src={BlueShape} alt="Blue Shape" className="scale-85" />
       </div>
-      <div className="absolute top-0 right-0">
-        <Image src={BlueShape} alt="Blue Shape" className="w-16 h-16" />
-      </div>
-      <div className="text-center">
-        <Image src={SibaQLogo} alt="Sibaq Logo" className="mx-auto mb-4" />
-        <p className="text-gray-600 text-lg leading-relaxed max-w-md mx-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s,
+      <div className="text-center my-16 flex justify-center flex-col items-center gap-10">
+        <Image src={SibaqLogo} alt="Sibaq Logo" className='scale-85' />
+        <p className="text-gray-600 text-3xl tracking-tighter px-32">
+        <span className="text-reveal text-[rgba(0,0,0,0.1)] bg-clip-text bg-gradient-to-r from-y via-r to-b">
+        SIBĀQ 2025, Darul Huda National Arts Fest is an intercollegiate arts fest conducted biennially, among under graduate colleges and off campuses of Darul Huda Islamic University. The event is officially sanctioned and supported by Darul Huda Islamic University and its Office of Academic Affairs (OAA) to support and promote development of educational activities of concerned students.
+        </span>
         </p>
       </div>
-      <div className="absolute bottom-0 left-0">
-        <Image src={TealShape} alt="Teal Shape" className="w-16 h-16" />
+      <div className='flex justify-between'>
+        <Image src={TealShape} alt="Teal Shape" className="scale-85" />
+        <Image src={OrangeShape} alt="Orange Shape" className="scale-85" />
       </div>
-      <div className="absolute bottom-0 right-0">
-        <Image src={OrangeShape} alt="Orange Shape" className="w-16 h-16" />
-      </div>
-      
+
     </div>
   );
 };

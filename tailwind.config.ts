@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        "spin-slow": "spin 3s linear infinite",
+        "spin-slow": "spin 20s linear infinite",
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)"],
@@ -31,8 +31,12 @@ const config: Config = {
         "dh-blue": "#2A2D94",
         "ruby-red": "#B41831",
       },
+      scale: {
+        '85': '85%',
+      },
       boxShadow: {
         "logo-round": "0 4px 250px rgba(0, 0, 0, 0.1)",
+        "subscribe-section": "0 4px 190px rgba(0, 0, 0, 0.05)",
       },
     },
   },
