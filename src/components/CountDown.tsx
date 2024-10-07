@@ -33,14 +33,21 @@ function CountDown() {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
+    setHasMounted(true);
+
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(timer);
   }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
 
   return (
     <div className="md:mx-28 flex flex-col md:flex-row justify-between items-center mb-20 p-5">
