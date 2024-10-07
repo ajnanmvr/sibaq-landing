@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ArrowDown from "@/assets/vector/arrow-down.svg";
+import SpinnerElement from "@/assets/static/spinner.png";
 export default function TimeLine() {
   return (
     <div className="flex justify-center flex-col gap-2">
@@ -19,14 +20,7 @@ export default function TimeLine() {
 
       <div className="relative">
         <hr
-          style={{
-            backgroundImage:
-              "linear-gradient(90deg, rgba(32,117,188,1) 0%, rgba(9,171,177,1) 28%, rgba(234,54,80,1) 56%, rgba(234,143,35,1) 94%)",
-            height: "9px",
-            width: "100%",
-            top: "40%",
-          }}
-          className="absolute"
+          className="absolute h-2 bg-four-color"
         />
         <div className="flex justify-center items-center my-10">
          
@@ -62,13 +56,13 @@ export default function TimeLine() {
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="relative flex justify-center items-center w-52 h-52 rounded-full border-0 bg-white border-transparent">
-                <img
-                  src="/Spinround.svg"
-                  alt="Sibaq Announcement"
-                  className="absolute inset-0 rounded-full object-cover w-full h-full animate-spin-slow"
+              <div className="relative flex justify-center items-center w-52 h-52 rounded-full border-0 border-transparent">
+                <Image
+                  src={SpinnerElement}
+                  alt="Sibaq Current Event Spinner Element"
+                  className="absolute animate-spin-slow"
                 />
-                <span className="text-gray-700 text-xl font-bold text-center">
+                <span className="text-black text-xl font-bold text-center">
                   March
                   <br />
                   <span className="text-6xl">25</span>

@@ -1,7 +1,7 @@
 import Image from "next/image"
-import DHLogo from "@/assets/logo/dh-logo.png"
-import DHIU from "@/assets/logo/dhiu.png"
-import RubyLogo from "@/assets/logo/ruby-logo.png"
+import DHLogo from "@/assets/static/dh-logo.png"
+import DHIU from "@/assets/static/dhiu.png"
+import RubyLogo from "@/assets/static/ruby-logo.png"
 function DHDetails() {
     return (
         <div className="relative mb-28">

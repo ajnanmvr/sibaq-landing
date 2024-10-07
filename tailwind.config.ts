@@ -9,10 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 3s linear infinite', },
+        "spin-slow": "spin 3s linear infinite",
+      },
       fontFamily: {
         sans: ["var(--font-dm-sans)"],
-        
+      },
+      backgroundImage: {
+        "four-color":
+          "linear-gradient(90deg, rgba(32,117,188,1) 0%, rgba(9,171,177,1) 28%, rgba(234,54,80,1) 56%, rgba(234,143,35,1) 94%)",
       },
       colors: {
         r: "#EA3650",

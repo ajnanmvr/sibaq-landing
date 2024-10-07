@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import CalenderIcon from "@/assets/vector/calender.svg";
 import { COUNTDOWN_DATE } from "@/libs/constanants";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function CountDown() {
   const calculateTimeLeft = () => {
@@ -70,7 +72,7 @@ function CountDown() {
           <p className="text-3xl font-light">Minutes</p>
         </div>
         <div className="text-center">
-          <div className="bg-r text-[48px] mb-2 rounded-full w-28 h-28 inline-flex items-center justify-center text-white font-bold p-1">
+          <div suppressHydrationWarning={true} className="bg-r text-[48px] mb-2 rounded-full w-28 h-28 inline-flex items-center justify-center text-white font-bold p-1">
             {timeLeft.seconds}
           </div>
           <p className="text-3xl font-light">Seconds</p>
