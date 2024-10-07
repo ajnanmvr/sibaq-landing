@@ -3,7 +3,7 @@ import FBLive from "@/assets/vector/fb.svg";
 import PDF from "@/assets/vector/pdf.svg";
 import CALE from "@/assets/vector/Cale.svg";
 import BWButton from "@/assets/vector/BWbutten.svg";
-import SBQLOGO from "@/assets/Vector/FestivalLogo.png";
+import SBQLOGO from "@/assets/vector/FestivalLogo.png";
 import Image from "next/image";
 import Link from "next/link";
 
