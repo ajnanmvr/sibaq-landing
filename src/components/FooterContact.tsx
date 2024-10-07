@@ -1,3 +1,12 @@
+import FBLink from "@/assets/vector/FB Small.svg";
+import ITLink from "@/assets/vector/InstgramIcon.svg";
+import WTLink from "@/assets/vector/WhatsappIcon.svg";
+import PaperPlane from "@/assets/vector/Plane.svg";
+import SBQLogo from "@/assets/vector/SibaqLogo2.png";
+
+import Image from "next/image";
+import Link from "next/link";
+
 const FooterContact = () => {
   return (
     <div className="flex flex-col items-center">
@@ -13,7 +22,7 @@ const FooterContact = () => {
         <div className="bg-white  rounded-3xl shadow-xl p-10 w-3/4 flex sm:flex-row gap-6">
           <div className="sm:w-1/2 ">
             <div className="">
-              <img src="image 3.png" alt="Sibaq Logo" className="h-96 " />
+            <Image src={SBQLogo} alt="Sibaq Logo" />
             </div>
           </div>
 
@@ -52,29 +61,25 @@ const FooterContact = () => {
               <textarea
                 id="message"
                 placeholder="Type Your Message"
-                className="w-full p-5 text-2xl h-28 bg-gray-50 rounded-3xl border border-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-200 resize-none"
+                className="w-full p-5 text-2xl h-40 bg-gray-50 rounded-3xl border border-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-200 resize-none"
               ></textarea>
             </div>
             <div className="mt-4 flex items-center text-xl">
               <h1>Contact via</h1>
-              <div className="flex gap-1 pl-2">
-                <a
-                  href="#"
-                  style={{ backgroundImage: "url(Bgrectangle1.png)" }}
-                  className="h-12 w-12 bg-cover grid place-items-center"
-                >
-                  <img src="fbicon.png" alt="Sibaq-2025 @fb" />
-                </a>
-                <a href="#">
-                  <img src="Insticon.png" alt="Sibaq-2025 @fb" />
-                </a>
-                <a href="#">
-                  <img src="whatsappicon.png" alt="Sibaq-2025 @fb" />
-                </a>
+              <div className="pl-2 pb-2 flex justify-center gap-0.5 mt-4">
+                <Link href="#">
+                  <Image src={FBLink} alt="Sibaq Facebook Page Link Icon" />
+                </Link>
+                <Link href="#">
+                  <Image src={ITLink} alt="Sibaq Instgram Page Link Icon" />
+                </Link>
+                <Link href="#">
+                  <Image src={WTLink} alt="Sibaq Whatsapp Page Link Icon" />
+                </Link>
               </div>
               <div className="pl-32">
                 <button className="w-28 h-10 flex items-center justify-between bg-orange-100 text-black py-2 px-6 rounded-2xl hover:bg-orange-200 transition-all">
-                  <img src="paper-plane.png" alt="" className="h-4" />
+                <Image src={PaperPlane} alt="Share icon" />
                   Send
                 </button>
               </div>

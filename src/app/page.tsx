@@ -6,6 +6,7 @@ import FooterContact from "@/components/FooterContact";
 import Notifications from "@/components/Notifications";
 import TimeLine from "@/components/TimeLine";
 import LiveSection from "@/components/LiveSection";
+import AboutSibaq from "@/components/AboutSibaq";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="h-screen"></div>
       <CountDown />
       <Notifications />
+      <AboutSibaq />
       <CounterCards />
       <DHDetails />
       <TimeLine />
