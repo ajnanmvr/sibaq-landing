@@ -1,6 +1,9 @@
-import FBLink from "@/assets/vector/FB Small.svg";
-import ITLink from "@/assets/vector/InstgramIcon.svg";
-import WTLink from "@/assets/vector/WhatsappIcon.svg";
+import fbSmallbg from "@/assets/vector/Icons/BG/fbsmall.png";
+import igBg from "@/assets/vector/Icons/BG/ig.png";
+import waBg from "@/assets/vector/Icons/BG/wt.png";
+import fbIcon from "@/assets/vector/Icons/fb.svg";
+import igIcon from "@/assets/vector/Icons/ig.svg";
+import waIcon from "@/assets/vector/Icons/wa.svg";
 import PaperPlane from "@/assets/vector/paper-plane.svg";
 import SibaqLogo from "@/assets/static/sibaq-logo-with-colorful-bg.png";
 import ContactUsLine from "@/assets/vector/line-for-contact-us.svg";
@@ -11,18 +14,22 @@ import Link from "next/link";
 const FooterContact = () => {
   return (
     <div className="flex flex-col items-center">
-
-
       <h2 className="text-5xl font-medium tracking-tighter">Contact Us</h2>
-      <Image src={ContactUsLine} alt="A Line as a part of style" className="scale-85 my-4" />
+      <Image
+        src={ContactUsLine}
+        alt="A Line as a part of style"
+        className="scale-85 my-4"
+      />
       <div className="mt-10 bg-opacity-30 rounded-[80px] shadow-logo-round p-12 flex items-center justify-center gap-12">
-        <Image src={SibaqLogo} alt="Sibaq Logo with colourful background" width={420} />
+        <Image
+          src={SibaqLogo}
+          alt="Sibaq Logo with colourful background"
+          width={420}
+        />
 
         <div className="">
           <div className="flex flex-col gap-3">
-            <label
-              htmlFor="name"
-              className="text-xl ml-4">
+            <label htmlFor="name" className="text-xl ml-4">
               Name
             </label>
             <input
@@ -31,9 +38,7 @@ const FooterContact = () => {
               placeholder="Enter Your Name Here"
               className="px-6 w-[35rem] py-4 -mt-2 text-2xl rounded-[2rem] placeholder:opacity-35 border focus:outline-none focus:ring-1 focus:ring-orange-200"
             />
-            <label
-              htmlFor="email"
-              className="text-xl ml-4">
+            <label htmlFor="email" className="text-xl ml-4">
               Email
             </label>
             <input
@@ -42,9 +47,7 @@ const FooterContact = () => {
               placeholder="Enter your email"
               className="px-6 w-[35rem] py-4 -mt-2 text-2xl rounded-[2rem] placeholder:opacity-35 border focus:outline-none focus:ring-1 focus:ring-orange-200"
             />
-            <label
-              htmlFor="message"
-              className="text-xl ml-4">
+            <label htmlFor="message" className="text-xl ml-4">
               Message
             </label>
             <textarea
@@ -54,33 +57,66 @@ const FooterContact = () => {
             ></textarea>
           </div>
 
-          <div className="mt-4 flex items-center justify-between text-xl ">
-            <div>
-
-              <p>Contact via</p>
-              {/* <div className="pl-2 pb-2 flex justify-center gap-0.5 mt-4">
+          <div className="pl-2 mt-4 flex items-center justify-between text-xl ">
+            <p>Contact via</p>
+            <div className="flex justify-center gap-0.5 mt-1">
               <Link href="#">
-                <Image src={FBLink} alt="Sibaq Facebook Page Link Icon" />
+                <div className="relative">
+                  <Image
+                    src={fbSmallbg}
+                    alt="Facebook Background"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center">
+                    <Image
+                      src={fbIcon}
+                      alt="Facebook Icon"
+                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                    />
+                  </div>
+                </div>
               </Link>
               <Link href="#">
-                <Image src={ITLink} alt="Sibaq Instgram Page Link Icon" />
+                <div className="relative">
+                  <Image
+                    src={igBg}
+                    alt="Instagram Background"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center">
+                    <Image
+                      src={igIcon}
+                      alt="Instagram Icon"
+                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                    />
+                  </div>
+                </div>
               </Link>
-              <Link href="#">
-                <Image src={WTLink} alt="Sibaq Whatsapp Page Link Icon" />
+              <Link href="#" className="">
+                <div className="relative">
+                  <Image
+                    src={waBg}
+                    alt="Whatsapp Background"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center ">
+                    <Image
+                      src={waIcon}
+                      alt="Whatsapp Icon"
+                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                    />
+                  </div>
+                </div>
               </Link>
-            </div> */}
             </div>
 
             <button className="h-10 inline-flex items-center gap-2 bg-y text-black py-2 px-6 rounded-2xl bg-opacity-10 hover:bg-opacity-30 transition-colors">
               <Image src={PaperPlane} alt="Send icon" />
               Send
             </button>
-
           </div>
-
         </div>
       </div>
-
     </div>
   );
 };

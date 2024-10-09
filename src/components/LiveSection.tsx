@@ -1,5 +1,5 @@
-import Youtubelive from "@/assets/vector/youtubelive.svg";
-import FBLive from "@/assets/vector/fb.svg";
+import ytBg from "@/assets/vector/Icons/BG/yt.png";
+import fbBg from "@/assets/vector/Icons/BG/fb.png";
 import PDF from "@/assets/vector/pdf.svg";
 import CALE from "@/assets/vector/Cale.svg";
 import BWButton from "@/assets/vector/BWbutten.svg";
@@ -21,10 +21,10 @@ const LiveSection = () => {
 
       <div className="flex gap-4 mt-4">
         <Link href="#">
-          <Image src={FBLive} alt="Sibaq Facebook live Link Icon" />
+          <Image src={fbBg} alt="Sibaq Facebook live Link Icon" />
         </Link>
         <Link href="#">
-          <Image src={Youtubelive} alt="Sibaq Youtube live Link Icon" />
+          <Image src={ytBg} alt="Sibaq Youtube live Link Icon" />
         </Link>
       </div>
       <h2 className="pt-16 text-5xl font-medium text-black mb-2">
