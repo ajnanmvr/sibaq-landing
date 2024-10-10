@@ -1,8 +1,13 @@
-import FBLink from "@/assets/vector/FB Small.svg";
-import ITLink from "@/assets/vector/InstgramIcon.svg";
-import WTLink from "@/assets/vector/WhatsappIcon.svg";
-import SYLink from "@/assets/vector/SpotifyIcon.svg";
-import YTLink from "@/assets/vector/YoutubeIcon.svg";
+import fbSmallbg from "@/assets/vector/Icons/BG/fbsmall.png";
+import igBg from "@/assets/vector/Icons/BG/ig.png";
+import waBg from "@/assets/vector/Icons/BG/wt.png";
+import syBg from "@/assets/vector/Icons/BG/sy.png";
+import ytSmallbg from "@/assets/vector/Icons/BG/ytsmall.png";
+import fbIcon from "@/assets/vector/Icons/fb.svg";
+import igIcon from "@/assets/vector/Icons/ig.svg";
+import waIcon from "@/assets/vector/Icons/wa.svg";
+import syIcon from "@/assets/vector/Icons/sy.svg";
+import ytIcon from "@/assets/vector/Icons/yt.svg";
 import SibaqLogo from "@/assets/vector/SibaqLogo.svg";
 import MenuIcon from "@/assets/static/menu-icon.png";
 import Link from "next/link";
@@ -15,7 +20,11 @@ const FooterAddress = () => {
       <div className="py-20 flex justify-center items-center">
         <div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between items-start gap-10 px-4 sm:px-0">
           <div className="flex ml-12 flex-col gap-4">
-            <Image src={SibaqLogo} alt="Sibaq Logo" className="scale-85 -ml-4" />
+            <Image
+              src={SibaqLogo}
+              alt="Sibaq Logo"
+              className="scale-85 -ml-4"
+            />
             <p className="leading-tight font-light opacity-75">
               Darul Huda Islamic University, Hidaya Nagar,
               <br />
@@ -26,19 +35,84 @@ const FooterAddress = () => {
 
             <div className="flex gap-0.5 mt-4">
               <Link href="#">
-                <Image src={FBLink} alt="Sibaq Facebook Page Link Icon" />
+                <div className="relative">
+                  <Image
+                    src={fbSmallbg}
+                    alt="Facebook Background"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center">
+                    <Image
+                      src={fbIcon}
+                      alt="Facebook Icon"
+                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                    />
+                  </div>
+                </div>
               </Link>
               <Link href="#">
-                <Image src={ITLink} alt="Sibaq Instgram Page Link Icon" />
+              <div className="relative">
+                  <Image
+                    src={igBg}
+                    alt="Instagram Background"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center">
+                    <Image
+                      src={igIcon}
+                      alt="Instagram Icon"
+                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                    />
+                  </div>
+                </div>
               </Link>
               <Link href="#" className="">
-                <Image src={WTLink} alt="Sibaq Whatsapp Page Link Icon" />
+              <div className="relative">
+                  <Image
+                    src={waBg}
+                    alt="Whatsapp Background"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center">
+                    <Image
+                      src={waIcon}
+                      alt="Whatsapp Icon"
+                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                    />
+                  </div>
+                </div>
               </Link>
               <Link href="#">
-                <Image src={SYLink} alt="Sibaq Spotify Page Link Icon" />
+              <div className="relative">
+                  <Image
+                    src={syBg}
+                    alt="Spotify Background"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center">
+                    <Image
+                      src={syIcon}
+                      alt="Spotify Icon"
+                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                    />
+                  </div>
+                </div>
               </Link>
               <Link href="#">
-                <Image src={YTLink} alt="Sibaq Youtube Page Link Icon" />
+              <div className="relative">
+                  <Image
+                    src={ytSmallbg}
+                    alt="Youtube Background"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center">
+                    <Image
+                      src={ytIcon}
+                      alt="Youtube Icon"
+                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                    />
+                  </div>
+                </div>
               </Link>
             </div>
 
@@ -48,7 +122,11 @@ const FooterAddress = () => {
           </div>
 
           <form className="flex flex-col px-16 py-12 rounded-[80px] text-center gap-2 shadow-subscribe-section items-center">
-            <Image src={MenuIcon} alt="colors of Sibaq Logo" className="scale-85" />
+            <Image
+              src={MenuIcon}
+              alt="colors of Sibaq Logo"
+              className="scale-85"
+            />
             <p className="text-[1.8rem] font-medium tracking-tighter">
               Never Miss Anything
             </p>
@@ -66,8 +144,8 @@ const FooterAddress = () => {
             </button>
           </form>
         </div>
-      </div></footer>
-
+      </div>
+    </footer>
   );
 };
 
