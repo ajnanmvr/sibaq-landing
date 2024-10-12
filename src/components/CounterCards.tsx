@@ -40,7 +40,7 @@ export default function CounterCards() {
                     <p className="md:text-4xl text-xl mt-0.5 tracking-tighter font-light md:mt-2">States</p>
                 </div>
                 <div className="flex justify-end">
-                    <Image src={Map} alt="Icon of map indicating states" className="scale-50 md:scale-85 md:-mr-16 md:-mb-12 -mt-8 -mr-16" />
+                    <Image src={Map} alt="Icon of map indicating states" className="scale-50 md:scale-85 md:-mr-16 md:-mb-12 -mt-8 -mr-[4.3rem]" />
                 </div>
             </div>
 
