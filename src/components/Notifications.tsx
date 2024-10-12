@@ -15,8 +15,8 @@ export default function Notifications() {
                 <Image src= {BellIcon} alt="Bell Icon" className="scale-75 md:scale-90" />
                 <div className="flex flex-col md:items-center gap-2 md:gap-4">
                     <p className="md:text-3xl text-[1.35rem] leading-6 md:leading-7 tracking-tighter font-medium ml-1 md:ml-0">Results are out now for controllers</p>
-                    <div className="flex md:flex-col items-center md:justify-center gap-2">
-                        <p className="bg-b bg-opacity-10 rounded-full inline px-3 md:px-4 py-0.5 md:py-1 font-light">Aliya Category</p>
+                    <div className="flex md:flex-col items-center md:justify-center gap-2 flex-wrap">
+                        <p className="bg-b bg-opacity-10 rounded-full inline px-3 md:px-4 py-0.5 font-light">Aliya Category</p>
                         <p className="opacity-40 text-xs">Today 11:15PM</p>
                     </div>
                 </div>
@@ -25,8 +25,8 @@ export default function Notifications() {
                 <Image src= {BellIcon} alt="Bell Icon" className="scale-75 md:scale-90" />
                 <div className="flex flex-col md:items-center gap-2 md:gap-4">
                     <p className="md:text-3xl text-[1.35rem] leading-6 md:leading-7 tracking-tighter font-medium ml-1 md:ml-0">Results are out now for i now controllers</p>
-                    <div className="flex md:flex-col items-center md:justify-center gap-2">
-                        <p className="bg-b bg-opacity-10 rounded-full inline px-3 md:px-4 py-0.5 md:py-1 font-light">Aliya Category</p>
+                    <div className="flex md:flex-col items-center md:justify-center gap-2 flex-wrap">
+                        <p className="bg-b bg-opacity-10 rounded-full inline px-3 md:px-4 py-0.5 font-light">Aliya Category</p>
                         <p className="opacity-40 text-xs">Today 11:15PM</p>
                     </div>
                 </div>
@@ -35,8 +35,8 @@ export default function Notifications() {
                 <Image src= {BellIcon} alt="Bell Icon" className="scale-75 md:scale-90" />
                 <div className="flex flex-col md:items-center gap-2 md:gap-4">
                     <p className="md:text-3xl text-[1.35rem] leading-6 md:leading-7 tracking-tighter font-medium ml-1 md:ml-0">Results are out now for controllers</p>
-                    <div className="flex md:flex-col items-center md:justify-center gap-2">
-                        <p className="bg-b bg-opacity-10 rounded-full inline px-3 md:px-4 py-0.5 md:py-1 font-light">Aliya Category</p>
+                    <div className="flex md:flex-col items-center md:justify-center gap-2 flex-wrap">
+                        <p className="bg-b bg-opacity-10 rounded-full inline px-3 md:px-4 py-0.5 font-light">Aliya Category</p>
                         <p className="opacity-40 text-xs">Today 11:15PM</p>
                     </div>
                 </div>
@@ -45,8 +45,8 @@ export default function Notifications() {
                 <Image src= {BellIcon} alt="Bell Icon" className="scale-75 md:scale-90" />
                 <div className="flex flex-col md:items-center gap-2 md:gap-4">
                     <p className="md:text-3xl text-[1.35rem] leading-6 md:leading-7 tracking-tighter font-medium ml-1 md:ml-0">Results are out now for controllers</p>
-                    <div className="flex md:flex-col items-center md:justify-center gap-2">
-                        <p className="bg-b bg-opacity-10 rounded-full inline px-3 md:px-4 py-0.5 md:py-1 font-light">Aliya Category</p>
+                    <div className="flex md:flex-col items-center md:justify-center gap-2 flex-wrap">
+                        <p className="bg-b bg-opacity-10 rounded-full inline px-3 md:px-4 py-0.5 font-light">Aliya Category</p>
                         <p className="opacity-40 text-xs">Today 11:15PM</p>
                     </div>
                 </div>
