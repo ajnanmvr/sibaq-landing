@@ -14,7 +14,7 @@ const AboutSibaq = () => {
       </div>
       <div className="text-center my-16 flex justify-center flex-col items-center gap-10">
         <Image src={SibaqLogo} alt="Sibaq Logo" className='scale-[70%] md:scale-85' />
-        <p className="text-2xl tracking-tighter md:px-32">
+        <p className="text-2xl md:text-3xl tracking-tighter md:px-32">
         <span className="text-reveal text-[rgba(0,0,0,0.1)] bg-clip-text bg-gradient-to-r from-black via-[#000000b5] to-black">
         SIBĀQ 2025, <br /> Darul Huda National Arts Fest is an intercollegiate arts fest conducted biennially, among under graduate colleges and off campuses of Darul Huda Islamic University. The event is officially sanctioned and supported by Darul Huda Islamic University and its Office of Academic Affairs (OAA) to support and promote development of educational activities of concerned students.
         </span>

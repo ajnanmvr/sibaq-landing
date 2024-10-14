@@ -121,7 +121,7 @@ const FooterAddress = () => {
             </p>
           </div>
 
-          <form className="flex w-full flex-col md:px-16 py-12 rounded-[80px] text-center gap-2 shadow-subscribe-section px-10 items-center">
+          <form className="flex w-full md:w-min flex-col md:px-16 py-12 rounded-[80px] text-center gap-2 shadow-subscribe-section px-10 items-center">
             <Image
               src={MenuIcon}
               alt="colors of Sibaq Logo"
@@ -145,7 +145,7 @@ const FooterAddress = () => {
           </form>
 
 
-          <p className="text-sm text-center w-full md:hidden opacity-40 mt-4 font-light">
+          <p className="text-sm text-center w-full sm:hidden opacity-40 mt-4 font-light">
               © All rights reserved | Sibaq Committee 2024
             </p>
         </div>
