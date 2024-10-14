@@ -48,39 +48,44 @@ export default function CountDown() {
   }
 
   return (
-    <div className="md:mx-28 flex flex-col md:flex-row justify-between items-center mb-1 md:mb-20 p-5 gap-5 md:gap-0">
+    <div className="md:px-28 flex flex-col md:flex-row justify-between items-center pb-1 md:pb-16 p-5 gap-5 md:gap-0 w-full">
       <div className="flex flex-col justify-center items-center gap-1 md:items-start">
-        <p className="text-[2rem] leading-8 text-center md:text-left md:text-[45px] font-medium mb-6 md:mb-1 tracking-tighter">Selection <br className="md:hidden" /> Round</p>
+        <p className="text-[2rem] leading-8 text-center md:text-left md:text-[45px] font-medium mb-2 md:mb-6 tracking-tighter">Selection Round</p>
+        <p className="font-light tracking-widest uppercase">starts in</p>
         <Link href="" className="bg-r  rounded-full py-1 pl-1.5 pr-5 text-xl gap-2 text-white items-center hidden md:inline-flex">
           <Image src={CalenderIcon} className="scale-90" alt="Calendar Icon" />
           Add to Calendar
         </Link>
       </div>
 
-      <div className="flex gap-3 md:gap-5 items-center justify-center">
-        <div className="text-center">
-          <div className="bg-g text-3xl md:text-[48px] mb-1 md:mb-2 rounded-full w-[4.5rem] h-[4.5rem] md:w-28 md:h-28 inline-flex items-center justify-center text-white font-bold p-1">
-            {timeLeft.days}
+      <div className="flex gap-3 md:gap-5 items-center justify-center flex-wrap">
+        <div className="flex gap-3 md:gap-5 items-center justify-center">
+          <div className="text-center">
+            <div className="bg-g text-3xl md:text-[48px] mb-1 md:mb-2 rounded-full w-[4.5rem] h-[4.5rem] md:w-28 md:h-28 inline-flex items-center justify-center text-white font-bold p-1">
+              {timeLeft.days}
+            </div>
+            <p className="text-lg md:text-3xl font-light">Days</p>
           </div>
-          <p className="text-lg md:text-3xl font-light">Days</p>
+          <div className="text-center">
+            <div className="bg-y text-3xl md:text-[48px] mb-1 md:mb-2 rounded-full w-[4.5rem] h-[4.5rem] md:w-28 md:h-28 inline-flex items-center justify-center text-white font-bold p-1">
+              {timeLeft.hours}
+            </div>
+            <p className="text-lg md:text-3xl font-light">Hours</p>
+          </div>
         </div>
-        <div className="text-center">
-          <div className="bg-y text-3xl md:text-[48px] mb-1 md:mb-2 rounded-full w-[4.5rem] h-[4.5rem] md:w-28 md:h-28 inline-flex items-center justify-center text-white font-bold p-1">
-            {timeLeft.hours}
+        <div className="flex gap-3 md:gap-5 items-center justify-center">
+          <div className="text-center">
+            <div className="bg-b text-3xl md:text-[48px] mb-1 md:mb-2 rounded-full w-[4.5rem] h-[4.5rem] md:w-28 md:h-28 inline-flex items-center justify-center text-white font-bold p-1">
+              {timeLeft.minutes}
+            </div>
+            <p className="text-lg md:text-3xl font-light">Minutes</p>
           </div>
-          <p className="text-lg md:text-3xl font-light">Hours</p>
-        </div>
-        <div className="text-center">
-          <div className="bg-b text-3xl md:text-[48px] mb-1 md:mb-2 rounded-full w-[4.5rem] h-[4.5rem] md:w-28 md:h-28 inline-flex items-center justify-center text-white font-bold p-1">
-            {timeLeft.minutes}
+          <div className="text-center">
+            <div suppressHydrationWarning={true} className="bg-r animate-pulse text-3xl md:text-[48px] mb-1 md:mb-2 rounded-full w-[4.5rem] h-[4.5rem] md:w-28 md:h-28 inline-flex items-center justify-center text-white font-bold p-1">
+              {timeLeft.seconds}
+            </div>
+            <p className="text-lg md:text-3xl font-light">Seconds</p>
           </div>
-          <p className="text-lg md:text-3xl font-light">Minutes</p>
-        </div>
-        <div className="text-center">
-          <div suppressHydrationWarning={true} className="bg-r animate-pulse text-3xl md:text-[48px] mb-1 md:mb-2 rounded-full w-[4.5rem] h-[4.5rem] md:w-28 md:h-28 inline-flex items-center justify-center text-white font-bold p-1">
-            {timeLeft.seconds}
-          </div>
-          <p className="text-lg md:text-3xl font-light">Seconds</p>
         </div>
       </div>
 

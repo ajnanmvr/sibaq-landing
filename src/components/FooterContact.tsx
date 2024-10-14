@@ -13,8 +13,8 @@ import Link from "next/link";
 
 const FooterContact = () => {
   return (
-    <div className="flex flex-col items-center mt-20">
-      <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center md:mt-20">
+      <div className="flex-col items-center justify-center hidden md:flex">
         <h2 className="text-4xl md:text-5xl font-medium tracking-tighter md:block ">Contact Us</h2>
         <Image
           src={ContactUsLine}
@@ -31,7 +31,16 @@ const FooterContact = () => {
         />
 
         <div className="">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 ">
+            <div className="flex md:hidden flex-col items-center justify-center  my-10">
+              <h2 className="text-4xl md:text-5xl font-medium tracking-tighter md:block">Contact Us</h2>
+              <Image
+                src={ContactUsLine}
+                alt="A Line as a part of style"
+                className="scale-50 md:scale-85 my-2 md:my-4"
+              />
+            </div>
+
             <label htmlFor="name" className="text-xl ml-4">
               Name
             </label>

@@ -10,7 +10,7 @@ import AboutSibaq from "@/components/AboutSibaq";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col items-center justify-center flex-wrap">
       <div className="h-screen"></div>
       <CountDown />
       <Notifications />
