@@ -1,15 +1,10 @@
-import fbSmallbg from "@/assets/vector/Icons/BG/fbsmall.png";
-import igBg from "@/assets/vector/Icons/BG/ig.png";
-import waBg from "@/assets/vector/Icons/BG/wt.png";
-import fbIcon from "@/assets/vector/Icons/fb.svg";
-import igIcon from "@/assets/vector/Icons/ig.svg";
-import waIcon from "@/assets/vector/Icons/wa.svg";
 import PaperPlane from "@/assets/vector/paper-plane.svg";
 import SibaqLogo from "@/assets/static/sibaq-logo-with-colorful-bg.png";
 import ContactUsLine from "@/assets/vector/line-for-contact-us.svg";
-
 import Image from "next/image";
 import Link from "next/link";
+import { facebook, instagram, whatsapp } from "@/libs/socialMediaLinks";
+const socialMediaLinks = [facebook, instagram, whatsapp]
 
 const FooterContact = () => {
   return (
@@ -73,58 +68,24 @@ const FooterContact = () => {
             <div className="flex justify-center items-center gap-2">
               <p>Contact via</p>
               <div className="flex justify-center gap-1">
-                <Link href="#">
-                  <div className="relative">
-                    <Image
-                      src={fbSmallbg}
-                      alt="Facebook Background"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 flex justify-center items-center">
+
+
+                {socialMediaLinks.map(({ platform, url, color, icon }, key) => (
+                  <Link href={url} key={key}>
+                    <div className={`w-full h-full rounded-[20px] p-2 flex justify-center items-center bg-opacity-10 hover:bg-opacity-25 transition-colors duration-300 ${color && ("bg-" + color)}`}>
                       <Image
-                        src={fbIcon}
-                        alt="Facebook Icon"
-                        className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                        src={icon}
+                        alt={platform}
+                        className={"w-8 h-8 opacity-80 transition-transform duration-200 group-hover:scale-110 group-hover:opacity-100"}
                       />
                     </div>
-                  </div>
-                </Link>
-                <Link href="#">
-                  <div className="relative">
-                    <Image
-                      src={igBg}
-                      alt="Instagram Background"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 flex justify-center items-center">
-                      <Image
-                        src={igIcon}
-                        alt="Instagram Icon"
-                        className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
-                      />
-                    </div>
-                  </div>
-                </Link>
-                <Link href="#" className="">
-                  <div className="relative">
-                    <Image
-                      src={waBg}
-                      alt="Whatsapp Background"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 flex justify-center items-center ">
-                      <Image
-                        src={waIcon}
-                        alt="Whatsapp Icon"
-                        className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
-                      />
-                    </div>
-                  </div>
-                </Link>
+                  </Link>
+                ))}
+
               </div>
             </div>
 
-            <button className="h-10 inline-flex items-center justify-center content-center border border-y gap-2 mb-10 md:mb-0 bg-y text-black py-8 md:py-2 px-6 rounded-3xl md:rounded-2xl w-full md:w-auto bg-opacity-10 md:hover:bg-opacity-30 transition-colors">
+            <button className="h-10 inline-flex items-center justify-center content-center border border-yellow gap-2 mb-10 md:mb-0 bg-yellow text-black py-8 md:py-2 px-6 rounded-3xl md:rounded-2xl w-full md:w-auto bg-opacity-10 md:hover:bg-opacity-30 transition-colors">
               <Image src={PaperPlane} alt="Send icon" />
               Send
             </button>

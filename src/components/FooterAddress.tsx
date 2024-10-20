@@ -1,17 +1,9 @@
-import fbSmallbg from "@/assets/vector/Icons/BG/fbsmall.png";
-import igBg from "@/assets/vector/Icons/BG/ig.png";
-import waBg from "@/assets/vector/Icons/BG/wt.png";
-import syBg from "@/assets/vector/Icons/BG/sy.png";
-import ytSmallbg from "@/assets/vector/Icons/BG/ytsmall.png";
-import fbIcon from "@/assets/vector/Icons/fb.svg";
-import igIcon from "@/assets/vector/Icons/ig.svg";
-import waIcon from "@/assets/vector/Icons/wa.svg";
-import syIcon from "@/assets/vector/Icons/sy.svg";
-import ytIcon from "@/assets/vector/Icons/yt.svg";
-import SibaqLogo from "@/assets/vector/SibaqLogo.svg";
+import SibaqLogo from "@/assets/vector/logo/sibaq-logo-with-text.svg";
 import MenuIcon from "@/assets/static/menu-icon.png";
 import Link from "next/link";
 import Image from "next/image";
+import { socialMediaLinks } from "@/libs/socialMediaLinks";
+
 
 const FooterAddress = () => {
   return (
@@ -34,86 +26,18 @@ const FooterAddress = () => {
             </p>
 
             <div className="flex gap-0.5 mt-4">
-              <Link href="#">
-                <div className="relative">
-                  <Image
-                    src={fbSmallbg}
-                    alt="Facebook Background"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 flex justify-center items-center">
+              {socialMediaLinks.map(({ platform, url, color, icon }, key) => (
+                <Link href={url} key={key}>
+                  <div className={`w-full h-full rounded-[20px] p-2 flex justify-center items-center bg-opacity-10 hover:bg-opacity-25 transition-colors duration-300 ${color && ("bg-" + color)}`}>
                     <Image
-                      src={fbIcon}
-                      alt="Facebook Icon"
-                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
+                      src={icon}
+                      alt={platform + " Icon"}
+                      className="w-8 h-8"
                     />
                   </div>
-                </div>
-              </Link>
-              <Link href="#">
-                <div className="relative">
-                  <Image
-                    src={igBg}
-                    alt="Instagram Background"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 flex justify-center items-center">
-                    <Image
-                      src={igIcon}
-                      alt="Instagram Icon"
-                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
-                    />
-                  </div>
-                </div>
-              </Link>
-              <Link href="#" className="">
-                <div className="relative">
-                  <Image
-                    src={waBg}
-                    alt="Whatsapp Background"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 flex justify-center items-center">
-                    <Image
-                      src={waIcon}
-                      alt="Whatsapp Icon"
-                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
-                    />
-                  </div>
-                </div>
-              </Link>
-              <Link href="#">
-                <div className="relative">
-                  <Image
-                    src={syBg}
-                    alt="Spotify Background"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 flex justify-center items-center">
-                    <Image
-                      src={syIcon}
-                      alt="Spotify Icon"
-                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
-                    />
-                  </div>
-                </div>
-              </Link>
-              <Link href="#">
-                <div className="relative">
-                  <Image
-                    src={ytSmallbg}
-                    alt="Youtube Background"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 flex justify-center items-center">
-                    <Image
-                      src={ytIcon}
-                      alt="Youtube Icon"
-                      className="w-8 h-8 opacity-80 transition-transform duration-200 hover:scale-110 hover:opacity-100"
-                    />
-                  </div>
-                </div>
-              </Link>
+                </Link>
+              ))}
+
             </div>
 
             <p className="text-sm hidden md:block opacity-40 mt-4 font-light">
@@ -137,17 +61,17 @@ const FooterAddress = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full md:w-[22rem] placeholder:opacity-60 p-3 text-lg md:text-xl rounded-[70px] text-center focus:outline-none focus:ring-2 bg-g bg-opacity-10 focus:ring-g "
+              className="w-full md:w-[22rem] placeholder:opacity-60 p-3 text-lg md:text-xl rounded-[70px] text-center focus:outline-none focus:ring-2 bg-green bg-opacity-10 focus:ring-green "
             />
-            <button className="w-full text-lg md:text-xl bg-g text-white py-3 rounded-[70px] hover:bg-opacity-85 transition-colors">
+            <button className="w-full text-lg md:text-xl bg-green text-white py-3 rounded-[70px] hover:bg-opacity-85 transition-colors">
               Subscribe
             </button>
           </form>
 
 
           <p className="text-sm text-center w-full sm:hidden opacity-40 mt-4 font-light">
-              © All rights reserved | Sibaq Committee 2024
-            </p>
+            © All rights reserved | Sibaq Committee 2024
+          </p>
         </div>
       </div>
     </footer>

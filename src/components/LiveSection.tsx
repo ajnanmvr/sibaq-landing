@@ -11,7 +11,7 @@ const LiveSection = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center py-12">
       <div className="flex justify-center items-center mb-4">
-        <div className="relative bg-r text-white text-xs font-light px-4 py-1 rounded-full flex items-center gap-2">
+        <div className="relative bg-red text-white text-xs font-light px-4 py-1 rounded-full flex items-center gap-2">
           <div className="items-center w-4 h-4">
             <Image src={BWButton} alt="Black & white Icon" />
           </div>
@@ -34,11 +34,11 @@ const LiveSection = () => {
         Keep Tracking Sibaq Events and be part of the prestigious Art Fest
       </p>
       <div className="pt-10 flex space-x-4 mb-8">
-        <button className="flex items-center bg-g text-white py-2 px-4 rounded-full hover:bg-g transition">
+        <button className="flex items-center bg-green text-white py-2 px-4 rounded-full hover:bg-green transition">
         <Image src={CALE} alt="Calendar Icon" />
           Add to Calendar
         </button>
-        <button className="flex items-center bg-b text-white py-2 px-4 rounded-full hover:bg-b transition">
+        <button className="flex items-center bg-blue text-white py-2 px-4 rounded-full hover:bg-blue transition">
           <Image src={PDF} alt="Pdf Icon" />
           Download PDF
         </button>

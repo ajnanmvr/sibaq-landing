@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import RedShape from '@/assets/vector/red-shape.svg';
-import BlueShape from '@/assets/vector/blue-shape.svg';
-import TealShape from '@/assets/vector/teal-shape.svg';
-import OrangeShape from '@/assets/vector/orange-shape.svg';
-import SibaqLogo from '@/assets/vector/sibaq-logo-without-text.svg';
+import RedShape from '@/assets/vector/about-sibaq/red-shape.svg';
+import BlueShape from '@/assets/vector/about-sibaq/blue-shape.svg';
+import TealShape from '@/assets/vector/about-sibaq/teal-shape.svg';
+import OrangeShape from '@/assets/vector/about-sibaq/orange-shape.svg';
+import SibaqLogo from '@/assets/vector/logo/sibaq-logo-without-text.svg';
 
 const AboutSibaq = () => {
   return (

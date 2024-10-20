@@ -7,6 +7,7 @@ import Notifications from "@/components/Notifications";
 // import TimeLine from "@/components/TimeLine";
 // import LiveSection from "@/components/LiveSection";
 import AboutSibaq from "@/components/AboutSibaq";
+import EventTile from "@/components/EventTile";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
       <AboutSibaq />
       <CounterCards />
       <DHDetails />
+
+      {/* <EventTile/> */}
       {/* <TimeLine /> */}
       {/* <LiveSection /> */}
       <FooterContact />
