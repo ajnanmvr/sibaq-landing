@@ -8,11 +8,15 @@ import Notifications from "@/components/Notifications";
 // import LiveSection from "@/components/LiveSection";
 import AboutSibaq from "@/components/AboutSibaq";
 import EventTile from "@/components/EventTile";
+import HomeArea from "@/components/HomeArea";
+
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center flex-wrap">
-      <div className="h-screen"></div>
+      <div className="h-screen w-full">
+        <HomeArea />
+      </div>
       <CountDown />
       <Notifications />
       <AboutSibaq />
