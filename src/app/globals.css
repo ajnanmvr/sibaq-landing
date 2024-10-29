@@ -2,29 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .text-reveal {
-    background-size: 0% 100%;
-    background-repeat: no-repeat;
-    animation: reveal linear forwards;
-    animation-timeline: view();
-    animation-range-start: 10vh;
-    animation-range-end: 80vh;
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  animation: reveal linear forwards;
+  animation-timeline: view();
+  animation-range-start: 10vh;
+  animation-range-end: 80vh;
+}
+
+@keyframes reveal {
+  to {
+    background-size: 100% 100%;
   }
-  
-  @keyframes reveal {
-    to {
-      background-size: 100% 100%;
+}
+
+@layer utilities {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
     }
   }
-  
-  @layer utilities {
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(calc(-250px * 7)); }
-    }
-  
-    .animate-scroll {
-      animation: scroll var(--animationSpeed, 40s) linear infinite;
-    }
+  img {
+    @apply pointer-events-none;
   }
+  .animate-scroll {
+    animation: scroll var(--animationSpeed, 40s) linear infinite;
+  }
+}

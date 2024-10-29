@@ -6,9 +6,10 @@ import { socialMediaLinks } from "@/libs/socialMediaLinks";
 const Header = () => {
   return (
     <header className="hidden md:flex justify-between items-center px-20 py-8">
-      <Image src={Logo} alt="Logo Sibaq" className="h-14 w-min" />
-
-      <nav className="text-[1.4rem] gap-4 flex justify-center items-center font-light">
+      <div className="flex items-center justify-start flex-1">
+        <Image src={Logo} alt="Logo Sibaq" className="h-14 w-min" />
+      </div>
+      <nav className="text-[1.35rem] gap-6 flex justify-center items-center font-light">
         <Link href="#" className="text-red">
           Home
         </Link>
@@ -23,7 +24,7 @@ const Header = () => {
         </Link>
       </nav>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-center justify-end flex-1">
         {socialMediaLinks.map(({ platform, url, color, icon }, key) => (
           <Link href={url} key={key}>
             <div className="grayscale hover:grayscale-0">

@@ -4,13 +4,15 @@ import ContactUsLine from "@/assets/vector/line-for-contact-us.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { facebook, instagram, whatsapp } from "@/libs/socialMediaLinks";
-const socialMediaLinks = [facebook, instagram, whatsapp]
+const socialMediaLinks = [facebook, instagram, whatsapp];
 
 const FooterContact = () => {
   return (
     <div className="flex flex-col items-center md:mt-20">
       <div className="flex-col items-center justify-center hidden md:flex">
-        <h2 className="text-4xl md:text-5xl font-medium tracking-tighter md:block ">Contact Us</h2>
+        <h2 className="text-4xl md:text-5xl font-medium tracking-tighter md:block ">
+          Contact Us
+        </h2>
         <Image
           src={ContactUsLine}
           alt="A Line as a part of style"
@@ -25,10 +27,12 @@ const FooterContact = () => {
           className="hidden md:block"
         />
 
-        <div className="">
-          <div className="flex flex-col gap-3 ">
-            <div className="flex md:hidden flex-col items-center justify-center  my-10">
-              <h2 className="text-4xl md:text-5xl font-medium tracking-tighter md:block">Contact Us</h2>
+        <div>
+          <div className="flex flex-col gap-3">
+            <div className="flex md:hidden flex-col items-center justify-center my-10">
+              <h2 className="text-4xl md:text-5xl font-medium tracking-tighter md:block">
+                Contact Us
+              </h2>
               <Image
                 src={ContactUsLine}
                 alt="A Line as a part of style"
@@ -68,20 +72,23 @@ const FooterContact = () => {
             <div className="flex justify-center items-center gap-2">
               <p>Contact via</p>
               <div className="flex justify-center gap-1">
-
-
                 {socialMediaLinks.map(({ platform, url, color, icon }, key) => (
                   <Link href={url} key={key}>
-                    <div className={`w-full h-full rounded-[20px] p-2 flex justify-center items-center bg-opacity-10 hover:bg-opacity-25 transition-colors duration-300 ${color && ("bg-" + color)}`}>
+                    <div
+                      className={`w-full h-full rounded-[20px] p-2 flex justify-center items-center bg-opacity-10 hover:bg-opacity-25 transition-colors duration-300 ${
+                        color && "bg-" + color
+                      }`}
+                    >
                       <Image
                         src={icon}
                         alt={platform}
-                        className={"w-8 h-8 opacity-80 transition-transform duration-200 group-hover:scale-110 group-hover:opacity-100"}
+                        className={
+                          "w-8 h-8 opacity-80 transition-transform duration-200 group-hover:scale-110 group-hover:opacity-100"
+                        }
                       />
                     </div>
                   </Link>
                 ))}
-
               </div>
             </div>
 
