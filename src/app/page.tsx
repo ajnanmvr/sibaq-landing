@@ -7,7 +7,6 @@ import Notifications from "@/components/Notifications";
 // import TimeLine from "@/components/TimeLine";
 // import LiveSection from "@/components/LiveSection";
 import AboutSibaq from "@/components/AboutSibaq";
-import EventTile from "@/components/EventTile";
 import HomeArea from "@/components/HomeArea";
 // import EventTile from "@/components/EventTile";
 
