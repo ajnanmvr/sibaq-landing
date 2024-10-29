@@ -1,27 +1,39 @@
-import React from 'react';
+import Image from "next/image";
+import Logo from "@/assets/vector/logo/sibaq-logo-with-text.svg";
+import Link from "next/link";
+import { socialMediaLinks } from "@/libs/socialMediaLinks";
 
 const Header = () => {
-    return (
-        <header className="flex justify-between items-center p-4 bg-white">
-            <div className="flex items-center">
-                <img src="/path-to-your-logo.png" alt="Logo" className="h-12 w-auto" />
-            </div>
+  return (
+    <header className="flex justify-between items-center px-20 py-8">
+      <Image src={Logo} alt="Logo Sibaq" className="h-14 w-min" />
 
-            <nav className="flex space-x-8">
-                <a href="#" className="text-red-500">Home</a>
-                <a href="#">Results</a>
-                <a href="#">Events</a>
-                <a href="#">Contact</a>
-            </nav>
+      <nav className="text-[1.4rem] gap-4 flex justify-center items-center font-light">
+        <Link href="#" className="text-red">
+          Home
+        </Link>
+        <Link className="opacity-60" href="#">Results</Link>
+        <Link className="opacity-60" href="#">Events</Link>
+        <Link className="opacity-60" href="#">Contact</Link>
+      </nav>
 
-            <div className="flex space-x-4">
-                <a href="#"><i className="fab fa-facebook-f"></i></a>
-                <a href="#"><i className="fab fa-instagram"></i></a>
-                <a href="#"><i className="fab fa-whatsapp"></i></a>
-                <a href="#"><i className="fab fa-youtube"></i></a>
+      <div className="flex gap-4">
+        {socialMediaLinks.map(({ platform, url, color, icon }, key) => (
+          <Link href={url} key={key}>
+            <div
+              className="grayscale hover:grayscale-0"
+            >
+              <Image
+                src={icon}
+                alt={platform + " Icon"}
+                className="w-6 h-6"
+              />
             </div>
-        </header>
-    );
+          </Link>
+        ))}
+      </div>
+    </header>
+  );
 };
 
 export default Header;

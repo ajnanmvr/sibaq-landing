@@ -10,19 +10,15 @@ import AboutSibaq from "@/components/AboutSibaq";
 import HomeArea from "@/components/HomeArea";
 // import EventTile from "@/components/EventTile";
 
-
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center flex-wrap">
-      <div className="h-screen w-full">
-        <HomeArea />
-      </div>
+      <HomeArea />
       <CountDown />
       <Notifications />
       <AboutSibaq />
       <CounterCards />
       <DHDetails />
-
       {/* <EventTile/> */}
       {/* <TimeLine /> */}
       {/* <LiveSection /> */}
@@ -31,4 +27,3 @@ export default function Home() {
     </div>
   );
 }
-
