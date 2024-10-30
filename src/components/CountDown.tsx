@@ -48,7 +48,7 @@ export default function CountDown() {
   }
 
   return (
-    <div className="md:px-28 flex flex-col md:flex-row justify-between items-center pb-1 md:pb-16 p-5 gap-5 md:gap-0 w-full">
+    <div className="md:px-28 flex flex-col md:flex-row justify-between items-center pb-1 md:pb-16 p-5 gap-5 mt-20 md:gap-0 w-full">
       <div className="flex flex-col justify-center items-center gap-1 md:items-start">
         <p className="text-[2rem] leading-8 text-center md:text-left md:text-[45px] font-medium mb-2 md:mb-6 tracking-tighter">Selection Round</p>
         <p className="font-light tracking-widest uppercase md:hidden">starts in</p>
