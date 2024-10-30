@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import "aos/dist/aos.css";
+import Nav from "@/components/Nav";
 
 
 const dm_sans = DM_Sans({
@@ -24,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dm_sans.variable} text-black select-none font-sans tracking-tighter`}>{children}</body>
+      <body className={`${dm_sans.variable} text-black select-none font-sans tracking-tighter`}>
+        <Nav/>
+        {children}</body>
     </html>
   );
 }
