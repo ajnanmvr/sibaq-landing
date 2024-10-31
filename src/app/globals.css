@@ -12,12 +12,18 @@
 }
 
 .text-gradient {
-  color: #EA8F23; 
-  background-image: linear-gradient(90deg, #EA8F23 0%, #EA3650 33%, #2075BC 66%, #119398 100%); 
-  background-clip: text; 
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
- }
+  color: #ea8f23;
+  background-image: linear-gradient(
+    90deg,
+    #ea8f23 0%,
+    #ea3650 33%,
+    #2075bc 66%,
+    #119398 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @keyframes reveal {
   to {

@@ -226,10 +226,12 @@ export default function Nav() {
           )}
         </div>
       </div>
-      <div
-        className="w-screen h-screen fixed z-40"
-        onClick={() => setNavClicked(false)}
-      ></div>
+      {isNavClicked && (
+        <div
+          className="w-screen h-screen fixed z-40"
+          onClick={() => setNavClicked(false)}
+        ></div>
+      )}
     </>
   );
 }
