@@ -15,14 +15,14 @@ export default function Nav() {
   return (
     <>
       <div
-        className="fixed z-50 top-8 right-8"
+        className="fixed z-50 md:top-8 md:right-8 right-0"
         onMouseOver={() => setNavHover(true)}
         onMouseLeave={() => setNavHover(false)}
         onClick={() => setNavClicked(!isNavClicked)}
       >
         <div
           className={`bg-white group rounded-[3rem] shadow-menu-icon ${
-            isNavOpen ? "w-96 p-12" : "w-auto m-8 p-4"
+            isNavOpen ? " h-[100svh] md:h-min md:w-96 p-12" : "w-auto m-8 p-4"
           }`}
         >
           <div className="flex justify-between items-center">
@@ -229,7 +229,10 @@ export default function Nav() {
       {isNavClicked && (
         <div
           className="w-screen h-screen fixed z-40"
-          onClick={() => setNavClicked(false)}
+          onClick={() => {
+            setNavClicked(false);
+            setNavHover(false);
+          }}
         ></div>
       )}
     </>
