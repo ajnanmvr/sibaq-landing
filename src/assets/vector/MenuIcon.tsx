@@ -10,7 +10,7 @@ const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_664_3)">
+      <g clipPath="url(#clip0_664_3)">
         <path
           d="M6.66664 0H11.6666C15.3485 0 18.3333 2.98477 18.3333 6.66664V11.6666C18.3333 15.3485 15.3485 18.3333 11.6666 18.3333H6.66664C2.98477 18.3334 0 15.3486 0 11.6666V6.66664C0 2.98477 2.98477 0 6.66664 0Z"
           fill="#2075BC"
