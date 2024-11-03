@@ -23,7 +23,6 @@ export default function Home() {
       {/* <TimeLine /> */}
       {/* <LiveSection /> */}
       <FooterContact />
-      <FooterAddress />
     </div>
   );
 }

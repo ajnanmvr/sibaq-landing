@@ -40,7 +40,7 @@
       transform: translateX(calc(-250px * 7));
     }
   }
-  img {
+  .home img {
     @apply pointer-events-none;
   }
   .animate-scroll {

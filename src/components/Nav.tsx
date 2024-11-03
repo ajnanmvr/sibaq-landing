@@ -86,7 +86,10 @@ export default function Nav() {
             <nav className="flex flex-col gap-3 mt-10 text-2xl">
               <Link
                 href={"/"}
-                className={`bg-red inline-flex font-light px-8 justify-between items-center ${
+                onClick={() => {
+                  setNavHover(false);
+                }}
+                className={`bg-red inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path === "/"
                     ? "text-white bg-opacity-90 shadow-menu-active shadow-red-half"
                     : "bg-opacity-10  text-red hover:bg-opacity-20"
@@ -109,7 +112,10 @@ export default function Nav() {
               </Link>
               <Link
                 href={"/downloads"}
-                className={`bg-blue inline-flex font-light px-8 justify-between items-center ${
+                onClick={() => {
+                  setNavHover(false);
+                }}
+                className={`bg-blue inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/downloads")
                     ? "text-white bg-opacity-90 shadow-menu-active shadow-blue-half"
                     : "bg-opacity-10  text-blue hover:bg-opacity-20"
@@ -132,7 +138,10 @@ export default function Nav() {
               </Link>
               <Link
                 href={"/result"}
-                className={`bg-yellow inline-flex font-light px-8 justify-between items-center ${
+                onClick={() => {
+                  setNavHover(false);
+                }}
+                className={`bg-yellow inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/result")
                     ? "text-white bg-opacity-90 shadow-menu-active shadow-yellow-half"
                     : "bg-opacity-10  text-yellow hover:bg-opacity-20"
@@ -155,7 +164,10 @@ export default function Nav() {
               </Link>
               <Link
                 href={"/updates"}
-                className={`bg-green inline-flex font-light px-8 justify-between items-center ${
+                onClick={() => {
+                  setNavHover(false);
+                }}
+                className={`bg-green inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/updates")
                     ? "text-white bg-opacity-90 shadow-menu-active shadow-green-half"
                     : "bg-opacity-10  text-green hover:bg-opacity-20"
@@ -178,7 +190,10 @@ export default function Nav() {
               </Link>
               <Link
                 href={"/gallery"}
-                className={`bg-parrot inline-flex font-light px-8 justify-between items-center ${
+                onClick={() => {
+                  setNavHover(false);
+                }}
+                className={`bg-parrot inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/gallery")
                     ? "text-white bg-opacity-90 shadow-menu-active shadow-parrot-half"
                     : "bg-opacity-10  text-parrot hover:bg-opacity-20"
@@ -201,7 +216,10 @@ export default function Nav() {
               </Link>
               <Link
                 href={"/contact"}
-                className={`bg-purple inline-flex font-light px-8 justify-between items-center ${
+                onClick={() => {
+                  setNavHover(false);
+                }}
+                className={`bg-purple inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/contact")
                     ? "text-white bg-opacity-90 shadow-menu-active shadow-purple-half"
                     : "bg-opacity-10  text-purple hover:bg-opacity-20"

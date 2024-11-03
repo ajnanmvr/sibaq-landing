@@ -6,7 +6,7 @@ import Mobile from "@/assets/static/landing-mobile.png";
 
 const HomeArea = () => {
   return (
-    <div className="w-screen relative h-[100svh] flex flex-col items-center  md:flex-row">
+    <div className="home w-full relative h-[100svh] flex flex-col items-center  md:flex-row">
       <div className="md:py-20 py-10 px-10 md:pl-32 flex flex-col justify-center gap-20">
         <Image src={Logo} alt="Logo Sibaq" className="h-14 md:h-20 w-min" />
         <div className="md:text-[4.3rem] text-center md:text-left text-5xl md:leading-[4.3rem] tracking-tighter">
@@ -29,7 +29,7 @@ const HomeArea = () => {
         quality={100}
         className="w-screen md:hidden absolute bottom-0"
       />
-      <div className="flex-1 relative h-screen py-3 md:w-[500px] overflow-hidden">
+      <div className="flex-1 relative h-screen py-3 md:w-[500px] overflow-hidden flex items-center justify-center">
         <Image
           src={Landing}
           alt="Logo Sibaq"

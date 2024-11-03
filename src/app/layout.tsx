@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import "aos/dist/aos.css";
 import Nav from "@/components/Nav";
+import FooterAddress from "@/components/FooterAddress";
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
       >
         <Nav />
         {children}
+        <FooterAddress />
       </body>
     </html>
   );
