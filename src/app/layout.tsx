@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import localFont from  "next/font/local";
 import "./globals.css";
 import "aos/dist/aos.css";
 import Nav from "@/components/Nav";
@@ -11,7 +10,6 @@ const dm_sans = DM_Sans({
   variable: "--font-dm-sans",
   display: "swap",
 });
-const nippo = localFont({ src: '../fonts/Nippo.ttf' });
 
 export const metadata: Metadata = {
   title: "Create Next App",
