@@ -3,7 +3,7 @@ import Logo from "@/assets/vector/logo/sibaq-logo-with-text.svg";
 
 interface BreadCrumbProps {
     title: string;
-    iconPath: any;
+    iconPath: JSX.Element;
 }
 
 export default function BreadCrumb({ title, iconPath }: BreadCrumbProps) {

@@ -1,10 +1,10 @@
 // import NewsCard from "@/components/NewsCard";
 import BreadCrumb from "@/components/BreadCrumb";
-import UpdateCard from "@/components/UpdateCard";
+// import UpdateCard from "@/components/UpdateCard";
 import UpdateCards from "@/components/UpdateCards";
 import Image from "next/image";
 import React from "react";
-const data = ["D", "", "", "", "", ""];
+// const data = ["D", "", "", "", "", ""];
 
 const updatesIcon = (<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" className="w-8 h-8 lg:w-24 lg:h-24" viewBox="0 0 512 512">
   <g>
