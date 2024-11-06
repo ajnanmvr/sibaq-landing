@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Logo from "@/assets/vector/logo/sibaq-logo-with-text.svg";
 import Landing from "@/assets/static/sibaq-landing-image.png";
@@ -11,7 +10,7 @@ const nippo = localFont({ src: "../fonts/nippo.ttf" });
 
 const HomeArea = () => {
   const handleClick = () => {
-    const duration = 5 * 1000;
+    const duration = 1000;
     const animationEnd = Date.now() + duration;
     const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
@@ -26,6 +25,7 @@ const HomeArea = () => {
       }
 
       const particleCount = 50 * (timeLeft / duration);
+
       confetti({
         ...defaults,
         particleCount,
@@ -54,11 +54,7 @@ const HomeArea = () => {
         </div>
         <div
           onClick={handleClick}
-          style={{
-            backgroundImage:
-              "linear-gradient(90deg, rgba(234,143,35,1) 0%, rgba(234,54,80,1) 33%, rgba(32,117,188,1) 66%, rgba(9,171,177,1) 100%)",
-          }}
-          className="w-52 h-16 p-1 rounded-full cursor-pointer hidden md:block"
+          className="w-52 h-16 p-1 bg-four-color rounded-full cursor-pointer hidden md:block"
         >
           <div className="w-full h-full p-2 grid place-items-center font-medium rounded-full bg-white text-2xl">
             Celebrate 🎉
@@ -76,7 +72,7 @@ const HomeArea = () => {
           src={Landing}
           alt="Logo Sibaq"
           quality={100}
-          className=" object-cover hidden md:block"
+          className="object-cover hidden md:block"
         />
       </div>
     </div>

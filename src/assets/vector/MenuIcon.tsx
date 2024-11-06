@@ -1,11 +1,9 @@
-const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
+const MenuIcon = ({ className }: { className?: string }) => {
   return (
     <svg
       width="40"
       height="40"
-      className={`h-8 w-8 group-hover:rotate-90 transition-transform duration-300 ${
-        isOpen && "rotate-90"
-      }`}
+      className={className}
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

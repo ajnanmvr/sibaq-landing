@@ -16,9 +16,7 @@
     "clsx": "^2.1.1",
     "next": "^14.2.14",
     "react": "^18",
-    "react-dom": "^18",
-    "tailwind-merge": "^2.5.4",
-    "tailwindcss-animate": "^1.0.7"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
