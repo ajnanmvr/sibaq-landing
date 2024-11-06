@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import MenuIcon from "@/assets/vector/MenuIcon";
+import MenuIcon from "@/assets/vector/ColorGrid";
 
 export default function Nav() {
   const [isNavHover, setNavHover] = useState(false);
