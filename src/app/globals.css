@@ -37,13 +37,13 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-50px * 7));
     }
   }
   .home img {
     @apply pointer-events-none;
   }
   .animate-scroll {
-    animation: scroll var(--animationSpeed, 40s) linear infinite;
+    animation: scroll var(--animationSpeed, 6s) linear infinite;
   }
 }

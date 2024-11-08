@@ -41,7 +41,7 @@ const HomeArea = () => {
 
   return (
     <div className="home w-full relative h-[100svh] flex flex-col items-center  md:flex-row">
-      <div className="md:py-20 py-10 px-10 md:pl-32 flex flex-col justify-center gap-20">
+      <div className="md:py-20 py-10 px-10 md:pl-32 flex flex-col justify-center items-start gap-20">
         <Image src={Logo} alt="Logo Sibaq" className="h-14 md:h-20 w-min" />
         <div className="md:text-[4.3rem] text-center md:text-left text-5xl md:leading-[4.3rem] tracking-tighter">
           <h1 className={`${nippo.className} text-gradient font-medium`}>
@@ -54,9 +54,9 @@ const HomeArea = () => {
         </div>
         <div
           onClick={handleClick}
-          className="w-52 h-16 p-1 bg-four-color rounded-full cursor-pointer hidden md:block"
+          className="h-16 p-1 bg-four-color rounded-full cursor-pointer hidden md:block"
         >
-          <div className="w-full h-full p-2 grid place-items-center font-medium rounded-full bg-white text-2xl">
+          <div className="h-full py-2 px-5 grid place-items-center tracking-tighter font-medium rounded-full bg-white text-2xl">
             Celebrate 🎉
           </div>
         </div>

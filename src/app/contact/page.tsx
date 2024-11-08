@@ -1,7 +1,6 @@
 import Image from "next/image";
 import SibaqLogo from "@/assets/vector/logo/sibaq-logo-without-text.svg";
 import FooterContact from "@/components/FooterContact";
-import BreadCrumb from "@/components/BreadCrumb";
 
 const ContactIcon = (
   <svg
@@ -32,7 +31,6 @@ const ContactIcon = (
 export default function Contact() {
   return (
     <>
-      <BreadCrumb title="Contact Us" iconPath={ContactIcon} />
       <div>
         <div className="flex flex-col-reverse lg:flex-row min-h-[80vh] max-w-6xl mx-auto lg:justify-center gap-16 p-8 items-center">
           <div className="flex-grow flex flex-col gap-4 items-start">

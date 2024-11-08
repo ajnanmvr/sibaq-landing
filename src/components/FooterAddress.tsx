@@ -8,7 +8,7 @@ import { socialMediaLinks } from "@/libs/socialMediaLinks";
 const FooterAddress = () => {
   return (
     <footer className="mt-20 w-full">
-      <hr className="h-[0.100rem] bg-black opacity-10 md:opacity-5 mx-10 md:mx-28" />
+      <hr className="h-[0.100rem] bg-black opacity-10 md:opacity-15 mx-10 md:mx-28" />
       <div className="py-20 flex justify-center items-center">
         <div className="w-full max-w-6xl flex flex-col items-center sm:flex-row justify-between md:items-start gap-10 px-4 sm:px-0">
           <div className="flex md:ml-12 flex-col gap-4 items-center md:items-start">
