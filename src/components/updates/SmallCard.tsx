@@ -33,7 +33,7 @@ export default function SmallCard({
             : index % 4 === 2
             ? "text-blue"
             : "text-green"
-        } font-[450] text-[1.6rem] leading-8 mx-5 line-clamp-3`}
+        } font-[450] text-[1.6rem] leading-7 mx-5 line-clamp-3`}
       >
         {data.title}
       </h2>

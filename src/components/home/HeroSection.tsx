@@ -8,7 +8,7 @@ import localFont from "next/font/local";
 
 const nippo = localFont({ src: "../../fonts/nippo.ttf" });
 
-const HomeArea = () => {
+const HeroSection = () => {
   const handleClick = () => {
     const duration = 1000;
     const animationEnd = Date.now() + duration;
@@ -79,4 +79,4 @@ const HomeArea = () => {
   );
 };
 
-export default HomeArea;
+export default HeroSection;
