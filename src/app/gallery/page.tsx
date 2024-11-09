@@ -27,7 +27,7 @@ export default function Gallery() {
           <div className="inset-0 absolute p-24 flex flex-col items-start justify-between">
             <Image src={Logo} alt="Sibaq Logo" className="w-32" />
             <h2 className="text-white text-[2.8rem] leading-[3rem]">
-              We have made a special <br /> album{" "}
+              We have made a special <br /> album&nbsp;
               <span className="text-gradient">just for you...</span>
             </h2>
             <button className="px-4 py-1.5 flex gap-1.5 items-center justify-center text-lg font-light border-[0.5px] border-white rounded-full transition-colors duration-300 hover:bg-opacity-20 mt-2 text-white bg-white bg-opacity-10">

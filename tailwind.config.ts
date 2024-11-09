@@ -10,14 +10,23 @@ const config: Config = {
     extend: {
       animation: {
         "spin-slow": "spin 20s linear infinite",
+        reveal: "reveal linear forwards",
+        scroll: "scroll 6s linear infinite",
+      },
+      keyframes: {
+        reveal: {
+          to: { backgroundSize: "100% 100%" },
+        },
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-50px * 7))" },
+        },
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)"],
       },
       backgroundImage: {
         "four-color":
-          "linear-gradient(90deg, rgba(32,117,188,1) 0%, rgba(9,171,177,1) 28%, rgba(234,54,80,1) 56%, rgba(234,143,35,1) 94%)",
-        singl:
           "linear-gradient(90deg, rgba(234,143,35,1) 0%, rgba(234,54,80,1) 33%, rgba(32,117,188,1) 66%, rgba(9,171,177,1) 100%)",
       },
       colors: {

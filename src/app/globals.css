@@ -11,39 +11,18 @@
   animation-range-end: 80vh;
 }
 
-.text-gradient {
-  color: #ea8f23;
-  background-image: linear-gradient(
-    90deg,
-    #ea8f23 0%,
-    #ea3650 33%,
-    #2075bc 66%,
-    #119398 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes reveal {
-  to {
-    background-size: 100% 100%;
-  }
-}
-
 @layer utilities {
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-50px * 7));
-    }
-  }
   .home img {
     @apply pointer-events-none;
   }
-  .animate-scroll {
-    animation: scroll var(--animationSpeed, 6s) linear infinite;
+
+  .text-gradient {
+    @apply text-transparent bg-four-color bg-clip-text inline;
+  }
+
+  @keyframes reveal {
+    to {
+      background-size: 100% 100%;
+    }
   }
 }
