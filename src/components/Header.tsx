@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Logo from "@/assets/vector/logo/sibaq-logo-with-text.svg";
 import { usePathname } from "next/navigation";
-import React from "react";
 
 export default function Header({
   pageTitle,
@@ -14,9 +13,7 @@ export default function Header({
   const path = usePathname();
   const slide = [...keywords, ...keywords, ...keywords, ...keywords];
   return (
-    <header
-      className={`top-0 w-full z-10 ${path !== "/" ? "bg-white" : "fixed"}`}
-    >
+    <header className="w-full z-10">
       <div className="flex justify-between max-h-40 items-center px-10 py-5">
         <div className="flex-1 pl-20">
           <Image
