@@ -8,7 +8,7 @@ const socialMediaLinks = [facebook, instagram, whatsapp];
 export default function Contact() {
   return (
     <div className="flex flex-col items-center">
-      <div className="mt-10 bg-opacity-30 rounded-[80px] shadow-slate-100 shadow-logo-round p-12 flex items-center justify-center gap-12">
+      <div className="mt-10 p-12 flex items-center justify-center gap-12">
         <Image
           src={SibaqLogo}
           alt="Sibaq Logo with colourful background"

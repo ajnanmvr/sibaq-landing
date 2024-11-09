@@ -21,9 +21,9 @@ const images = [
 export default function Gallery() {
   return (
     <>
-      <section className="mx-24 mt-14">
-        <div className="relative">
-          <Image src={Camera} alt="camera" className="rounded-[5.5rem]" />
+      <section className="mx-5 md:mx-24 mt-14">
+        <div className="relative hidden md:block">
+          <Image src={Camera} alt="camera" className="md:rounded-[5.5rem]" />
           <div className="inset-0 absolute p-24 flex flex-col items-start justify-between">
             <Image src={Logo} alt="Sibaq Logo" className="w-32" />
             <h2 className="text-white text-[2.8rem] leading-[3rem]">
@@ -36,7 +36,7 @@ export default function Gallery() {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mt-14 mx-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mt-14 mx-5 gap-4 md:gap-8">
           {images.map((image, key) => (
             <div
               key={key}
@@ -45,12 +45,12 @@ export default function Gallery() {
               <Image
                 src={image}
                 alt="galley image"
-                className="rounded-[55px]"
+                className="rounded-[40px] md:rounded-[55px]"
                 width={400}
                 height={400}
               />
               <div
-                className={`absolute z-10 rounded-full border-white border-[6px] w-12 h-12 -right-[2.5rem] ${
+                className={`absolute hidden md:block z-10 rounded-full border-white border-[6px] w-12 h-12 -right-[2.5rem] ${
                   key % 4 === 3 && "hidden"
                 } ${
                   key % 5 === 0

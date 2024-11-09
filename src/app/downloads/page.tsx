@@ -2,11 +2,11 @@ export default function Downloads() {
   return (
     <>
       <div className="md:px-52 flex flex-col justify-center items-center pt-20">
-        <div>
+        <div className="flex justify-center flex-col items-center">
           <h1 className="font-bold text-center md:text-left text-3xl mb-2">
             GENERAL
           </h1>
-          <hr className="border-2 border-blue rounded-full" />
+          <hr className="border-2 border-blue rounded-full md:w-full w-2/3" />
 
           <div className="w-full px-5 lg:px-0 py-12 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
             <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-yellow border border-yellow-half hover:border-yellow bg-opacity-10">
@@ -74,11 +74,12 @@ export default function Downloads() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center flex-col items-center">
           <h1 className="font-bold text-center md:text-left text-3xl mb-2">
             NIICS
           </h1>
-          <hr className="border-2 border-blue rounded-full" />
+          <hr className="border-2 border-blue rounded-full md:w-full w-2/3" />
+
           <div className="w-full px-5 lg:px-0 py-12 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
             <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-yellow border border-yellow-half hover:border-yellow bg-opacity-10">
               <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-yellow-half group-hover:from-yellow group-hover:via-yellow-half  to-yellow group-hover:to-yellow  transition-colors duration-300 flex-1 rounded-3xl">

@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <>
       <div
-        className="fixed z-50 md:top-3 md:right-14 right-0"
+        className="fixed z-50 md:top-3 -top-2 md:right-14 right-0"
         onMouseOver={() => setNavHover(true)}
         onMouseLeave={() => setNavHover(false)}
       >
@@ -31,7 +31,10 @@ export default function Nav() {
             )}
             <div onClick={() => setNavClicked(!isNavClicked)}>
               {isNavClicked ? (
-                <div className="bg-red h-9 w-9 rounded-full flex justify-center items-center">
+                <div
+                  className="bg-red h-9 w-9 rounded-full flex justify-center items-center"
+                  onClick={() => setNavHover(false)}
+                >
                   <svg
                     width="277"
                     className="h-3 w-3"
