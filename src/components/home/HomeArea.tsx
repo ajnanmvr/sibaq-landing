@@ -6,7 +6,7 @@ import Mobile from "@/assets/static/landing-mobile.png";
 import confetti from "canvas-confetti";
 import localFont from "next/font/local";
 
-const nippo = localFont({ src: "../fonts/nippo.ttf" });
+const nippo = localFont({ src: "../../fonts/nippo.ttf" });
 
 const HomeArea = () => {
   const handleClick = () => {

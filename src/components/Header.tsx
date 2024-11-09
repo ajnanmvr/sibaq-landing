@@ -12,6 +12,7 @@ export default function Header({
   keywords: string[];
 }) {
   const path = usePathname();
+  const slide = [...keywords, ...keywords, ...keywords, ...keywords];
   return (
     <header
       className={`top-0 w-full z-10 ${path !== "/" ? "bg-white" : "fixed"}`}
@@ -50,55 +51,7 @@ export default function Header({
               {keyword}
             </span>
           ))}
-          {keywords.map((keyword, key) => (
-            <span
-              key={key}
-              className={
-                key % 4 === 0
-                  ? "text-red"
-                  : key % 4 === 1
-                  ? "text-yellow"
-                  : key % 4 === 2
-                  ? "text-blue"
-                  : "text-green"
-              }
-            >
-              {keyword}
-            </span>
-          ))}
-          {keywords.map((keyword, key) => (
-            <span
-              key={key}
-              className={
-                key % 4 === 0
-                  ? "text-red"
-                  : key % 4 === 1
-                  ? "text-yellow"
-                  : key % 4 === 2
-                  ? "text-blue"
-                  : "text-green"
-              }
-            >
-              {keyword}
-            </span>
-          ))}
-          {keywords.map((keyword, key) => (
-            <span
-              key={key}
-              className={
-                key % 4 === 0
-                  ? "text-red"
-                  : key % 4 === 1
-                  ? "text-yellow"
-                  : key % 4 === 2
-                  ? "text-blue"
-                  : "text-green"
-              }
-            >
-              {keyword}
-            </span>
-          ))}
-          {keywords.map((keyword, key) => (
+          {slide.map((keyword, key) => (
             <span
               key={key}
               className={

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SibaqLogo from "@/assets/vector/logo/sibaq-logo-without-text.svg";
-import FooterContact from "@/components/FooterContact";
+import FooterContact from "@/components/home/Contact";
 
 const ContactIcon = (
   <svg

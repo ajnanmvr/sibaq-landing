@@ -1,10 +1,10 @@
-import CountDown from "@/components/CountDown";
-import CounterCards from "@/components/CounterCards";
-import DHDetails from "@/components/DHDetails";
-import FooterContact from "@/components/FooterContact";
-import Notifications from "@/components/Notifications";
-import AboutSibaq from "@/components/AboutSibaq";
-import HomeArea from "@/components/HomeArea";
+import CountDown from "@/components/home/CountDown";
+import CounterCards from "@/components/home/CounterCards";
+import DHDetails from "@/components/home/DHDetails";
+import FooterContact from "@/components/home/Contact";
+import Notifications from "@/components/home/Notifications";
+import AboutSibaq from "@/components/home/AboutSibaq";
+import HomeArea from "@/components/home/HomeArea";
 // import TimeLine from "@/components/TimeLine";
 // import LiveSection from "@/components/LiveSection";
 // import EventTile from "@/components/EventTile";
