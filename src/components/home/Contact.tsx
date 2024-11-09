@@ -6,7 +6,7 @@ import Link from "next/link";
 import { facebook, instagram, whatsapp } from "@/libs/socialMediaLinks";
 const socialMediaLinks = [facebook, instagram, whatsapp];
 
-const FooterContact = () => {
+const Contact = () => {
   return (
     <div className="flex flex-col items-center md:mt-20">
       <div className="flex-col items-center justify-center hidden md:flex">
@@ -103,4 +103,4 @@ const FooterContact = () => {
   );
 };
 
-export default FooterContact;
+export default Contact;

@@ -15,11 +15,11 @@ export default function Header({
   return (
     <header className="w-full z-10">
       <div className="flex justify-between max-h-40 items-center px-10 py-5">
-        <div className="flex-1 pl-20">
+        <div className="flex-1">
           <Image
             src={Logo}
             alt="Logo Sibaq"
-            className={`h-10 md:h-16 w-min my-8 ${path === "/" && "opacity-0"}`}
+            className={`h-10 md:h-14 w-min ml-20 my-8 ${path === "/" && "opacity-0"}`}
           />
         </div>
         <div className="flex-1 flex justify-center">
@@ -27,7 +27,7 @@ export default function Header({
             {pageTitle}
           </h1>
         </div>
-        <div className="flex-1"></div>
+        <div className="flex-1 bg-gre"></div>
       </div>
 
       <div className="opacity-50 w-full overflow-hidden -mt-3">

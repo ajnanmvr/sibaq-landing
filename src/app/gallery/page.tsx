@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Image from "next/image";
 import Camera from "@/assets/static/gallery-camera-bg.jpg";
 import Logo from "@/assets/vector/logo/sibaq-logo-for-dark-bg.svg";
@@ -22,11 +21,7 @@ const images = [
 export default function Gallery() {
   return (
     <>
-      <Header
-        pageTitle="Gallery"
-        keywords={["Festival", "Downloads", "Files", "Forms", "Criteria"]}
-      />
-      <div className="mx-24 mt-14">
+      <section className="mx-24 mt-14">
         <div className="relative">
           <Image src={Camera} alt="camera" className="rounded-[5.5rem]" />
           <div className="inset-0 absolute p-24 flex flex-col items-start justify-between">
@@ -41,7 +36,7 @@ export default function Gallery() {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mt-14 mx-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mt-14 mx-5 gap-8">
           {images.map((image, key) => (
             <div
               key={key}
@@ -78,7 +73,7 @@ export default function Gallery() {
             <RoundArrow className="rotate-45 w-6 h-6" />
           </button>
         </div>
-      </div>
+      </section>
     </>
   );
 }

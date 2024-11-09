@@ -3,10 +3,6 @@ import Header from "@/components/Header";
 export default function Downloads() {
   return (
     <>
-      <Header
-        pageTitle="Downloads"
-        keywords={["Festival", "Downloads", "Files", "Forms", "Criteria"]}
-      />
       <div className="md:px-52 flex flex-col justify-center items-center pt-20">
         <div>
           <h1 className="font-bold text-center md:text-left text-3xl mb-2">
