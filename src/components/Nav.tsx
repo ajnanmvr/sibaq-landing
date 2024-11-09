@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <>
       <div
-        className="fixed z-50 md:top-3 -top-2 md:right-14 right-0"
+        className="fixed z-50 md:top-3 -top-3 md:right-14 right-0"
         onMouseOver={() => setNavHover(true)}
         onMouseLeave={() => setNavHover(false)}
       >
