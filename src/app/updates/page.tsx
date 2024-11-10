@@ -7,28 +7,28 @@ const data = [
   {
     thumbnail: "",
     title:
-      "Fayiz PV pooped in his pants, no water to wash his underwares today",
+      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
     url: "#",
     published: "today",
   },
   {
     thumbnail: "",
     title:
-      "Fayiz PV pooped in his pants, no water to wash his underwares today",
+      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
     url: "#",
     published: "today",
   },
   {
     thumbnail: "",
     title:
-      "Fayiz PV pooped in his pants, no water to wash his underwares today",
+      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
     url: "#",
     published: "today",
   },
   {
     thumbnail: "",
     title:
-      "Fayiz PV pooped in his pants, no water to wash his underwares today",
+      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
     url: "#",
     published: "today",
   },
