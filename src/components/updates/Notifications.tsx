@@ -30,6 +30,24 @@ const NotificationData = [
     time: "Today 11:15PM",
     link: "#",
   },
+  {
+    title: "Results are out now for controllers",
+    category: "Aliya Category",
+    time: "Today 11:15PM",
+    link: "#",
+  },
+  {
+    title: "Results are out now for controllers",
+    category: "Aliya Category",
+    time: "Today 11:15PM",
+    link: "#",
+  },
+  {
+    title: "Results are out now for controllers",
+    category: "Aliya Category",
+    time: "Today 11:15PM",
+    link: "#",
+  },
 ];
 export default function Notifications() {
   useEffect(() => {
@@ -37,25 +55,21 @@ export default function Notifications() {
   }, []);
 
   return (
-    <div className="flex justify-center gap-2 md:gap-4 items-center my-10 flex-wrap px-8">
+    <div className="flex justify-center gap-2 items-center my-10 flex-wrap px-8">
       {NotificationData.map(({ title, category, time, link }, key) => (
         <Link
           href={link}
           key={key}
           data-aos="fade-in"
-          className="bg-blue md:text-center hover:bg-opacity-15 bg-opacity-10 px-4 py-6 gap-4 rounded-[1.8rem] md:rounded-[70px] flex md:flex-col items-center md:justify-center w-full md:w-[19rem] md:min-h-[21rem]"
+          className="px-4 py-6 gap-4 flex w-full hover:bg-blue/10 rounded-[1.8rem]"
         >
-          <Image
-            src={BellIcon}
-            alt="Bell Icon"
-            className="scale-75 md:scale-90"
-          />
-          <div className="flex flex-col md:items-center gap-2 md:gap-4">
-            <p className="md:text-3xl text-[1.35rem] leading-6 md:leading-7 tracking-tighter font-medium ml-1 md:ml-0 line-clamp-2">
+          <Image src={BellIcon} alt="Bell Icon" className="scale-75 " />
+          <div className="flex flex-col  gap-2 ">
+            <p className="text-[1.35rem] leading-6 tracking-tighter font-medium ml-1 line-clamp-2">
               {title}
             </p>
-            <div className="flex md:flex-col items-center md:justify-center gap-2 flex-wrap">
-              <p className="bg-blue bg-opacity-10 text-sm rounded-full inline px-3 md:px-4 py-0.5 font-light">
+            <div className="flex  items-center  gap-2 flex-wrap">
+              <p className="bg-blue bg-opacity-10 text-sm rounded-full inline px-3 py-0.5 font-light">
                 {category}
               </p>
               <p className="opacity-40 text-xs">{time}</p>

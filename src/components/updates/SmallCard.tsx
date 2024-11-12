@@ -15,7 +15,7 @@ export default function SmallCard({
   index: number;
 }) {
   return (
-    <div className="flex gap-2 flex-col w-80 text-center justify-center items-center">
+    <div className="flex gap-2 flex-col md:w-80 text-center justify-center items-center">
       <Image
         src="/modal/1.jpg"
         width={300}

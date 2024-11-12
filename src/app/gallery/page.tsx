@@ -51,7 +51,7 @@ export default function Gallery() {
               />
               <div
                 className={`absolute hidden md:block z-10 rounded-full border-white border-[6px] w-12 h-12 -right-[2.5rem] ${
-                  key % 4 === 3 && "hidden"
+                  key % 4 === 3 && "md:hidden"
                 } ${
                   key % 5 === 0
                     ? "bg-yellow"

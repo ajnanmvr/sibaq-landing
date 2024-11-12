@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import "aos/dist/aos.css";
-import FooterAddress from "@/components/FooterAddress";
+import FooterAddress from "@/components/Footer";
 import Nav from "@/components/Nav";
 
 const dm_sans = DM_Sans({

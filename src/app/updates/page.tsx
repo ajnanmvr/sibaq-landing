@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Notifications from "@/components/updates/Notifications";
 import SmallCard from "@/components/updates/SmallCard";
 import WideCard from "@/components/updates/WideCard";
 import { Fragment } from "react";
@@ -41,9 +42,9 @@ export default function updates() {
         pageTitle="Updates"
         keywords={["Festival", "Downloads", "Files", "Forms", "Criteria"]}
       />
-      <section className="md:px-28 mt-20 px-10">
+      <section className="md:px-28 mt-20 px-8">
         <WideCard />
-        <div className="flex justify-between gap-10 mt-20">
+        <div className="flex justify-between gap-10 mt-20 flex-wrap">
           <div className="flex justify-between flex-wrap flex-1 gap-x-2 gap-y-10">
             {data.map((update, key) => (
               <Fragment key={key}>
@@ -51,7 +52,9 @@ export default function updates() {
               </Fragment>
             ))}
           </div>
-          <div className="bg-red rounded-[50px] w-[550px]"></div>
+          <div className="bg-blue/5 rounded-[50px] w-[550px]">
+            <Notifications />
+          </div>
         </div>
       </section>
     </>

@@ -19,7 +19,7 @@ const Contact = () => {
           className="scale-50 md:scale-85 my-2 md:my-4"
         />
       </div>
-      <div className="mt-10 bg-opacity-30 rounded-[80px] shadow-slate-100 shadow-logo-round p-12 flex items-center justify-center gap-12">
+      <div className="mt-10 bg-opacity-30 rounded-[3rem] md:rounded-[80px] shadow-slate-100 shadow-logo-round px-4 md:px-12 py-12 flex items-center justify-center gap-12">
         <Image
           src={SibaqLogo}
           alt="Sibaq Logo with colourful background"
@@ -28,7 +28,7 @@ const Contact = () => {
         />
 
         <div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 ">
             <div className="flex md:hidden flex-col items-center justify-center my-10">
               <h2 className="text-4xl md:text-5xl font-medium tracking-tighter md:block">
                 Contact Us

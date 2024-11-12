@@ -9,8 +9,8 @@ export default function Downloads() {
           <hr className="border-2 border-blue rounded-full md:w-full w-2/3" />
 
           <div className="w-full px-5 lg:px-0 py-12 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
-            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-yellow border border-yellow-half hover:border-yellow bg-opacity-10">
-              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-yellow-half group-hover:from-yellow group-hover:via-yellow-half  to-yellow group-hover:to-yellow  transition-colors duration-300 flex-1 rounded-3xl">
+            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-yellow border border-yellow/50 hover:border-yellow bg-opacity-10">
+              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-yellow/50 group-hover:from-yellow group-hover:via-yellow/50  to-yellow group-hover:to-yellow  transition-colors duration-300 flex-1 rounded-3xl">
                 PDF
               </div>
               <div className="p-1 flex flex-col gap-2">
@@ -25,8 +25,8 @@ export default function Downloads() {
               </div>
             </div>
 
-            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-red border border-red-half hover:border-red bg-opacity-10">
-              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-red-half group-hover:from-red group-hover:via-red-half  to-red group-hover:to-red  transition-colors duration-300 flex-1 rounded-3xl">
+            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-red border border-red/50 hover:border-red bg-opacity-10">
+              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-red/50 group-hover:from-red group-hover:via-red/50  to-red group-hover:to-red  transition-colors duration-300 flex-1 rounded-3xl">
                 PDF
               </div>
               <div className="p-1 flex flex-col gap-2">
@@ -41,8 +41,8 @@ export default function Downloads() {
               </div>
             </div>
 
-            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-blue border border-blue-half hover:border-blue bg-opacity-10">
-              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-blue-half group-hover:from-blue group-hover:via-blue-half  to-blue group-hover:to-blue  transition-colors duration-300 flex-1 rounded-3xl">
+            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-blue border border-blue/50 hover:border-blue bg-opacity-10">
+              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-blue/50 group-hover:from-blue group-hover:via-blue/50  to-blue group-hover:to-blue  transition-colors duration-300 flex-1 rounded-3xl">
                 PDF
               </div>
               <div className="p-1 flex flex-col gap-2">
@@ -57,8 +57,8 @@ export default function Downloads() {
               </div>
             </div>
 
-            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-green border border-green-half hover:border-green bg-opacity-10">
-              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-green-half group-hover:from-green group-hover:via-green-half  to-green group-hover:to-green  transition-colors duration-300 flex-1 rounded-3xl">
+            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-green border border-green/50 hover:border-green bg-opacity-10">
+              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-green/50 group-hover:from-green group-hover:via-green/50  to-green group-hover:to-green  transition-colors duration-300 flex-1 rounded-3xl">
                 PDF
               </div>
               <div className="p-1 flex flex-col gap-2">
@@ -81,8 +81,8 @@ export default function Downloads() {
           <hr className="border-2 border-blue rounded-full md:w-full w-2/3" />
 
           <div className="w-full px-5 lg:px-0 py-12 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
-            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-yellow border border-yellow-half hover:border-yellow bg-opacity-10">
-              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-yellow-half group-hover:from-yellow group-hover:via-yellow-half  to-yellow group-hover:to-yellow  transition-colors duration-300 flex-1 rounded-3xl">
+            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-yellow border border-yellow/50 hover:border-yellow bg-opacity-10">
+              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-yellow/50 group-hover:from-yellow group-hover:via-yellow/50  to-yellow group-hover:to-yellow  transition-colors duration-300 flex-1 rounded-3xl">
                 PDF
               </div>
               <div className="p-1 flex flex-col gap-2">
@@ -97,8 +97,8 @@ export default function Downloads() {
               </div>
             </div>
 
-            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-yellow border border-yellow-half hover:border-yellow bg-opacity-10">
-              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-red-half group-hover:from-red group-hover:via-red-half  to-red group-hover:to-red  transition-colors duration-300 flex-1 rounded-3xl">
+            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-red border border-red/50 hover:border-red bg-opacity-10">
+              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-red/50 group-hover:from-red group-hover:via-red/50  to-red group-hover:to-red  transition-colors duration-300 flex-1 rounded-3xl">
                 PDF
               </div>
               <div className="p-1 flex flex-col gap-2">
@@ -113,8 +113,8 @@ export default function Downloads() {
               </div>
             </div>
 
-            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-yellow border border-yellow-half hover:border-yellow bg-opacity-10">
-              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-blue-half group-hover:from-blue group-hover:via-blue-half  to-blue group-hover:to-blue  transition-colors duration-300 flex-1 rounded-3xl">
+            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-blue border border-blue/50 hover:border-blue bg-opacity-10">
+              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-blue/50 group-hover:from-blue group-hover:via-blue/50  to-blue group-hover:to-blue  transition-colors duration-300 flex-1 rounded-3xl">
                 PDF
               </div>
               <div className="p-1 flex flex-col gap-2">
@@ -129,8 +129,8 @@ export default function Downloads() {
               </div>
             </div>
 
-            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-yellow border border-yellow-half hover:border-yellow bg-opacity-10">
-              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-green-half group-hover:from-green group-hover:via-green-half  to-green group-hover:to-green  transition-colors duration-300 flex-1 rounded-3xl">
+            <div className="group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-green border border-green/50 hover:border-green bg-opacity-10">
+              <div className="bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-green/50 group-hover:from-green group-hover:via-green/50  to-green group-hover:to-green  transition-colors duration-300 flex-1 rounded-3xl">
                 PDF
               </div>
               <div className="p-1 flex flex-col gap-2">
