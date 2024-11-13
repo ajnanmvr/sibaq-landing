@@ -1,8 +1,6 @@
-"use client";
 import Image from "next/image";
 import Logo from "@/assets/vector/logo/sibaq-logo-with-text.svg";
 import LogoRound from "@/assets/static/sibaq-logo-round-color.png";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function Header({
@@ -12,20 +10,17 @@ export default function Header({
   pageTitle?: string;
   keywords: string[];
 }) {
-  const path = usePathname();
   const slide = [...keywords, ...keywords, ...keywords, ...keywords];
   return (
     <>
       <header className="w-full sticky top-0 md:static backdrop-blur-xl bg-white/70 rounded-b-[3rem] z-10">
         <div className="flex justify-between max-h-40 items-center px-10 md:py-5">
           <div className="flex-1 flex justify-start items-center">
-            <Link href={"/"} className="">
+            <Link href={"/"}>
               <Image
                 src={Logo}
                 alt="Logo Sibaq"
-                className={`h-14 w-min md:ml-20 my-8 hidden md:block ${
-                  path === "/" && "opacity-0"
-                }`}
+                className="h-14 w-min md:ml-20 my-8 hidden md:block"
               />
               <Image
                 src={LogoRound}
@@ -57,7 +52,6 @@ export default function Header({
                   : "text-green"
               }
             >
-              {" "}
               {keyword}
             </span>
           ))}
