@@ -56,9 +56,9 @@ const HeroSection = () => {
           onClick={handleClick}
           className="h-16 p-1 bg-four-color rounded-full cursor-pointer hidden md:block"
         >
-          <div className="h-full py-2 px-5 grid place-items-center tracking-tighter font-medium rounded-full bg-white text-2xl">
+          <button className="h-full py-2 px-5 grid place-items-center tracking-tighter font-medium rounded-full bg-white text-2xl">
             Celebrate 🎉
-          </div>
+          </button>
         </div>
       </div>
       <Image

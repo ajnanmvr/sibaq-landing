@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        "spin-slow": "spin 20s linear infinite",
+        "spin-slow": "spin 3s linear infinite",
         reveal: "reveal linear forwards",
         scroll: "scroll 6s linear infinite",
       },

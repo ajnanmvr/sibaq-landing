@@ -47,7 +47,7 @@ const Footer = () => {
             <Image
               src={MenuIcon}
               alt="colors of Sibaq Logo"
-              className="scale-85"
+              className="animate-spin-slow w-9 mb-1"
             />
             <p className="text-2xl md:text-[1.8rem] font-medium tracking-tighter">
               Never Miss Anything
