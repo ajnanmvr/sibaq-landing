@@ -9,10 +9,14 @@ export default function Gallery() {
     <>
       <section className="mx-5 md:mx-24 mt-14">
         <div className="relative hidden md:block">
-          <Image src={Camera} alt="camera" className="md:rounded-[5.5rem]" />
-          <div className="inset-0 absolute p-24 flex flex-col items-start justify-between">
+          <Image
+            src={Camera}
+            alt="camera"
+            className="md:rounded-[5.5rem] 2xl:w-full"
+          />
+          <div className="inset-0 absolute p-24 flex flex-col items-start gap-10 justify-center">
             <Image src={Logo} alt="Sibaq Logo" className="w-32" />
-            <h2 className="text-white text-[2.8rem] leading-[3rem]">
+            <h2 className="text-white text-[2.8rem] 2xl:text-5xl leading-[3rem]">
               We have made a special <br /> album&nbsp;
               <span className="text-gradient">just for you...</span>
             </h2>
