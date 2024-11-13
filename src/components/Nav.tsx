@@ -68,7 +68,7 @@ export default function Nav() {
                 }}
                 className={`bg-red inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path === "/"
-                    ? "text-white bg-opacity-90 shadow-menu-active shadow-red/50"
+                    ? "text-white bg-opacity-90 shadow-menu-active shadow-red/30"
                     : "bg-opacity-10  text-red hover:bg-opacity-20"
                 } transition-colors duration-300 rounded-2xl h-14 border border-red`}
               >
@@ -95,7 +95,7 @@ export default function Nav() {
                 }}
                 className={`bg-blue inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/downloads")
-                    ? "text-white bg-opacity-90 shadow-menu-active shadow-blue/50"
+                    ? "text-white bg-opacity-90 shadow-menu-active shadow-blue/30"
                     : "bg-opacity-10  text-blue hover:bg-opacity-20"
                 } transition-colors duration-300 rounded-2xl h-14 border border-blue`}
               >
@@ -122,7 +122,7 @@ export default function Nav() {
                 }}
                 className={`bg-yellow inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/result")
-                    ? "text-white bg-opacity-90 shadow-menu-active shadow-yellow/50"
+                    ? "text-white bg-opacity-90 shadow-menu-active shadow-yellow/30"
                     : "bg-opacity-10  text-yellow hover:bg-opacity-20"
                 } transition-colors duration-300 rounded-2xl h-14 border border-yellow`}
               >
@@ -149,7 +149,7 @@ export default function Nav() {
                 }}
                 className={`bg-green inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/updates")
-                    ? "text-white bg-opacity-90 shadow-menu-active shadow-green/50"
+                    ? "text-white bg-opacity-90 shadow-menu-active shadow-green/30"
                     : "bg-opacity-10  text-green hover:bg-opacity-20"
                 } transition-colors duration-300 rounded-2xl h-14 border border-green`}
               >
@@ -176,7 +176,7 @@ export default function Nav() {
                 }}
                 className={`bg-parrot inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/gallery")
-                    ? "text-white bg-opacity-90 shadow-menu-active shadow-parrot/50"
+                    ? "text-white bg-opacity-90 shadow-menu-active shadow-parrot/30"
                     : "bg-opacity-10  text-parrot hover:bg-opacity-20"
                 } transition-colors duration-300 rounded-2xl h-14 border border-parrot`}
               >
@@ -203,7 +203,7 @@ export default function Nav() {
                 }}
                 className={`bg-purple inline-flex gap-3 font-light px-8 justify-between items-center ${
                   path.includes("/contact")
-                    ? "text-white bg-opacity-90 shadow-menu-active shadow-purple/50"
+                    ? "text-white bg-opacity-90 shadow-menu-active shadow-purple/30"
                     : "bg-opacity-10  text-purple hover:bg-opacity-20"
                 } transition-colors duration-300 rounded-2xl h-14 border border-purple`}
               >

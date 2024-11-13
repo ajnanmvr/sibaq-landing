@@ -1,4 +1,4 @@
-import RoundArrow from "@/assets/vector/RoundArrow";
+import RoundArrow from "@/components/RoundArrow";
 import Image from "next/image";
 
 export default function WideCard() {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RoundArrow from "@/assets/vector/RoundArrow";
+import RoundArrow from "@/components/RoundArrow";
 import Link from "next/link";
 type Data = {
   thumbnail: string;

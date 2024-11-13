@@ -25,10 +25,10 @@ export default function SingleNotification({
         ref={modalRef}
         className="bg-white p-12 rounded-[3rem] max-w-md w-full mx-4"
       >
-        <button onClick={onClose} className="text-red float-right">
+        <button onClick={onClose} className="text-red bg-red/10 p-2 rounded-xl hover:bg-red hover:text-white float-right">
           Close
         </button>
-        <h2 className="text-2xl font-semibold mb-2">{data.title}</h2>
+        <h2 className="text-2xl font-semibold mb-2 leading-7">{data.title}</h2>
         <p className="text-sm text-gray-500 mb-4">
           {data.category} - {data.time}
         </p>
