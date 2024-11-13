@@ -32,7 +32,7 @@ export default function Gallery() {
             </h2>
             <button className="px-4 py-1.5 flex gap-1.5 items-center justify-center text-lg font-light border-[0.5px] border-white rounded-full transition-colors duration-300 hover:bg-opacity-20 mt-2 text-white bg-white bg-opacity-10">
               View More
-              <RoundArrow className="rotate-45 w-5 h-5" color="#09abb1" />
+              <RoundArrow className="from-red/80 to-red/5 w-6 h-6 bg-white" />
             </button>
           </div>
         </div>
@@ -50,19 +50,17 @@ export default function Gallery() {
                 height={400}
               />
               <div
-                className={`absolute hidden md:block z-10 rounded-full border-white border-[6px] w-12 h-12 -right-[2.5rem] ${
-                  key % 4 === 3 && "md:hidden"
-                } ${
-                  key % 5 === 0
+                className={`absolute hidden md:block z-10 rounded-full border-white border-[6px] w-12 h-12 -right-[2.5rem] ${key % 4 === 3 && "md:hidden"
+                  } ${key % 5 === 0
                     ? "bg-yellow"
                     : key % 5 === 1
-                    ? "bg-red"
-                    : key % 5 === 2
-                    ? "bg-blue"
-                    : key % 5 === 3
-                    ? "bg-green"
-                    : "bg-blue"
-                }`}
+                      ? "bg-red"
+                      : key % 5 === 2
+                        ? "bg-blue"
+                        : key % 5 === 3
+                          ? "bg-green"
+                          : "bg-blue"
+                  }`}
               ></div>
             </div>
           ))}

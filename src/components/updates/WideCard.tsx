@@ -20,7 +20,7 @@ export default function WideCard() {
         </p>
         <button className="px-4 py-1.5 flex gap-2 items-center justify-center font-medium text-lg border-[0.5px] border-black rounded-full transition-colors duration-300 hover:bg-red hover:bg-opacity-5 mt-2">
           View More
-          <RoundArrow className="rotate-45 w-6 h-6" />
+          <RoundArrow className="from-red/80 to-red/5 w-6 h-6" />
         </button>
       </div>
       <Image
