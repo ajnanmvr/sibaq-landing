@@ -66,11 +66,8 @@ const data = [
 export default function updates() {
   return (
     <>
-      <Header
-        pageTitle="Updates"
-        keywords={["Festival", "Downloads", "Files", "Forms", "Criteria"]}
-      />
-      <section className="md:px-28 mt-20 px-8">
+
+      <div className="md:px-28 mt-20 px-8">
         <WideCard />
         <Notifications />
         <div className="flex justify-center flex-wrap flex-1 gap-x-8 gap-y-12">
@@ -81,7 +78,7 @@ export default function updates() {
             ))}
           </div>
 
-      </section>
+      </div>
     </>
   );
 }
