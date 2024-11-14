@@ -3,35 +3,7 @@ import Bell from "@/assets/vector/Bell";
 import { useState } from "react";
 import { TNotification } from "@/libs/types";
 import SingleNotification from "../SingleNotification";
-
-const NotificationData: TNotification[] = [
-  {
-    title: "Results are out now for controllers",
-    category: "Aliya Category",
-    time: "Today 11:15PM",
-    url: "#",
-  },
-  {
-    title: "Results are out now for installed now controllers",
-    category: "Aliya Category",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, dignissimos voluptatibus suscipit laudantium praesentium totam dicta eos, cumque, laborum adipisci dolores velit nobis deserunt? Aperiam quisquam veniam repellendus odio ipsam.",
-    time: "Today 11:15PM",
-    url: "#",
-  },
-  {
-    title: "Results are out now for controllers",
-    category: "Aliya Category",
-    time: "Today 11:15PM",
-    url: "#",
-  },
-  {
-    title: "Results are out now for controllers",
-    category: "Aliya Category",
-    time: "Today 11:15PM",
-    url: "#",
-  },
-];
+import NotificationData from "@/libs/notifications.json";
 
 export default function Notifications() {
   const [selectedNotification, setSelectedNotification] =
