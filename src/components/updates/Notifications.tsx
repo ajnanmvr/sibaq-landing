@@ -29,17 +29,19 @@ export default function Notifications() {
               : "bg-green"
           }`}
         >
-          <Bell
-            className={`rounded-full w-8 h-8 ${
-              key % 4 === 0
-                ? "bg-yellow"
-                : key % 4 === 1
-                ? "bg-red"
-                : key % 4 === 2
-                ? "bg-blue"
-                : "bg-green"
-            }`}
-          />
+          <div className="w-8">
+            <Bell
+              className={`rounded-full w-8 h-8 ${
+                key % 4 === 0
+                  ? "bg-yellow"
+                  : key % 4 === 1
+                  ? "bg-red"
+                  : key % 4 === 2
+                  ? "bg-blue"
+                  : "bg-green"
+              }`}
+            />
+          </div>
           <div className="flex flex-col gap-2">
             <p className="text-[1.35rem] leading-6 tracking-tighter font-medium ml-1 line-clamp-2">
               {notification.title}
