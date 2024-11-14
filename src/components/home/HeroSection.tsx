@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import Logo from "@/assets/vector/logo/sibaq-logo-with-text.svg";
-import Landing from "@/assets/static/sibaq-landing-image.png";
-import Mobile from "@/assets/static/landing-mobile.png";
+import LeftSide from "@/assets/vector/landing/leftside-pattern.svg";
+import RightSide from "@/assets/vector/landing/rightside-pattern.svg";
 import confetti from "canvas-confetti";
 import localFont from "next/font/local";
 
@@ -40,10 +40,13 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="home w-full relative h-[100svh] flex flex-col items-center  md:flex-row">
-      <div className="md:py-20 py-10 px-10 md:pl-32 flex flex-col justify-center items-start gap-20">
+    <div className="home w-full relative min-h-[100svh] flex items-center justify-between">
+      <div className="flex-1">
+        <Image src={LeftSide} alt="Left Side" className="w-auto h-[100svh]" />
+      </div>{" "}
+      <div className="md:py-20 py-10 px-10 flex flex-col justify-center items-center flex-1 gap-20">
         <Image src={Logo} alt="Logo Sibaq" className="h-14 md:h-20 w-min" />
-        <div className="md:text-[4.3rem] text-center md:text-left text-5xl md:leading-[4.3rem] tracking-tighter">
+        <div className="md:text-[4.3rem] text-center text-5xl md:leading-[4.3rem] tracking-tighter">
           <h1 className={`${nippo.className} text-gradient font-medium`}>
             SIBĀQ 25
           </h1>
@@ -61,19 +64,8 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-      <Image
-        src={Mobile}
-        alt="Landing Sibaq"
-        quality={100}
-        className="w-screen md:hidden absolute bottom-0"
-      />
-      <div className="flex-1 relative h-screen py-3 md:w-[500px] overflow-hidden flex items-center justify-center">
-        <Image
-          src={Landing}
-          alt="Logo Sibaq"
-          quality={100}
-          className="object-cover hidden md:block"
-        />
+      <div className="flex-1 flex justify-end">
+        <Image src={RightSide} alt="Right Side" className="w-auto h-[100svh]" />
       </div>
     </div>
   );
