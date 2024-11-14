@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Notifications from "@/components/updates/Notifications";
 import SmallCard from "@/components/updates/SmallCard";
 import WideCard from "@/components/updates/WideCard";

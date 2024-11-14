@@ -1,6 +1,4 @@
 "use client";
-import BellIcon from "@/assets/vector/bell.svg";
-import Image from "next/image";
 import AOS from "aos";
 import { useEffect, useState } from "react";
 import { TNotification } from "@/libs/types";

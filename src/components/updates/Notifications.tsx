@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import Bell from "@/assets/vector/Bell";
 import { useState } from "react";
 import { TNotification } from "@/libs/types";
