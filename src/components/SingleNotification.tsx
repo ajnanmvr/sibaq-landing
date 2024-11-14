@@ -19,13 +19,16 @@ export default function SingleNotification({
   return (
     <div
       onClick={handleOverlayClick}
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-30"
+      className="fixed inset-0 flex items-center justify-center bg-black/10 backdrop-blur-lg z-30"
     >
       <div
         ref={modalRef}
         className="bg-white p-12 rounded-[3rem] max-w-md w-full mx-4"
       >
-        <button onClick={onClose} className="text-red bg-red/10 p-2 rounded-xl hover:bg-red hover:text-white float-right">
+        <button
+          onClick={onClose}
+          className="text-red bg-red/10 p-2 rounded-xl hover:bg-red hover:text-white float-right"
+        >
           Close
         </button>
         <h2 className="text-2xl font-semibold mb-2 leading-7">{data.title}</h2>
