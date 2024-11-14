@@ -42,7 +42,7 @@ const HeroSection = () => {
 
   return (
     <div className="home w-full relative min-h-[100svh] flex items-center justify-center">
-      <div className="md:py-20 bg-white/60 backdrop-blur-md rounded-full p-10 flex flex-col justify-center items-center gap-8">
+      <div className="md:py-20 bg-white/70 backdrop-blur-sm rounded-[3rem] p-10 flex flex-col justify-center items-center gap-8">
         <Image src={Logo} alt="Logo Sibaq" className="h-14 md:h-20 w-min" />
         <div className="md:text-[4.3rem] text-center text-[2.5rem] leading-[2.5rem] sm:text-5xl md:leading-[4.3rem] tracking-tighter">
           <h1 className={`${nippo.className} text-gradient font-medium`}>
