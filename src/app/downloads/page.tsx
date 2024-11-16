@@ -5,17 +5,17 @@ export default function Downloads() {
     "general": [
       {
         "title": "Concept Note",
-        "date": "",
+        "date": "16-11-2024",
         "path": "/downloads/general-concept-note.pdf",
       },
       {
         "title": "By Law",
-        "date": "",
+        "date": "16-11-2024",
         "path": "/downloads/general-bylaw.pdf"
       },
       {
         "title": "Program List",
-        "date": "",
+        "date": "16-11-2024",
         "path": "/downloads/general-program-list.pdf"
       },
     ],
