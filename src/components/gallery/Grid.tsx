@@ -1,29 +1,29 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RoundArrow from "../RoundArrow";
 
 const images = [
-  "/logo-launch.JPG",
-  "/4.webp",
-  "/bg-1.jpg",
-  "/logo-launch.JPG",
-  "/4.webp",
-  "/bg-1.jpg",
-  "/logo-launch.JPG",
-  "/4.webp",
-  "/bg-1.jpg",
-  "/logo-launch.JPG",
-  "/4.webp",
-  "/bg-1.jpg",
-  "/logo-launch.JPG",
-  "/4.webp",
-  "/bg-1.jpg",
+  "/gallery/1.jpg",
+  "/gallery/2.jpg",
+  "/gallery/3.jpg",
+  "/gallery/4.jpg",
 ];
 
 function Grid() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   const openLightbox = (index: number) => {
     setCurrentImage(index);
@@ -44,7 +44,7 @@ function Grid() {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mt-14 mx-5 gap-4 md:gap-8">
+      <div className="columns-1 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 mt-14 mx-5 gap-4 md:gap-8">
         {images.map((image, index) => (
           <div
             key={index}
@@ -54,7 +54,7 @@ function Grid() {
             <Image
               src={image}
               alt="gallery image"
-              className="rounded-[40px] hover:scale-[101%] transition-transform duration-300 md:rounded-[55px]"
+              className="rounded-[40px] mb-8 hover:scale-[101%] transition-transform duration-300 md:rounded-[55px]"
               width={400}
               height={400}
             />
@@ -96,8 +96,8 @@ function Grid() {
 
       <div className="flex items-center justify-center mt-10">
         <button className="px-4 py-1.5 flex gap-2 items-center justify-center font-medium text-lg border-[0.5px] border-black rounded-full transition-colors duration-300 hover:bg-red hover:bg-opacity-5 mt-2">
-          View More
-          <RoundArrow className="rotate-45 w-6 h-6" />
+          Load More
+          <RoundArrow className="from-green/80 to-green/10 w-6 h-6" />
         </button>
       </div>
     </>
