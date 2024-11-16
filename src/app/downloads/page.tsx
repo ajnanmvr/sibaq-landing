@@ -68,7 +68,7 @@ export default function Downloads() {
             {data?.general?.map((item: any, index: number) => {
               const color = index % 4 === 0 ? "yellow" : index % 4 === 1 ? "blue" : index % 4 === 2 ? "green" : "red";
               return (
-                <Link href={item?.path} className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}>
+                <Link key={index} href={item?.path} className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}>
                   <div className={`bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-${color}/50 group-hover:from-${color} group-hover:via-${color}/50  to-${color} group-hover:to-${color}  transition-colors duration-300 flex-1 rounded-3xl`}>
                     PDF
                   </div>
@@ -98,7 +98,7 @@ export default function Downloads() {
             {data?.niics?.map((item: any, index: number) => {
               const color = index % 4 === 0 ? "yellow" : index % 4 === 1 ? "blue" : index % 4 === 2 ? "green" : "red";
               return (
-                <Link href={item?.path} className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}>
+                <Link key={index} href={item?.path} className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}>
                   <div className={`bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-${color}/50 group-hover:from-${color} group-hover:via-${color}/50  to-${color} group-hover:to-${color}  transition-colors duration-300 flex-1 rounded-3xl`}>
                     PDF
                   </div>
@@ -128,7 +128,7 @@ export default function Downloads() {
             {data?.zahrawiyya?.map((item: any, index: number) => {
               const color = index % 4 === 0 ? "yellow" : index % 4 === 1 ? "blue" : index % 4 === 2 ? "green" : "red";
               return (
-                <Link href={item?.path} className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}>
+                <Link key={index} href={item?.path} className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}>
                   <div className={`bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-${color}/50 group-hover:from-${color} group-hover:via-${color}/50  to-${color} group-hover:to-${color}  transition-colors duration-300 flex-1 rounded-3xl`}>
                     PDF
                   </div>
