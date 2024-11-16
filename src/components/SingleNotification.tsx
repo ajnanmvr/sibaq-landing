@@ -1,4 +1,5 @@
 import { TPopupProps } from "@/libs/types";
+import Link from "next/link";
 import { useRef } from "react";
 
 export default function SingleNotification({
@@ -38,9 +39,14 @@ export default function SingleNotification({
         {data.description && (
           <p className="text-gray-700">{data.description}</p>
         )}
-        <a href={data.url} className="text-blue underline mt-4 inline-block">
-          Apply Now
-        </a>
+        {data?.url && (
+          <Link
+            href={data.url}
+            className="text-blue underline mt-4 inline-block"
+          >
+            Apply Now
+          </Link>
+        )}
       </div>
     </div>
   );

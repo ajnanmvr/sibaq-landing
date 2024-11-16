@@ -1,27 +1,28 @@
 [
   {
-    "title": "Elimination round of Section B of Group 2 starts on November 29 ",
+    "title": "Elimination round of Section B of Group 2 starts on November 29",
     "category": "General",
-    "time": "Today 11:15PM",
-    "url": "#"
+    "description": "The much-awaited elimination round for Section B of Group 2 kicks off on November 29. Get ready to showcase your skills and progress to the finals!",
+    "time": "Today 11:15PM"
   },
   {
-    "title": "Item registration closes tomowrrow",
+    "title": "Item registration closes tomorrow",
     "category": "General",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, dignissimos voluptatibus suscipit laudantium praesentium totam dicta eos, cumque, laborum adipisci dolores velit nobis deserunt? Aperiam quisquam veniam repellendus odio ipsam.",
-    "time": "Today 11:15PM",
-    "url": "#"
+    "description": "Don’t miss the deadline! Ensure all your items are registered by tomorrow to participate in the event. Late entries will not be entertained.",
+    "time": "Today 11:15PM"
   },
   {
     "title": "Schedule for Debate Eng, Arb, Urd are out now",
     "category": "Kullliyyah",
+    "description": "Check out the latest schedules for the debates in English, Arabic, and Urdu languages. Make sure to prepare and stay updated with the timings.",
     "time": "Today 11:15PM",
-    "url": "#"
+    "url": "/downloads",
+    "button":"View Now"
   },
   {
     "title": "Cluster wise writing programs (Y Category) Postponed to Dec 15",
     "category": "General",
-    "time": "Today 11:15PM",
-    "url": "#"
+    "description": "The writing programs for Y Category clusters have been postponed to December 15. Utilize this extra time to enhance your writing submissions.",
+    "time": "Today 11:15PM"
   }
 ]
