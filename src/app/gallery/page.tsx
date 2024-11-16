@@ -12,6 +12,8 @@ export default function Gallery() {
           <Image
             src={Camera}
             alt="camera"
+            priority={true}
+            placeholder="blur"
             className="md:rounded-[5.5rem] 2xl:w-full bg-black"
           />
           <div className="inset-0 absolute p-24 flex flex-col items-start gap-10 justify-center">
