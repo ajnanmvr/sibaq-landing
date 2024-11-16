@@ -31,6 +31,7 @@ export default function SmallCard({
     >
       <Image
         src={data.thumbnail}
+        placeholder="blur"
         width={300}
         height={100}
         alt="1"

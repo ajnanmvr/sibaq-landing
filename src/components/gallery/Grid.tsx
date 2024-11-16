@@ -60,6 +60,8 @@ function Grid() {
             <Image
               src={image}
               alt="gallery image"
+              placeholder="blur"
+              
               className="rounded-[40px] mb-8 hover:scale-[101%] transition-transform duration-300 md:rounded-[55px]"
               width={400}
               height={400}
