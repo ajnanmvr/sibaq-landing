@@ -2,58 +2,58 @@ import Link from "next/link";
 
 export default function Downloads() {
   const data = {
-    "general": [
+    general: [
       {
-        "title": "Concept Note",
-        "date": "16-11-2024",
-        "path": "/downloads/general-concept-note.pdf",
+        title: "Concept Note",
+        date: "16-11-2024",
+        path: "/downloads/general-concept-note.pdf",
       },
       {
-        "title": "By Law",
-        "date": "16-11-2024",
-        "path": "/downloads/general-bylaw.pdf"
+        title: "By Law",
+        date: "16-11-2024",
+        path: "/downloads/general-bylaw.pdf",
       },
       {
-        "title": "Program List",
-        "date": "16-11-2024",
-        "path": "/downloads/general-program-list.pdf"
-      },
-    ],
-    "niics": [
-      {
-        "title": "Concept Note",
-        "date": "16-11-2024",
-        "path": "/downloads/niics-concept-note.pdf",
-      },
-      {
-        "title": "By Law",
-        "date": "16-11-2024",
-        "path": "/downloads/niics-bylaw.pdf"
-      },
-      {
-        "title": "Program List",
-        "date": "16-11-2024",
-        "path": "/downloads/niics-program-list.pdf"
+        title: "Program List",
+        date: "16-11-2024",
+        path: "/downloads/general-program-list.pdf",
       },
     ],
-    "zahrawiyya": [
+    niics: [
       {
-        "title": "Concept Note",
-        "date": "16-11-2024",
-        "path": "/downloads/zahrawiyya-concept-note.pdf",
+        title: "Concept Note",
+        date: "16-11-2024",
+        path: "/downloads/niics-concept-note.pdf",
       },
       {
-        "title": "By Law",
-        "date": "16-11-2024",
-        "path": "/downloads/zahrawiyya-bylaw.pdf"
+        title: "By Law",
+        date: "16-11-2024",
+        path: "/downloads/niics-bylaw.pdf",
       },
       {
-        "title": "Program List",
-        "date": "16-11-2024",
-        "path": "/downloads/zahrawiyya-program-list.pdf"
+        title: "Program List",
+        date: "16-11-2024",
+        path: "/downloads/niics-program-list.pdf",
       },
     ],
-  }
+    zahrawiyya: [
+      {
+        title: "Concept Note",
+        date: "16-11-2024",
+        path: "/downloads/zahrawiyya-concept-note.pdf",
+      },
+      {
+        title: "By Law",
+        date: "16-11-2024",
+        path: "/downloads/zahrawiyya-bylaw.pdf",
+      },
+      {
+        title: "Program List",
+        date: "16-11-2024",
+        path: "/downloads/zahrawiyya-program-list.pdf",
+      },
+    ],
+  };
 
   return (
     <>
@@ -66,14 +66,29 @@ export default function Downloads() {
 
           <div className="w-full px-5 lg:px-0 py-12 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
             {data?.general?.map((item: any, index: number) => {
-              const color = index % 4 === 0 ? "yellow" : index % 4 === 1 ? "blue" : index % 4 === 2 ? "green" : "red";
+              const color =
+                index % 4 === 0
+                  ? "yellow"
+                  : index % 4 === 1
+                  ? "blue"
+                  : index % 4 === 2
+                  ? "green"
+                  : "red";
               return (
-                <Link key={index} href={item?.path} className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}>
-                  <div className={`bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-${color}/50 group-hover:from-${color} group-hover:via-${color}/50  to-${color} group-hover:to-${color}  transition-colors duration-300 flex-1 rounded-3xl`}>
+                <Link
+                  key={index}
+                  href={item?.path}
+                  className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}
+                >
+                  <div
+                    className={`bg-${color} text-white font-bold items-center justify-center flex text-[2.5rem]  transition-colors duration-300 flex-1 rounded-3xl`}
+                  >
                     PDF
                   </div>
                   <div className="p-1 flex flex-col gap-2">
-                    <h3 className={`text-2xl leading-6 font-medium text-${color}`}>
+                    <h3
+                      className={`text-2xl leading-6 font-medium text-${color}`}
+                    >
                       <span className="text-sm">SIBAQ 2024</span>
                       <br /> {item?.title}
                     </h3>
@@ -83,7 +98,7 @@ export default function Downloads() {
                     </div>
                   </div>
                 </Link>
-              )
+              );
             })}
           </div>
         </div>
@@ -96,14 +111,29 @@ export default function Downloads() {
 
           <div className="w-full px-5 lg:px-0 py-12 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
             {data?.niics?.map((item: any, index: number) => {
-              const color = index % 4 === 0 ? "yellow" : index % 4 === 1 ? "blue" : index % 4 === 2 ? "green" : "red";
+              const color =
+                index % 4 === 0
+                  ? "yellow"
+                  : index % 4 === 1
+                  ? "blue"
+                  : index % 4 === 2
+                  ? "green"
+                  : "red";
               return (
-                <Link key={index} href={item?.path} className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}>
-                  <div className={`bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-${color}/50 group-hover:from-${color} group-hover:via-${color}/50  to-${color} group-hover:to-${color}  transition-colors duration-300 flex-1 rounded-3xl`}>
+                <Link
+                  key={index}
+                  href={item?.path}
+                  className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}
+                >
+                  <div
+                    className={`bg-${color} text-white font-bold items-center justify-center flex text-[2.5rem]  transition-colors duration-300 flex-1 rounded-3xl`}
+                  >
                     PDF
                   </div>
                   <div className="p-1 flex flex-col gap-2">
-                    <h3 className={`text-2xl leading-6 font-medium text-${color}`}>
+                    <h3
+                      className={`text-2xl leading-6 font-medium text-${color}`}
+                    >
                       <span className="text-sm">SIBAQ 2024</span>
                       <br /> {item?.title}
                     </h3>
@@ -113,7 +143,7 @@ export default function Downloads() {
                     </div>
                   </div>
                 </Link>
-              )
+              );
             })}
           </div>
         </div>
@@ -126,14 +156,29 @@ export default function Downloads() {
 
           <div className="w-full px-5 lg:px-0 py-12 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
             {data?.zahrawiyya?.map((item: any, index: number) => {
-              const color = index % 4 === 0 ? "yellow" : index % 4 === 1 ? "blue" : index % 4 === 2 ? "green" : "red";
+              const color =
+                index % 4 === 0
+                  ? "yellow"
+                  : index % 4 === 1
+                  ? "blue"
+                  : index % 4 === 2
+                  ? "green"
+                  : "red";
               return (
-                <Link key={index} href={item?.path} className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}>
-                  <div className={`bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] from-${color}/50 group-hover:from-${color} group-hover:via-${color}/50  to-${color} group-hover:to-${color}  transition-colors duration-300 flex-1 rounded-3xl`}>
+                <Link
+                  key={index}
+                  href={item?.path}
+                  className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}
+                >
+                  <div
+                    className={`bg-${color} text-white font-bold items-center justify-center flex text-[2.5rem]  transition-colors duration-300 flex-1 rounded-3xl`}
+                  >
                     PDF
                   </div>
                   <div className="p-1 flex flex-col gap-2">
-                    <h3 className={`text-2xl leading-6 font-medium text-${color}`}>
+                    <h3
+                      className={`text-2xl leading-6 font-medium text-${color}`}
+                    >
                       <span className="text-sm">SIBAQ 2024</span>
                       <br /> {item?.title}
                     </h3>
@@ -143,7 +188,7 @@ export default function Downloads() {
                     </div>
                   </div>
                 </Link>
-              )
+              );
             })}
           </div>
         </div>
