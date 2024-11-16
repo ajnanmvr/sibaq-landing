@@ -1,37 +1,37 @@
 import InstagramIcon from "@/assets/vector/social-media/instagram.svg";
 import FacebookIcon from "@/assets/vector/social-media/facebook.svg";
 import YoutubeIcon from "@/assets/vector/social-media/youtube.svg";
-import SpotifyIcon from "@/assets/vector/social-media/spotify.svg";
+// import SpotifyIcon from "@/assets/vector/social-media/spotify.svg";
 import WhatsappIcon from "@/assets/vector/social-media/whatsapp.svg";
 
 export const socialMediaLinks = [
   {
     platform: "Facebook",
-    url: "#",
+    url: "https://www.facebook.com/sibaq.darulhuda",
     icon: FacebookIcon,
     color: "blue",
   },
   {
     platform: "Instagram",
-    url: "#",
+    url: "https://www.instagram.com/sibaq_darulhuda/",
     icon: InstagramIcon,
     color: "purple",
   },
   {
     platform: "WhatsApp",
-    url: "#",
+    url: "https://wa.me/917902460575",
     icon: WhatsappIcon,
     color: "green",
   },
-  {
-    platform: "Spotify",
-    url: "#",
-    icon: SpotifyIcon,
-    color: "parrot",
-  },
+  // {
+  //   platform: "Spotify",
+  //   url: "#",
+  //   icon: SpotifyIcon,
+  //   color: "parrot",
+  // },
   {
     platform: "YouTube",
-    url: "#",
+    url: "https://www.youtube.com/@dhmediayt",
     icon: YoutubeIcon,
     color: "red",
   },

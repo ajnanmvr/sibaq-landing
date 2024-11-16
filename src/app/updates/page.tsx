@@ -5,78 +5,55 @@ import { Fragment } from "react";
 
 const data = [
   {
-    thumbnail: "",
+    thumbnail: "/gallery/website-launching.jpg",
     title:
-      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
+      "SIBĀQ 2025 Website Launched by Sayyid Sabiqali Shihab Thangal",
     url: "#",
     published: "today",
   },
   {
-    thumbnail: "",
+    thumbnail: "/gallery/baraf.jpg",
     title:
-      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
+      "BARAF Program Workshop Successfully Held",
     url: "#",
     published: "today",
   },
   {
-    thumbnail: "",
+    thumbnail: "/gallery/1.jpg",
     title:
-      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
+      "Debates and Munazara Elimination Rounds Scheduled",
     url: "#",
-    published: "today",
+    published: "1 Day Ago",
   },
   {
-    thumbnail: "",
+    thumbnail: "/gallery/1.jpg",
     title:
-      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
+      "Y Category Programs to Be Held Cluster-Wise ",
     url: "#",
-    published: "today",
+    published: "2 Days Ago",
   },
   {
-    thumbnail: "",
+    thumbnail: "/gallery/1.jpg",
     title:
-      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
+      "Elimination Round Dates Announced",
     url: "#",
-    published: "today",
-  },
-  {
-    thumbnail: "",
-    title:
-      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
-    url: "#",
-    published: "today",
-  },
-  {
-    thumbnail: "",
-    title:
-      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
-    url: "#",
-    published: "today",
-  },
-  {
-    thumbnail: "",
-    title:
-      "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
-    url: "#",
-    published: "today",
-  },
+    published: "4 Days Ago",
+  }
 ];
 
 export default function updates() {
   return (
     <>
-
       <div className="md:px-28 mt-20 px-8">
         <WideCard />
         <Notifications />
         <div className="flex justify-center flex-wrap flex-1 gap-x-8 gap-y-12">
-            {data.map((update, key) => (
-              <Fragment key={key}>
-                <SmallCard data={update} index={key} />
-              </Fragment>
-            ))}
-          </div>
-
+          {data.map((update, key) => (
+            <Fragment key={key}>
+              <SmallCard data={update} index={key} />
+            </Fragment>
+          ))}
+        </div>
       </div>
     </>
   );
