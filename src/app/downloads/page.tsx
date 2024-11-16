@@ -22,34 +22,34 @@ export default function Downloads() {
     "niics": [
       {
         "title": "Concept Note",
-        "date": "",
+        "date": "16-11-2024",
         "path": "/downloads/niics-concept-note.pdf",
       },
       {
         "title": "By Law",
-        "date": "",
+        "date": "16-11-2024",
         "path": "/downloads/niics-bylaw.pdf"
       },
       {
         "title": "Program List",
-        "date": "",
+        "date": "16-11-2024",
         "path": "/downloads/niics-program-list.pdf"
       },
     ],
     "zahrawiyya": [
       {
         "title": "Concept Note",
-        "date": "",
+        "date": "16-11-2024",
         "path": "/downloads/zahrawiyya-concept-note.pdf",
       },
       {
         "title": "By Law",
-        "date": "",
+        "date": "16-11-2024",
         "path": "/downloads/zahrawiyya-bylaw.pdf"
       },
       {
         "title": "Program List",
-        "date": "",
+        "date": "16-11-2024",
         "path": "/downloads/zahrawiyya-program-list.pdf"
       },
     ],
