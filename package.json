@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.0.3",
     "@types/aos": "^3.0.7",
     "@types/canvas-confetti": "^1.6.4",
     "aos": "^2.3.4",
