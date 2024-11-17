@@ -37,7 +37,7 @@ export default function Nav() {
                   className="bg-red h-9 w-9 rounded-full flex justify-center items-center"
                   onClick={() => setNavHover(false)}
                 >
-              <Image src={CloseIcon} alt="Close Icon" />
+                  <Image src={CloseIcon} alt="Close Icon" className="w-4 h-4" />
                 </div>
               ) : (
                 <MenuIcon

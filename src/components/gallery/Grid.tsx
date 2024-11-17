@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import RoundArrow from "../RoundArrow";
+import CloseIcon from "@/assets/vector/close.svg";
 
 const images = [
   "/gallery/1.jpg",
@@ -59,6 +60,8 @@ function Grid() {
             <Image
               src={image}
               alt="gallery image"
+              placeholder="blur"
+              
               className="rounded-[40px] mb-8 hover:scale-[101%] transition-transform duration-300 md:rounded-[55px]"
               width={400}
               height={400}
@@ -68,14 +71,14 @@ function Grid() {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-white/10 backdrop-blur-md flex items-center justify-center z-50">
-          <button
-            onClick={closeLightbox}
-            className="absolute top-5 right-5 text-red text-3xl"
+        <div
+          className="fixed inset-0 bg-white/10 backdrop-blur-md flex items-center justify-center z-50"
+          onClick={closeLightbox}
+        >
+          <div
+            className="relative flex items-center"
+            onClick={(e) => e.stopPropagation()}
           >
-            &times;
-          </button>
-          <div className="relative flex items-center">
             <button
               onClick={prevImage}
               className="absolute left-10 text-white text-3xl p-2"
@@ -89,6 +92,12 @@ function Grid() {
               width={800}
               height={800}
             />
+            <div
+              onClick={closeLightbox}
+              className="bg-red hover:bg-ruby-red transition-colors absolute top-10 right-10 h-9 w-9 rounded-full flex justify-center items-center"
+            >
+              <Image src={CloseIcon} alt="Close Icon" className="w-4 h-4" />
+            </div>
             <button
               onClick={nextImage}
               className="absolute right-10 text-white text-3xl p-2"

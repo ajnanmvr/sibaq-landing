@@ -62,16 +62,26 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-        <Image src={LeftSide} alt="Left Side" className="h-screen -z-10 object-cover absolute left-0" />
-        <Image src={RightSide} alt="Right Side" className="h-screen -z-10 absolute object-cover -right-0" />
+      <Image
+        priority={true}
+        placeholder="blur"
+        src={LeftSide}
+        alt="Left Side"
+        className="h-screen -z-10 object-cover absolute left-0"
+      />
+      <Image
+        priority={true}
+        placeholder="blur"
+        src={RightSide}
+        alt="Right Side"
+        className="h-screen -z-10 absolute object-cover -right-0"
+      />
 
       {/* <Image
         src={Sea}
         alt="Right Side"
         className="w-screen absolute bottom-0"
       /> */}
-
-
     </div>
   );
 };

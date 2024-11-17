@@ -12,10 +12,18 @@ export default function Gallery() {
           <Image
             src={Camera}
             alt="camera"
-            className="md:rounded-[5.5rem] 2xl:w-full"
+            priority={true}
+            placeholder="blur"
+            className="md:rounded-[5.5rem] 2xl:w-full bg-black"
           />
           <div className="inset-0 absolute p-24 flex flex-col items-start gap-10 justify-center">
-            <Image src={Logo} alt="Sibaq Logo" className="w-32" />
+            <Image
+              src={Logo}
+              alt="Sibaq Logo"
+              priority={true}
+              placeholder="blur"
+              className="w-32"
+            />
             <h2 className="text-white text-[2.8rem] 2xl:text-5xl leading-[3rem]">
               We have made a special <br /> album&nbsp;
               <span className="text-gradient">just for you...</span>
