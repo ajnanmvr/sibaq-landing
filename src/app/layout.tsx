@@ -49,9 +49,9 @@ export default function RootLayout({
         <Nav />
         {children}
         <FooterAddress />
+        <SpeedInsights />
       </body>
       <GoogleAnalytics gaId="G-ZFS1FXX4BH" />
-      <SpeedInsights />
     </html>
   );
 }
