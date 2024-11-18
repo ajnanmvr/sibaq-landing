@@ -2,7 +2,6 @@ import Notifications from "@/components/updates/Notifications";
 import SmallCard from "@/components/updates/SmallCard";
 import WideCard from "@/components/updates/WideCard";
 import { Fragment } from "react";
-import { gql, useQuery } from "@apollo/client";
 
 const data = [
   {
@@ -36,17 +35,6 @@ const data = [
     published: "4 Days Ago",
   },
 ];
-
-export const GET_NEWS = gql`
-  query News {
-    news {
-      id
-      title
-      date
-      photo
-    }
-  }
-`;
 
 export default function updates() {
   return (
