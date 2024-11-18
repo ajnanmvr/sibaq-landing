@@ -1,3 +1,4 @@
+import autoColor from "@/utils/autoColor";
 import Link from "next/link";
 const data = {
   general: [
@@ -72,7 +73,15 @@ export default function Downloads() {
                   className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}
                 >
                   <div
-                    className={`bg-${color} text-white font-bold items-center justify-center flex text-[2.5rem] transition-colors duration-300 flex-1 rounded-3xl`}
+                    className={`bg-gradient-to-r text-white font-bold items-center justify-center flex text-[2.5rem] ${autoColor(
+                      index,
+                      [
+                        "from-yellow/50 group-hover:from-yellow group-hover:via-yellow/50  to-yellow group-hover:to-yellow",
+                        "from-blue/50 group-hover:from-blue group-hover:via-blue/50  to-blue group-hover:to-blue",
+                        "from-green/50 group-hover:from-green group-hover:via-green/50  to-green group-hover:to-green",
+                        "from-red/50 group-hover:from-red group-hover:via-red/50  to-red group-hover:to-red",
+                      ]
+                    )}  transition-colors duration-300 flex-1 rounded-3xl`}
                   >
                     PDF
                   </div>
