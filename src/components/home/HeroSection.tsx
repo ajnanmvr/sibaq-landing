@@ -14,9 +14,12 @@ const HeroSection = () => {
       <div className="md:py-20 bg-white/70 backdrop-blur-md rounded-[3rem] p-10 flex flex-col justify-center items-center gap-8">
         <Image src={Logo} alt="Logo Sibaq" className="h-14 md:h-20 w-min" />
         <div className="md:text-[4.3rem] text-center text-[2.5rem] leading-[2.5rem] sm:text-5xl md:leading-[4.3rem] tracking-tighter">
-          <h1 className={`${nippo.className} text-gradient font-medium`}>
+          <h1
+            className={`${nippo.className} text-gradient bg-four-color font-medium`}
+          >
             SIBĀQ 25
           </h1>
+
           <p className="font-light mt-0.5 md:mt-2">
             DHIU National <br />
             Arts Fest

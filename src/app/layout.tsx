@@ -45,9 +45,9 @@ export default function RootLayout({
       <body
         className={`${dm_sans.variable} text-black select-none font-sans tracking-tighter`}
       >
-          <Nav />
-          {children}
-          <FooterAddress />
+        <Nav />
+        {children}
+        <FooterAddress />
       </body>
       <GoogleAnalytics gaId="G-ZFS1FXX4BH" />
     </html>
