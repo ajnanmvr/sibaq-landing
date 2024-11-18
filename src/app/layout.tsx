@@ -47,11 +47,11 @@ export default function RootLayout({
         className={`${dm_sans.variable} text-black select-none font-sans tracking-tighter`}
       >
         <Nav />
-        {children}
+        <main> {children}</main>
         <FooterAddress />
         <SpeedInsights />
       </body>
-      <GoogleAnalytics gaId="G-ZFS1FXX4BH" />
+      <GoogleAnalytics gaId={process.env.GA_ID!} />
     </html>
   );
 }

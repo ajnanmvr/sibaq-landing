@@ -11,7 +11,7 @@ export default function ContactLayout({
         pageTitle="Contact"
         keywords={["Festival", "Downloads", "Files", "Forms", "Criteria"]}
       />
-      <main>{children}</main>
+      <div>{children}</div>
     </>
   );
 }
