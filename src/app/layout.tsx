@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { DM_Sans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "aos/dist/aos.css";
 import FooterAddress from "@/components/Footer";
@@ -50,6 +51,7 @@ export default function RootLayout({
         <FooterAddress />
       </body>
       <GoogleAnalytics gaId="G-ZFS1FXX4BH" />
+      <SpeedInsights />
     </html>
   );
 }
