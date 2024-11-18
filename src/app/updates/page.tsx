@@ -2,44 +2,51 @@ import Notifications from "@/components/updates/Notifications";
 import SmallCard from "@/components/updates/SmallCard";
 import WideCard from "@/components/updates/WideCard";
 import { Fragment } from "react";
+import { gql, useQuery } from "@apollo/client";
 
 const data = [
   {
     thumbnail: "/gallery/website-launching.jpg",
-    title:
-      "SIBĀQ 2025 Website Launched by Sayyid Sabiqali Shihab Thangal",
-    url: "#",
+    title: "SIBĀQ 2025 Website Launched by Sayyid Sabiqali Shihab Thangal",
+    id: "#",
     published: "today",
   },
   {
     thumbnail: "/gallery/baraf.jpg",
-    title:
-      "BARAF Program Workshop Successfully Held",
-    url: "#",
+    title: "BARAF Program Workshop Successfully Held",
+    id: "#",
     published: "today",
   },
   {
     thumbnail: "/gallery/1.jpg",
-    title:
-      "Debates and Munazara Elimination Rounds Scheduled",
-    url: "#",
+    title: "Debates and Munazara Elimination Rounds Scheduled",
+    id: "#",
     published: "1 Day Ago",
   },
   {
     thumbnail: "/gallery/1.jpg",
-    title:
-      "Y Category Programs to Be Held Cluster-Wise ",
-    url: "#",
+    title: "Y Category Programs to Be Held Cluster-Wise ",
+    id: "#",
     published: "2 Days Ago",
   },
   {
     thumbnail: "/gallery/1.jpg",
-    title:
-      "Elimination Round Dates Announced",
-    url: "#",
+    title: "Elimination Round Dates Announced",
+    id: "#",
     published: "4 Days Ago",
-  }
+  },
 ];
+
+export const GET_NEWS = gql`
+  query News {
+    news {
+      id
+      title
+      date
+      photo
+    }
+  }
+`;
 
 export default function updates() {
   return (

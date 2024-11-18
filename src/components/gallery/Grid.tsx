@@ -1,44 +1,40 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { useQuery } from "@apollo/client";
 import RoundArrow from "../RoundArrow";
 import CloseIcon from "@/assets/vector/close.svg";
+import Error from "../Error";
+import { GET_GALLERY } from "@/graphql/gallery";
 
-const images = [
-  "/gallery/1.jpg",
-  "/gallery/2.jpg",
-  "/gallery/3.jpg",
-  "/gallery/4.jpg",
-  "/gallery/5.jpg",
-  "/gallery/6.jpg",
-  "/gallery/7.jpg",
-  "/gallery/8.jpg",
-  "/gallery/9.jpg",
-];
+interface Image {
+  photo: string;
+}
+
+interface GalleryData {
+  gallery: Image[];
+}
 
 function Grid() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
-
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    document.body.style.overflow = isOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [isOpen]);
+
+  const { data, loading, error } = useQuery<GalleryData>(GET_GALLERY);
+
+  const images = (data?.gallery || []).filter((image) => image?.photo);
 
   const openLightbox = (index: number) => {
     setCurrentImage(index);
     setIsOpen(true);
   };
 
-  const closeLightbox = () => {
-    setIsOpen(false);
-  };
+  const closeLightbox = () => setIsOpen(false);
 
   const nextImage = () => {
     setCurrentImage((currentImage + 1) % images.length);
@@ -48,26 +44,32 @@ function Grid() {
     setCurrentImage((currentImage - 1 + images.length) % images.length);
   };
 
+  if (error) {
+    return <Error />;
+  }
+
   return (
     <>
-      <div className="columns-1 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 mt-14 mx-5 gap-4 md:gap-8">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`flex justify-center items-center relative cursor-pointer`}
-            onClick={() => openLightbox(index)}
-          >
-            <Image
-              src={image}
-              alt="gallery image"
-              placeholder="blur"
-              
-              className="rounded-[40px] mb-8 hover:scale-[101%] transition-transform duration-300 md:rounded-[55px]"
-              width={400}
-              height={400}
-            />
-          </div>
-        ))}
+      <div className="mt-14 mx-5 gap-4 md:gap-8 columns-1 sm:columns-2 md:columns-3 lg:columns-4">
+        {loading ? (
+          <div className="bg-slate-200 animate-pulse h-96 w-full rounded-[40px]"></div>
+        ) : (
+          images.map((image, index) => (
+            <div
+              key={index}
+              className="flex justify-center items-center relative cursor-pointer"
+              onClick={() => openLightbox(index)}
+            >
+              <Image
+                src={image.photo}
+                alt={`Gallery image ${index + 1}`}
+                className="rounded-[40px] mb-8 hover:scale-[101%] transition-transform duration-300 md:rounded-[55px]"
+                width={400}
+                height={400}
+              />
+            </div>
+          ))
+        )}
       </div>
 
       {isOpen && (
@@ -76,21 +78,15 @@ function Grid() {
           onClick={closeLightbox}
         >
           <div
-            className="relative flex items-center"
+            className="relative min-h-[80vh] min-w-[60vw] max-w-[80vw] flex items-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              onClick={prevImage}
-              className="absolute left-10 text-white text-3xl p-2"
-            >
-              &#10094;
-            </button>
             <Image
-              src={images[currentImage]}
-              alt="enlarged gallery image"
-              className="rounded-[3rem]"
-              width={800}
-              height={800}
+              src={images[currentImage]?.photo || ""}
+              alt={`Enlarged gallery image ${currentImage + 1}`}
+              className="rounded-[3rem] object-contain bg-gradient-to-bl from-yellow/20 via-red/20 to-green/20 backdrop-blur-lg"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              fill
             />
             <div
               onClick={closeLightbox}
@@ -99,8 +95,16 @@ function Grid() {
               <Image src={CloseIcon} alt="Close Icon" className="w-4 h-4" />
             </div>
             <button
+              onClick={prevImage}
+              className="absolute left-10 bg-gradient-to-tr text-white text-3xl p-2"
+              aria-label="Previous image"
+            >
+              &#10094;
+            </button>
+            <button
               onClick={nextImage}
               className="absolute right-10 text-white text-3xl p-2"
+              aria-label="Next image"
             >
               &#10095;
             </button>

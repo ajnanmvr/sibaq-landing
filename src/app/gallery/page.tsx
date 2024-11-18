@@ -21,7 +21,6 @@ export default function Gallery() {
               src={Logo}
               alt="Sibaq Logo"
               priority={true}
-              placeholder="blur"
               className="w-32"
             />
             <h2 className="text-white text-[2.8rem] 2xl:text-5xl leading-[3rem]">
