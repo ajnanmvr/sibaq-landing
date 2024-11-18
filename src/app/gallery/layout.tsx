@@ -12,7 +12,7 @@ export default function GalleryLayout({
         pageTitle="Gallery"
         keywords={["Festival", "Downloads", "Files", "Forms", "Criteria"]}
       />
-      <div>{children}</div>
+      <main>{children}</main>
     </>
   );
 }

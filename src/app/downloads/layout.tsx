@@ -11,7 +11,7 @@ export default function Downloads({
         pageTitle="Downloads"
         keywords={["Festival", "Downloads", "Files", "Forms", "Criteria"]}
       />
-      <div>{children}</div>
+      <main>{children}</main>
     </>
   );
 }

@@ -47,7 +47,7 @@ export default function RootLayout({
         className={`${dm_sans.variable} text-black select-none font-sans tracking-tighter`}
       >
         <Nav />
-        <main> {children}</main>
+        {children}
         <FooterAddress />
         <SpeedInsights />
       </body>
