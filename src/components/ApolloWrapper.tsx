@@ -9,7 +9,7 @@ import {
 
 function makeClient() {
   const httpLink = new HttpLink({
-    uri: 'https://api.sibaq.in/graphql',
+    uri: process.env.GRAPHQL_API_URI,
     fetchOptions: { cache: "no-store" },
   });
 
