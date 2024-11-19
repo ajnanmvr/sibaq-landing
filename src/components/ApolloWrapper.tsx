@@ -1,5 +1,5 @@
 "use client";
-
+import { GRAPHQL_API_URI } from "@/libs/constanants";
 import { HttpLink } from "@apollo/client";
 import {
   ApolloNextAppProvider,
@@ -9,7 +9,7 @@ import {
 
 function makeClient() {
   const httpLink = new HttpLink({
-    uri: process.env.GRAPHQL_API_URI,
+    uri: GRAPHQL_API_URI,
     fetchOptions: { cache: "no-store" },
   });
 

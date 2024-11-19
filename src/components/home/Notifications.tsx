@@ -5,6 +5,7 @@ import { TNotification } from "@/libs/types";
 import SingleNotification from "../SingleNotification";
 import Bell from "@/assets/vector/Bell";
 import NotificationData from "@/libs/notifications.json";
+import { GRAPHQL_API_URI } from "@/libs/constanants";
 
 export default function Notifications() {
   const [selectedNotification, setSelectedNotification] =
