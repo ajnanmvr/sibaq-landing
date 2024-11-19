@@ -6,16 +6,26 @@ import RoundArrow from "../RoundArrow";
 import Error from "../Error";
 import Lightbox from "./Lightbox";
 import { GET_GALLERY } from "@/graphql/gallery";
-
+const dummyimages = [
+  "/gallery/1.jpg",
+  "/gallery/2.jpg",
+  "/gallery/3.jpg",
+  "/gallery/4.jpg",
+  "/gallery/5.jpg",
+  "/gallery/6.jpg",
+  "/gallery/7.jpg",
+  "/gallery/8.jpg",
+  "/gallery/9.jpg",
+];
 function Grid() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
 
   const { data, loading, error } = useQuery(GET_GALLERY);
-  const images =
+  let images =
     data?.gallery?.map((img: { photo: string }) => img.photo).filter(Boolean) ||
     [];
-
+  images = [...images, ...dummyimages];
   const openLightbox = (index: number) => {
     setCurrentImage(index);
     setIsOpen(true);
