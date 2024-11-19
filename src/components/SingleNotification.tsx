@@ -1,6 +1,7 @@
-import { TPopupProps } from "@/libs/types";
-import Link from "next/link";
 import { useRef } from "react";
+import { TPopupProps } from "@/libs/types";
+import { useModal } from "@/hooks/useModal"; // Import the hook
+import Link from "next/link";
 
 export default function SingleNotification({
   isOpen,
@@ -8,6 +9,8 @@ export default function SingleNotification({
   data,
 }: TPopupProps) {
   const modalRef = useRef<HTMLDivElement>(null);
+
+  useModal(isOpen, onClose);
 
   if (!isOpen || !data) return null;
 
