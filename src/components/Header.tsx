@@ -30,7 +30,7 @@ export default function Header({
             </Link>
           </div>
           <div className="flex-1 flex items-center gap-2 justify-center py-8 md:p-0">
-            <h1 className="md:text-4xl text-2xl font-semibold tracking-tighter text-gradient capitalize text-center">
+            <h1 className="md:text-4xl text-2xl font-semibold tracking-tighter text-gradient bg-four-color capitalize text-center">
               {pageTitle}
             </h1>
           </div>

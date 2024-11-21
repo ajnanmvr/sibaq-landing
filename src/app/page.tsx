@@ -11,7 +11,7 @@ import HomeArea from "@/components/home/HeroSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center flex-wrap">
+    <main className="flex flex-col items-center justify-center flex-wrap">
       <HomeArea />
       <CountDown />
       <Notifications />
@@ -22,6 +22,6 @@ export default function Home() {
       {/* <TimeLine /> */}
       {/* <LiveSection /> */}
       <FooterContact />
-    </div>
+    </main>
   );
 }
