@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sibaq 2025 - Landing Page Project  
 
-## Getting Started
+An open-source landing page project for **Sibaq 2025 Darul Huda National Arts Fest**. This project serves as the central online hub for event updates, schedules, results, and more.  
 
-First, run the development server:
+## Getting Started  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+First, run the development server:  
+
+```bash  
+npm run dev  
+# or  
+yarn dev  
+# or  
+pnpm dev  
+# or  
+bun dev  
+```  
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.  
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.  
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load fonts.  
+
+## File Structure  
+
+The project is organized as follows:  
+
 ```
+.
+├── node_modules/          # Installed dependencies  
+├── public/                # Static assets  
+│   ├── downloads/         # Downloadable resources (e.g., forms, bylaws)  
+│   └── gallery/           # Event images and media files  
+├── src/                   # Main source code  
+│   ├── app/               # Next.js App Router files  
+│   ├── assets/            # Project assets  
+│   │   ├── static/        # Static files (e.g., images, documents)  
+│   │   └── vector/        # SVG and vector graphics  
+│   ├── components/        # Reusable UI components  
+│   ├── fonts/             # Custom and imported fonts  
+│   ├── graphql/           # GraphQL queries and mutations  
+│   ├── hooks/             # Custom React hooks  
+│   ├── libs/              # Utility and configuration files  
+│   │   ├── constants.ts   # Application constants  
+│   │   ├── notifications.json # Notifications data  
+│   │   ├── socialMediaLinks.ts # Social media links configuration  
+│   │   └── types.ts       # TypeScript types  
+│   └── utils/             # Shared utility functions  
+├── .env.local             # Local environment variables  
+├── .eslintrc.json         # ESLint configuration  
+├── .gitignore             # Git ignored files and folders  
+├── next-env.d.ts          # TypeScript Next.js environment  
+├── next.config.mjs        # Next.js configuration  
+├── package.json           # Project metadata and dependencies  
+├── postcss.config.mjs     # PostCSS configuration  
+├── README.md              # Project documentation  
+├── tailwind.config.js     # Tailwind CSS configuration  
+├── tsconfig.json          # TypeScript configuration  
+└── yarn.lock              # Yarn lockfile for dependencies  
+```  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Branch Strategy  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project follows a **central repository model** with three main branches:  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `dev`:  
+  - Open for collaboration, used for developing new features and fixing bugs.  
+  - Serves as the development environment.  
 
-## Learn More
+- `beta`:  
+  - Hosted branch where the source code of `HEAD` reflects the latest delivered changes for the next release.  
+  - Used for testing and quality assurance.  
 
-To learn more about Next.js, take a look at the following resources:
+- `pro`:  
+  - Hosted branch where the source code of `HEAD` reflects the stable and production-ready version of the application.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Commit Message Types  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Use the following conventional commit message types:  
 
-## Deploy on Vercel
+- **feat**: Adds new features or significant improvements.  
+  - Example: `feat(column): Added new feature.`  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **fix**: Resolves bugs or improves reliability.  
+  - Example: `fix(case): Fixed case sensitivity issue in search functionality for accurate results.`  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **docs**: Updates documentation.  
+  - Example: `docs(readme): Updated README file with installation instructions.`  
+
+- **style**: Code style changes without impacting functionality.  
+  - Example: `style(format): Corrected indentation and added missing semicolons.`  
+
+- **refactor**: Refactors code for better maintainability.  
+  - Example: `refactor(variables): Renamed variables for improved clarity.`  
+
+- **test**: Adds or updates tests without affecting production code.  
+  - Example: `test(login): Added tests for user login functionality.`  
+
+- **chore**: Updates build tasks or non-production code.  
+  - Example: `chore(grunt): Updated Grunt tasks for better build process efficiency.`  
+
+## Pull Request Flow  
+
+1. All pull requests should target the `dev` branch (feature or bug-fix).  
+2. After review, changes are merged into:  
+   - `beta` for testing new features and upcoming releases.  
+   - `pro` for production-ready updates.  
+
+## Role-Based Workflow  
+
+- **Quality Tester**:  
+  - Verify the `beta` branch for testing upcoming features.  
+  - Verify the `pro` branch for already deployed features.  
+
+## Learn More  
+
+To learn more about Next.js, check the following resources:  
+
+- [Next.js Documentation](https://nextjs.org/docs)  
+- [Learn Next.js](https://nextjs.org/learn)  
