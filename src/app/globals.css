@@ -2,24 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-reveal {
-  background-size: 0% 100%;
-  background-repeat: no-repeat;
-  animation: reveal linear forwards;
-  animation-timeline: view();
-  animation-range-start: 10vh;
-  animation-range-end: 80vh;
-}
-
 @layer utilities {
-  .home img {
+  img {
     @apply pointer-events-none;
   }
 
   .text-gradient {
-    @apply text-transparent bg-four-color bg-clip-text inline;
+    @apply text-transparent bg-clip-text inline;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
+  .text-reveal {
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-animation: reveal 1s linear forwards;
+    -moz-animation: reveal 1s linear forwards;
+    animation: reveal 1s linear forwards;
+    animation-timeline: view();
+    -webkit-background-clip: text;
+    animation-range-start: 30vh;
+    animation-range-end: 100vh;
+  }
+  @media (max-width: 768px) {
+    .text-reveal {
+      animation-range-start: 30vh;
+      animation-range-end: 100vh;
+    }
+  }
   @keyframes reveal {
     to {
       background-size: 100% 100%;

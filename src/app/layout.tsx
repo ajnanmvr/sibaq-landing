@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { DM_Sans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "aos/dist/aos.css";
 import FooterAddress from "@/components/Footer";
@@ -26,6 +27,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-96x96.png"
+          sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Sibaq 2025" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body
         className={`${dm_sans.variable} text-black select-none font-sans tracking-tighter`}
       >
@@ -33,6 +51,7 @@ export default function RootLayout({
           <Nav />
           {children}
           <FooterAddress />
+          <SpeedInsights />
         </ApolloWrapper>
       </body>
       <GoogleAnalytics gaId={process.env.GA_ID!} />
