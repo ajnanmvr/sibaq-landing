@@ -6,39 +6,34 @@ import { Fragment } from "react";
 const data = [
   {
     thumbnail: "/gallery/website-launching.jpg",
-    title:
-      "SIBĀQ 2025 Website Launched by Sayyid Sabiqali Shihab Thangal",
-    url: "#",
+    title: "SIBĀQ 2025 Website Launched by Sayyid Sabiqali Shihab Thangal",
+    id: "#",
     published: "today",
   },
   {
     thumbnail: "/gallery/baraf.jpg",
-    title:
-      "BARAF Program Workshop Successfully Held",
-    url: "#",
+    title: "BARAF Program Workshop Successfully Held",
+    id: "#",
     published: "today",
   },
   {
     thumbnail: "/gallery/1.jpg",
-    title:
-      "Debates and Munazara Elimination Rounds Scheduled",
-    url: "#",
+    title: "Debates and Munazara Elimination Rounds Scheduled",
+    id: "#",
     published: "1 Day Ago",
   },
   {
     thumbnail: "/gallery/1.jpg",
-    title:
-      "Y Category Programs to Be Held Cluster-Wise ",
-    url: "#",
+    title: "Y Category Programs to Be Held Cluster-Wise ",
+    id: "#",
     published: "2 Days Ago",
   },
   {
     thumbnail: "/gallery/1.jpg",
-    title:
-      "Elimination Round Dates Announced",
-    url: "#",
+    title: "Elimination Round Dates Announced",
+    id: "#",
     published: "4 Days Ago",
-  }
+  },
 ];
 
 export default function updates() {

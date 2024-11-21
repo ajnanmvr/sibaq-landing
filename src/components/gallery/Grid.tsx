@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useQuery } from "@apollo/client";
 import RoundArrow from "../RoundArrow";
-import CloseIcon from "@/assets/vector/close.svg";
-
-const images = [
+import Error from "../Error";
+import Lightbox from "./Lightbox";
+import { GET_GALLERY } from "@/graphql/gallery";
+const dummyimages = [
   "/gallery/1.jpg",
   "/gallery/2.jpg",
   "/gallery/3.jpg",
@@ -15,97 +17,63 @@ const images = [
   "/gallery/8.jpg",
   "/gallery/9.jpg",
 ];
-
 function Grid() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
-
+  const { data, loading, error } = useQuery(GET_GALLERY);
+  let images =
+    data?.gallery?.map((img: { photo: string }) => img.photo).filter(Boolean) ||
+    [];
+  images = [...images, ...dummyimages];
   const openLightbox = (index: number) => {
     setCurrentImage(index);
     setIsOpen(true);
   };
 
-  const closeLightbox = () => {
-    setIsOpen(false);
+  const closeLightbox = () => setIsOpen(false);
+
+  const changeImage = (step: number) => {
+    setCurrentImage((currentImage + step + images.length) % images.length);
   };
 
-  const nextImage = () => {
-    setCurrentImage((currentImage + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImage((currentImage - 1 + images.length) % images.length);
-  };
+  if (error) {
+    return <Error />;
+  }
 
   return (
     <>
-      <div className="columns-1 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 mt-14 mx-5 gap-4 md:gap-8">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`flex justify-center items-center relative cursor-pointer`}
-            onClick={() => openLightbox(index)}
-          >
-            <Image
-              src={image}
-              alt="gallery image"
-              placeholder="blur"
-              
-              className="rounded-[40px] mb-8 hover:scale-[101%] transition-transform duration-300 md:rounded-[55px]"
-              width={400}
-              height={400}
-            />
-          </div>
-        ))}
+      <div className="mt-14 mx-5 gap-4 md:gap-8 columns-1 sm:columns-2 md:columns-3 lg:columns-4">
+        {loading ? (
+          <div className="bg-slate-200 animate-pulse h-96 w-full rounded-[40px]"></div>
+        ) : (
+          images.map((photo: string, index: number) => (
+            <div
+              key={index}
+              className="flex justify-center items-center relative cursor-pointer"
+              onClick={() => openLightbox(index)}
+            >
+              <Image
+                src={photo}
+                alt={`Gallery image ${index + 1}`}
+                className="rounded-[40px] mb-8 hover:scale-[101%] transition-transform duration-300 md:rounded-[55px]"
+                width={400}
+                height={400}
+              />
+            </div>
+          ))
+        )}
       </div>
 
       {isOpen && (
-        <div
-          className="fixed inset-0 bg-white/10 backdrop-blur-md flex items-center justify-center z-50"
-          onClick={closeLightbox}
-        >
-          <div
-            className="relative flex items-center"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={prevImage}
-              className="absolute left-10 text-white text-3xl p-2"
-            >
-              &#10094;
-            </button>
-            <Image
-              src={images[currentImage]}
-              alt="enlarged gallery image"
-              className="rounded-[3rem]"
-              width={800}
-              height={800}
-            />
-            <div
-              onClick={closeLightbox}
-              className="bg-red hover:bg-ruby-red transition-colors absolute top-10 right-10 h-9 w-9 rounded-full flex justify-center items-center"
-            >
-              <Image src={CloseIcon} alt="Close Icon" className="w-4 h-4" />
-            </div>
-            <button
-              onClick={nextImage}
-              className="absolute right-10 text-white text-3xl p-2"
-            >
-              &#10095;
-            </button>
-          </div>
-        </div>
+        <Lightbox
+          images={images}
+          currentImage={currentImage}
+          isOpen={isOpen}
+          onClose={closeLightbox}
+          onNext={() => changeImage(1)}
+          onPrev={() => changeImage(-1)}
+        />
       )}
 
       <div className="flex items-center justify-center mt-10">

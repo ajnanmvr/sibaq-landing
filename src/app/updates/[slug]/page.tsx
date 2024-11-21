@@ -4,6 +4,7 @@ import { Fragment } from "react";
 
 const data = [
   {
+    id: "",
     thumbnail: "/gallery/1.jpg",
     title:
       "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
@@ -11,6 +12,7 @@ const data = [
     published: "today",
   },
   {
+    id: "",
     thumbnail: "/gallery/1.jpg",
     title:
       "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
@@ -18,6 +20,7 @@ const data = [
     published: "today",
   },
   {
+    id: "",
     thumbnail: "/gallery/1.jpg",
     title:
       "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
@@ -25,6 +28,7 @@ const data = [
     published: "today",
   },
   {
+    id: "",
     thumbnail: "/gallery/1.jpg",
     title:
       "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
@@ -32,6 +36,7 @@ const data = [
     published: "today",
   },
   {
+    id: "",
     thumbnail: "/gallery/1.jpg",
     title:
       "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
@@ -39,6 +44,7 @@ const data = [
     published: "today",
   },
   {
+    id: "",
     thumbnail: "/gallery/1.jpg",
     title:
       "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
@@ -46,6 +52,7 @@ const data = [
     published: "today",
   },
   {
+    id: "",
     thumbnail: "/gallery/1.jpg",
     title:
       "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",
@@ -53,6 +60,7 @@ const data = [
     published: "today",
   },
   {
+    id: "",
     thumbnail: "/gallery/1.jpg",
     title:
       "Ellavarkkum sugam aan enn karuthunnu, ini sugam illel saralla, ithokke alle oru ith",

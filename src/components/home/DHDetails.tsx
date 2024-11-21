@@ -23,8 +23,9 @@ export default function DHDetails() {
             className="-order-1 md:order-none shadow-logo-round rounded-full w-24 md:w-40 "
           />
           <p className="md:w-[28rem] text-black text-2xl px-8 md:text-3xl md:text-left font-light">
-          
-A vibrant blend of creativity, culture, and intellect, fostering innovation, collaboration, and artistic excellence while bridging tradition and modernity in a shared journey of expression.
+            A vibrant blend of creativity, culture, and intellect, fostering
+            innovation, collaboration, and artistic excellence while bridging
+            tradition and modernity in a shared journey of expression.
           </p>
 
           <Link
@@ -48,7 +49,9 @@ A vibrant blend of creativity, culture, and intellect, fostering innovation, col
         />
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-5 md:gap-14 bg-gradient-to-t from-transparent via-ruby-red/10 md:from-transparent pb-40 md:pb-0">
           <p className="md:w-[28rem] text-black text-2xl px-8 md:text-3xl font-light md:text-right">
-          Darul Huda celebrates forty years of excellence, integrating Islamic and modern education, empowering generations, and fostering scholarship, inclusivity, and community transformation.
+            Darul Huda celebrates forty years of excellence, integrating Islamic
+            and modern education, empowering generations, and fostering
+            scholarship, inclusivity, and community transformation.
           </p>
           <Image
             src={RubyLogo}

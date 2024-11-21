@@ -6,6 +6,7 @@ import "./globals.css";
 import "aos/dist/aos.css";
 import FooterAddress from "@/components/Footer";
 import Nav from "@/components/Nav";
+import { ApolloWrapper } from "@/components/ApolloWrapper";
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -46,10 +47,12 @@ export default function RootLayout({
       <body
         className={`${dm_sans.variable} text-black select-none font-sans tracking-tighter`}
       >
-        <Nav />
-        {children}
-        <FooterAddress />
-        <SpeedInsights />
+        <ApolloWrapper>
+          <Nav />
+          {children}
+          <FooterAddress />
+          <SpeedInsights />
+        </ApolloWrapper>
       </body>
       <GoogleAnalytics gaId={process.env.GA_ID!} />
     </html>

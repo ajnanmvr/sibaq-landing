@@ -31,13 +31,13 @@ const HeroSection = () => {
         priority={true}
         src={LeftSide}
         alt="Left Side"
-        className="h-screen -z-10 object-cover absolute left-0"
+        className="h-screen -z-10 object-cover object-right absolute left-0"
       />
       <Image
         priority={true}
         src={RightSide}
         alt="Right Side"
-        className="h-screen -z-10 absolute object-cover -right-0"
+        className="h-screen -z-10 absolute object-cover object-left -right-0"
       />
 
       {/* <Image
