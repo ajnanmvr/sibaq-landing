@@ -14,7 +14,7 @@ export default function TimeLine() {
           width="59"
           height="295"
           viewBox="0 0 59 295"
-          className="w-12 hidden sm:block"
+          className="w-8 hidden sm:block"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -34,7 +34,9 @@ export default function TimeLine() {
                 <p className="text-sm md:text-md">
                   {a.startTime} - {a.endTime}
                 </p>
-                <p className="text-lg md:text-2xl tracking-tighter">{a.title}</p>
+                <p className="text-lg md:text-2xl tracking-tighter leading-5">
+                  {a.title}
+                </p>
               </div>
             </div>
 
@@ -58,7 +60,9 @@ export default function TimeLine() {
                 <p className="text-sm md:text-md">
                   {c.startTime} - {c.endTime}
                 </p>
-                <p className="text-lg md:text-2xl tracking-tighter">{c.title}</p>
+                <p className="text-lg md:text-2xl tracking-tighter leading-5">
+                  {c.title}
+                </p>
               </div>
             </div>
           </div>
@@ -70,11 +74,11 @@ export default function TimeLine() {
           <p className="text-xl md:ml-2">Host</p>
           <div className="flex items-center group gap-2">
             <Image
-              src={"/gallery/1.jpg"}
+              src={"/gallery/9.jpg"}
               alt="Collage Name"
               width={80}
               height={80}
-              className="w-14 h-14 object-cover rounded-xl group-hover:grayscale"
+              className="w-14 h-14 object-cover rounded-xl"
             />
             <div className="h-14 bg-yellow/10 group-hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center px-8 text-2xl  text-yellow rounded-xl">
               DUDC Thootha
