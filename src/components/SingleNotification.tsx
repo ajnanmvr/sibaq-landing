@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { TPopupProps } from "@/libs/types";
-import { useModal } from "@/hooks/useModal"; // Import the hook
+import { useModal } from "@/hooks/useModal";
 import Link from "next/link";
 
 export default function SingleNotification({
