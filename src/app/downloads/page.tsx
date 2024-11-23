@@ -3,6 +3,11 @@ import Link from "next/link";
 const data = {
   general: [
     {
+      title: "Brochure",
+      date: "24-11-2024",
+      path: "/downloads/sibaq-25-brochure.pdf",
+    },
+    {
       title: "Concept Note",
       date: "16-11-2024",
       path: "/downloads/general-concept-note.pdf",
