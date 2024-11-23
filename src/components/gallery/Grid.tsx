@@ -14,6 +14,7 @@ const dummyimages = [
   "/gallery/baraf-5.jpg",
   "/gallery/baraf-6.jpg",
   "/gallery/baraf-7.jpg",
+  "/gallery/baraf-7.jpg",
   "/gallery/1.jpg",
   "/gallery/2.jpg",
   "/gallery/3.jpg",
