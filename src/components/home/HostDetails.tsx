@@ -1,7 +1,7 @@
 import HostData from "@/libs/host.json";
 import Image from "next/image";
 import Link from "next/link";
-import NavigateIcon from "@/assets/vector/Navigate.svg";
+import NavigateIcon from "@/assets/vector/navigate.svg";
 import autoColor from "@/utils/autoColor";
 export default function HostDetails() {
   return (
