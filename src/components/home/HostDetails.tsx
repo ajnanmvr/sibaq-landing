@@ -5,8 +5,8 @@ import NavigateIcon from "@/assets/vector/navigate.svg";
 import autoColor from "@/utils/autoColor";
 export default function HostDetails() {
   return (
-    <section className="w-full p-20 mt-10 flex flex-col items-center justify-center gap-16">
-      <h2 className="text-gradient text-center bg-four-color font-medium text-4xl md:text-5xl tracking-tighter">
+    <section className="w-full p-20 flex flex-col items-center justify-center gap-16">
+      <h2 className="text-gradient mb-8 text-center bg-four-color font-medium text-4xl md:text-5xl tracking-tighter">
         Elimination Hosts
       </h2>
       <div className="flex justify-center items-center flex-wrap gap-8">
