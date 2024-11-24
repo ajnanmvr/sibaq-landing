@@ -6,7 +6,7 @@ import autoColor from "@/utils/autoColor";
 export default function HostDetails() {
   return (
     <section className="w-full p-20 mt-10 flex flex-col items-center justify-center gap-16">
-      <h2 className="text-gradient text-center bg-four-color font-medium text-5xl tracking-tighter">
+      <h2 className="text-gradient text-center bg-four-color font-medium text-4xl md:text-5xl tracking-tighter">
         Elimination Hosts
       </h2>
       <div className="flex justify-center items-center flex-wrap gap-8">
@@ -51,13 +51,13 @@ export default function HostDetails() {
               <Link
                 href={host.location}
                 className={` ${autoColor(index, [
-                  "bg-yellow hover:bg-yellow/80",
-                  "bg-red hover:bg-red/80",
-                  "bg-green hover:bg-green/80",
-                  "bg-blue hover:bg-blue/80",
-                  "bg-yellow hover:bg-yellow/80",
-                  "bg-blue hover:bg-blue/80",
-                ])} transition-colors duration-300 pl-3 pr-4 py-1.5 text-white inline-flex items-center justify-center gap-1.5 rounded-full`}
+                  "bg-yellow hover:shadow-yellow/20",
+                  "bg-red hover:shadow-red/20",
+                  "bg-green hover:shadow-green/20",
+                  "bg-blue hover:shadow-blue/20",
+                  "bg-yellow hover:shadow-yellow/20",
+                  "bg-blue hover:shadow-blue/20",
+                ])} transition-colors duration-300 hover:shadow-menu-active pl-3 pr-4 py-1.5 text-white inline-flex items-center justify-center gap-1.5 rounded-full`}
               >
                 <Image
                   src={NavigateIcon}
