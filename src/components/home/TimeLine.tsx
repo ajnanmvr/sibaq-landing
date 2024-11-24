@@ -1,12 +1,77 @@
+"use client"
+
 import Image from "next/image";
 import Schedule from "@/libs/schedule.json";
 import Host from "@/libs/host.json";
+import { useEffect, useState } from "react";
 
-const a = Schedule[0];
-const b = Schedule[1];
-const c = Schedule[2];
+function convertTo24Hour(time12h: any) {
+  const [time, modifier] = time12h.split(" ");
+  let [hours, minutes] = time.split(":");
+
+  if (modifier === "PM" && hours !== "12") {
+    hours = parseInt(hours, 10) + 12;
+  } else if (modifier === "AM" && hours === "12") {
+    hours = "00";
+  }
+
+  return `${hours}:${minutes}`;
+}
 
 export default function TimeLine() {
+  const [lastProgram, setLastProgram] = useState<any>(null);
+  const [currentProgram, setCurrentProgram] = useState<any>(null);
+  const [nextProgram, setNextProgram] = useState<any>(null);
+  const [hostIndex, setHostIndex] = useState<number>(0);
+  const [optionsOpen, setOptionsOpen] = useState<boolean>(false);
+  const [selectedVenue, setSelectedVenue] = useState("1");
+
+  useEffect(() => {
+    const updatePrograms = () => {
+      console.log("Schedule:", Schedule);
+
+      const fixedSchedule = Schedule.map((program) => ({
+        ...program,
+        startTime: new Date(`2024-11-24T${convertTo24Hour(program.startTime)}`),
+        endTime: new Date(`2024-11-24T${convertTo24Hour(program.endTime)}`),
+      })).sort((a, b) => a.startTime.getTime() - b.startTime.getTime());
+
+      console.log("Fixed Schedule:", fixedSchedule);
+
+      const now = new Date();
+
+      let last = null, current = null, next = null;
+
+      for (let i = 0; i < fixedSchedule.length; i++) {
+        const program = fixedSchedule[i];
+        if (program.endTime < now) {
+          last = program;
+        } else if (program.startTime <= now && program.endTime >= now) {
+          current = program;
+          next = fixedSchedule[i + 1] || null;
+          break;
+        } else if (program.startTime > now) {
+          current = null;
+          next = program;
+          break;
+        }
+      }
+
+      setLastProgram(last);
+      setCurrentProgram(current);
+      setNextProgram(next);
+    };
+
+    updatePrograms();
+    const interval = setInterval(updatePrograms, 60000);
+
+    return () => clearInterval(interval);
+  }, [Schedule]);
+
+  useEffect(() => {
+    if (lastProgram) console.log("lastProgram")
+  }, [lastProgram]);
+
   return (
     <div className="flex justify-center gap-10 md:gap-20 items-center flex-col md:flex-row">
       <div className="bg-gradient-to-tr m-8 md:m-0 from-yellow/5 via-yellow/10 to-yellow/5 rounded-[4rem] gap-16 px-20 py-16  flex items-center justify-center">
@@ -32,10 +97,10 @@ export default function TimeLine() {
               <div className="bg-yellow w-5 h-5 aspect-square rounded-full"></div>
               <div className="opacity-60">
                 <p className="text-sm md:text-md">
-                  {a.startTime} - {a.endTime}
+                  {lastProgram?.startTime.toLocaleTimeString()} - {lastProgram?.endTime.toLocaleTimeString()}
                 </p>
                 <p className="text-lg md:text-2xl tracking-tighter leading-5">
-                  {a.title}
+                  {lastProgram?.title}
                 </p>
               </div>
             </div>
@@ -46,10 +111,10 @@ export default function TimeLine() {
               </div>
               <div>
                 <p className="md:text-xl opacity-80">
-                  {b.startTime} - {b.endTime}
+                  {currentProgram?.startTime.toLocaleTimeString()} - {currentProgram?.endTime.toLocaleTimeString()}
                 </p>
                 <p className="text-2xl md:text-3xl font-medium tracking-tighter">
-                  {b.title}
+                  {currentProgram?.title}
                 </p>
               </div>
             </div>
@@ -58,10 +123,10 @@ export default function TimeLine() {
               <div className="bg-yellow w-5 h-5 aspect-square rounded-full"></div>
               <div className="opacity-60">
                 <p className="text-sm md:text-md">
-                  {c.startTime} - {c.endTime}
+                  {nextProgram?.startTime.toLocaleTimeString()} - {nextProgram?.endTime.toLocaleTimeString()}
                 </p>
                 <p className="text-lg md:text-2xl tracking-tighter leading-5">
-                  {c.title}
+                  {nextProgram?.title}
                 </p>
               </div>
             </div>
@@ -72,7 +137,7 @@ export default function TimeLine() {
       <div className="flex flex-col gap-10 items-center md:items-start px-8">
         <div className="flex flex-col gap-2 items-center md:items-start">
           <p className="text-xl md:ml-2">Host</p>
-          <div className="flex items-center group gap-2">
+          <div className="flex items-center gap-2">
             <Image
               src={"/gallery/9.jpg"}
               alt="Collage Name"
@@ -80,20 +145,35 @@ export default function TimeLine() {
               height={80}
               className="w-14 h-14 object-cover rounded-xl"
             />
-            <div className="h-14 bg-yellow/10 group-hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center px-8 text-2xl  text-yellow rounded-xl">
-              DUDC Thootha
-              <div className="h-6 w-6 bg-yellow/20 group-hover:bg-yellow group-hover:text-white duration-300 transition-colors rounded-full items-center justify-center flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="Bold"
-                  viewBox="0 0 24 24"
-                  width="512"
-                  height="512"
-                  className="fill-yellow group-hover:fill-white transition-colors duration-300"
-                >
-                  <path d="M6.414,9H17.586a1,1,0,0,1,.707,1.707l-5.586,5.586a1,1,0,0,1-1.414,0L5.707,10.707A1,1,0,0,1,6.414,9Z" />
-                </svg>
+            <div className="relative" onClick={()=>setOptionsOpen(!optionsOpen)}>
+              <div className="group h-14 bg-yellow/10 group-hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center px-8 text-2xl  text-yellow rounded-xl cursor-pointer">
+                {Host[hostIndex]?.name}
+                <div className="h-6 w-6 bg-yellow/20 group-hover:bg-yellow group-hover:text-white duration-300 transition-colors rounded-full items-center justify-center flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="Bold"
+                    viewBox="0 0 24 24"
+                    width="512"
+                    height="512"
+                    className="fill-yellow group-hover:fill-white transition-colors duration-300"
+                  >
+                    <path d="M6.414,9H17.586a1,1,0,0,1,.707,1.707l-5.586,5.586a1,1,0,0,1-1.414,0L5.707,10.707A1,1,0,0,1,6.414,9Z" />
+                  </svg>
+                </div>
               </div>
+              {optionsOpen && (
+                <div className="absolute left-0 rounded-xl overflow-hidden">
+                  {Host?.map((host: any, index: number) => (
+                    <div
+                      key={index}
+                      className="w-64 h-14 bg-yellow hover:bg-yellow transition-colors duration-300 gap-3 inline-flex items-center justify-center px-8 text-2xl  text-gray-300 hover:text-white border-b cursor-pointer"
+                      onClick={() => setHostIndex(index)}
+                    >
+                      {host?.name}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -101,36 +181,29 @@ export default function TimeLine() {
         <div className="flex flex-col gap-2 items-center md:items-start">
           <p className="text-xl md:ml-2">Venue</p>
           <div className="flex items-center gap-2 flex-wrap justify-center md:justify-start">
-            <div className="h-14 min-w-14 border-2 border-yellow bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl">
-              1
-            </div>
-            <div className="h-14 min-w-14  bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl">
-              2
-            </div>
-            <div className="h-14 min-w-14  bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl">
-              3
-            </div>
-            <div className="h-14 min-w-14  bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl">
-              4
-            </div>
-            <div className="h-14 min-w-14 px-8 bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl">
-              Non stage
-            </div>
+            {Host[hostIndex]?.venues?.map((venue: string, index: number) => (
+              <div 
+              key={index} 
+              className={`h-14 min-w-14 ${selectedVenue === venue && "border-2 border-yellow"} px-8 bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl`}
+              onClick={()=>setSelectedVenue(venue)}
+              >
+                {venue}
+              </div>
+            ))}
           </div>
         </div>
 
         <div className="flex flex-col gap-2 items-center md:items-start">
           <p className="text-xl md:ml-2">Category</p>
           <div className="flex items-center gap-2 flex-wrap justify-center md:justify-start">
-            <div className="h-14 min-w-14 border-2 border-yellow px-8 bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl">
-              Aliya
-            </div>
-            <div className="h-14 min-w-14 px-8 bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl">
-              Kulliya
-            </div>
-            <div className="h-14 min-w-14 px-8 bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl">
-              Bidaya
-            </div>
+            {Host[hostIndex]?.category?.map((category: string, index: number) => (
+              <div 
+              key={index} 
+              className={`h-14 min-w-14 ${currentProgram?.category === category && "border-2 border-yellow"} px-8 bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl`}
+              >
+                {category}
+              </div>
+            ))}
           </div>
         </div>
       </div>

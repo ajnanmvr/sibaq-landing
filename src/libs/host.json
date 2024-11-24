@@ -1,6 +1,55 @@
-[{
-  "name": "DUDC Thootha",
-  "image": "",
-  "venues": ["1", "2", "3", "non stage"],
-  "category": ["aliya", "kulliyya"]
-}]
+[
+  {
+    "name": "DUDC Thootha",
+    "image": "",
+    "venues": [
+      "1",
+      "2",
+      "3"
+    ],
+    "category": [
+      "Thanawiyyah",
+      "Aliyah",
+      "Kulliyyah"
+    ]
+  },
+  {
+    "name": "DHDC Manoor",
+    "image": "",
+    "venues": [
+      "2",
+      "3"
+    ],
+    "category": [
+      "Thanawiyyah",
+      "Aliyah",
+      "Kulliyyah"
+    ]
+  },
+  {
+    "name": "SHIC Parappur",
+    "image": "",
+    "venues": [
+      "Non Stage"
+    ],
+    "category": [
+      "Bidayah",
+      "Ula",
+      "Thaniyah"
+    ]
+  },
+  {
+    "name": "DHIU Chemmad",
+    "image": "",
+    "venues": [
+      "6",
+      "2",
+      "3"
+    ],
+    "category": [
+      "Bidayah",
+      "Ula",
+      "Thaniyah"
+    ]
+  }
+]
