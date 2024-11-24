@@ -10,7 +10,14 @@ export default function Header({
   pageTitle?: string;
   keywords: string[];
 }) {
-  const slide = [...keywords, ...keywords, ...keywords, ...keywords];
+  const slide = [
+    ...keywords,
+    ...keywords,
+    ...keywords,
+    ...keywords,
+    ...keywords,
+    ...keywords,
+  ];
   return (
     <>
       <header className="w-full sticky top-0 md:static backdrop-blur-xl bg-white/70 rounded-b-[3rem] z-10">

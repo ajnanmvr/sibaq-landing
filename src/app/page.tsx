@@ -5,9 +5,8 @@ import FooterContact from "@/components/home/Contact";
 import Notifications from "@/components/home/Notifications";
 import AboutSibaq from "@/components/home/AboutSibaq";
 import HomeArea from "@/components/home/HeroSection";
-// import TimeLine from "@/components/TimeLine";
-// import LiveSection from "@/components/LiveSection";
-// import EventTile from "@/components/EventTile";
+// import TimeLine from "@/components/home/TimeLine";
+import HostDetails from "@/components/home/HostDetails";
 
 export default function Home() {
   return (
@@ -18,9 +17,8 @@ export default function Home() {
       <AboutSibaq />
       <CounterCards />
       <DHDetails />
-      {/* <EventTile/> */}
       {/* <TimeLine /> */}
-      {/* <LiveSection /> */}
+      <HostDetails />
       <FooterContact />
     </main>
   );
