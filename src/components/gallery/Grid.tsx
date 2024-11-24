@@ -7,6 +7,14 @@ import Error from "../Error";
 import Lightbox from "./Lightbox";
 import { GET_GALLERY } from "@/graphql/gallery";
 const dummyimages = [
+  "/gallery/baraf-1.jpg",
+  "/gallery/baraf-2.jpg",
+  "/gallery/baraf-3.jpg",
+  "/gallery/baraf-4.jpg",
+  "/gallery/baraf-5.jpg",
+  "/gallery/baraf-6.jpg",
+  "/gallery/baraf-7.jpg",
+  "/gallery/baraf-7.jpg",
   "/gallery/1.jpg",
   "/gallery/2.jpg",
   "/gallery/3.jpg",

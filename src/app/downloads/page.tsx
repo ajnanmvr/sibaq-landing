@@ -3,6 +3,16 @@ import Link from "next/link";
 const data = {
   general: [
     {
+      title: "Brochure",
+      date: "24-11-2024",
+      path: "/downloads/sibaq-25-brochure.pdf",
+    },
+    {
+      title: "Theme Brochure",
+      date: "24-11-2024",
+      path: "/downloads/sibaq-theme-brochure.pdf",
+    },
+    {
       title: "Concept Note",
       date: "16-11-2024",
       path: "/downloads/general-concept-note.pdf",
@@ -48,6 +58,7 @@ const data = {
       path: "/downloads/zahrawiyya-program-list.pdf",
     },
   ],
+  
 };
 export default function Downloads() {
   const colors = ["yellow", "blue", "green", "red"];
