@@ -6,6 +6,7 @@ import Notifications from "@/components/home/Notifications";
 import AboutSibaq from "@/components/home/AboutSibaq";
 import HomeArea from "@/components/home/HeroSection";
 import TimeLine from "@/components/home/TimeLine";
+import HostDetails from "@/components/home/HostDetails";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <CounterCards />
       <DHDetails />
       <TimeLine />
+      <HostDetails />
       <FooterContact />
     </main>
   );

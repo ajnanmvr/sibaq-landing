@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Schedule from "@/libs/schedule.json";
 import Host from "@/libs/host.json";

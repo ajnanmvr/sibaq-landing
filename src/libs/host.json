@@ -1,55 +1,56 @@
 [
   {
     "name": "DUDC Thootha",
-    "image": "",
-    "venues": [
-      "1",
-      "2",
-      "3"
-    ],
-    "category": [
-      "Thanawiyyah",
-      "Aliyah",
-      "Kulliyyah"
-    ]
+    "image": "/gallery/1.jpg",
+    "venues": ["1", "2", "3"],
+    "category": ["Thanawiyyah", "Aliyah", "Kulliyyah"],
+    "group": "Group 1",
+    "section": "Section A",
+    "location": ""
   },
   {
     "name": "DHDC Manoor",
-    "image": "",
-    "venues": [
-      "2",
-      "3"
-    ],
-    "category": [
-      "Thanawiyyah",
-      "Aliyah",
-      "Kulliyyah"
-    ]
+    "image": "/gallery/2.jpg",
+    "venues": ["2", "3"],
+    "category": ["Thanawiyyah", "Aliyah", "Kulliyyah"],
+    "group": "Group 1",
+    "section": "Section B",
+    "location": ""
   },
   {
     "name": "SHIC Parappur",
-    "image": "",
-    "venues": [
-      "Non Stage"
-    ],
-    "category": [
-      "Bidayah",
-      "Ula",
-      "Thaniyah"
-    ]
+    "image": "/gallery/3.jpg",
+    "venues": ["Non Stage"],
+    "category": ["Bidayah", "Ula", "Thaniyah"],
+    "group": "Group 2",
+    "section": "Section A",
+    "location": ""
   },
   {
     "name": "DHIU Chemmad",
-    "image": "",
-    "venues": [
-      "6",
-      "2",
-      "3"
-    ],
-    "category": [
-      "Bidayah",
-      "Ula",
-      "Thaniyah"
-    ]
+    "image": "/gallery/4.jpg",
+    "venues": ["6", "2", "3"],
+    "category": ["Bidayah", "Ula", "Thaniyah"],
+    "group": "Group 2",
+    "section": "Section B",
+    "location": ""
+  },
+  {
+    "name": "AIMS Kondotty",
+    "image": "/gallery/5.jpg",
+    "venues": ["4", "5"],
+    "category": ["Bidayah", "Ula", "Thaniyah"],
+    "group": "Group 3",
+    "section": "Section A",
+    "location": ""
+  },
+  {
+    "name": "MUAC Ponnani",
+    "image": "/gallery/6.jpg",
+    "venues": ["3", "4"],
+    "category": ["Thanawiyyah", "Aliyah", "Kulliyyah"],
+    "group": "Group 3",
+    "section": "Section B",
+    "location": ""
   }
 ]
