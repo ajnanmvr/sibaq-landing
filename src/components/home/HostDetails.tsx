@@ -1,4 +1,4 @@
-import HostData from "@/libs/host.json";
+import { eliminationHosts } from "@/libs/eliminationHosts";
 import Image from "next/image";
 import Link from "next/link";
 import NavigateIcon from "@/assets/vector/navigate.svg";
@@ -10,7 +10,7 @@ export default function HostDetails() {
         Elimination Hosts
       </h2>
       <div className="flex justify-center items-center flex-wrap gap-8">
-        {HostData.map((host, index) => (
+        {eliminationHosts.map((host, index) => (
           <div
             key={index}
             className={`bg-gradient-to-t ${autoColor(index, [

@@ -5,7 +5,7 @@ import FooterContact from "@/components/home/Contact";
 import Notifications from "@/components/home/Notifications";
 import AboutSibaq from "@/components/home/AboutSibaq";
 import HomeArea from "@/components/home/HeroSection";
-import TimeLine from "@/components/home/TimeLine";
+// import TimeLine from "@/components/home/TimeLine";
 import HostDetails from "@/components/home/HostDetails";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <AboutSibaq />
       <CounterCards />
       <DHDetails />
-      <TimeLine />
+      {/* <TimeLine /> */}
       <HostDetails />
       <FooterContact />
     </main>

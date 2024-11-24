@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Schedule from "@/libs/schedule.json";
-import Host from "@/libs/host.json";
+import { eliminationHosts } from "@/libs/eliminationHosts";
 import { useEffect, useState } from "react";
 
 function convertTo24Hour(time12h: any) {
@@ -154,7 +154,7 @@ export default function TimeLine() {
               onClick={() => setOptionsOpen(!optionsOpen)}
             >
               <div className="group h-14 bg-yellow/10 group-hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center px-8 text-2xl  text-yellow rounded-xl cursor-pointer">
-                {Host[hostIndex]?.name}
+                {eliminationHosts[hostIndex]?.name}
                 <div className="h-6 w-6 bg-yellow/20 group-hover:bg-yellow group-hover:text-white duration-300 transition-colors rounded-full items-center justify-center flex">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@ export default function TimeLine() {
               </div>
               {optionsOpen && (
                 <div className="absolute left-0 rounded-xl overflow-hidden">
-                  {Host?.map((host: any, index: number) => (
+                  {eliminationHosts?.map((host: any, index: number) => (
                     <div
                       key={index}
                       className="w-64 h-14 bg-yellow hover:bg-yellow transition-colors duration-300 gap-3 inline-flex items-center justify-center px-8 text-2xl  text-gray-300 hover:text-white border-b cursor-pointer"
@@ -188,24 +188,26 @@ export default function TimeLine() {
         <div className="flex flex-col gap-2 items-center md:items-start">
           <p className="text-xl md:ml-2">Venue</p>
           <div className="flex items-center gap-2 flex-wrap justify-center md:justify-start">
-            {Host[hostIndex]?.venues?.map((venue: string, index: number) => (
-              <div
-                key={index}
-                className={`h-14 min-w-14 ${
-                  selectedVenue === venue && "border-2 border-yellow"
-                } px-8 bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl`}
-                onClick={() => setSelectedVenue(venue)}
-              >
-                {venue}
-              </div>
-            ))}
+            {eliminationHosts[hostIndex]?.venues?.map(
+              (venue: string, index: number) => (
+                <div
+                  key={index}
+                  className={`h-14 min-w-14 ${
+                    selectedVenue === venue && "border-2 border-yellow"
+                  } px-8 bg-yellow/10 hover:bg-yellow/20 transition-colors duration-300 gap-3 inline-flex items-center justify-center text-2xl  text-yellow rounded-xl`}
+                  onClick={() => setSelectedVenue(venue)}
+                >
+                  {venue}
+                </div>
+              )
+            )}
           </div>
         </div>
 
         <div className="flex flex-col gap-2 items-center md:items-start">
           <p className="text-xl md:ml-2">Category</p>
           <div className="flex items-center gap-2 flex-wrap justify-center md:justify-start">
-            {Host[hostIndex]?.category?.map(
+            {eliminationHosts[hostIndex]?.category?.map(
               (category: string, index: number) => (
                 <div
                   key={index}
