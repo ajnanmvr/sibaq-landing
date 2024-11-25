@@ -48,8 +48,9 @@ export default function HostDetails() {
               <p className="text-lg max-w-48 mb-2 leading-6">
                 for {host.category.join(", ")} categories
               </p>
-              <Link
+              <a
                 href={host.location}
+                target="_blank"
                 className={` ${autoColor(index, [
                   "bg-yellow hover:shadow-yellow/20",
                   "bg-red hover:shadow-red/20",
@@ -65,7 +66,7 @@ export default function HostDetails() {
                   className="w-5 h-5"
                 />
                 Navigate
-              </Link>
+              </a>
             </div>
           </div>
         ))}

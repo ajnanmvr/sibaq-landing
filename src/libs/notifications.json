@@ -1,5 +1,13 @@
 [
   {
+    "title": "Hall ticket for contestants",
+    "category": "General",
+    "description": "Hall tickets for all candidates are now available on the SIBĀQ portal. Please log in to your institution's dashboard and download them from the  Hall Ticket menu. Ensure that all programs of each candidate are listed in the hall ticket. It is also mandatory to have your hall ticket sealed from the SIBĀQ control room. Hall tickets are required for registration and participation in all programs.",
+    "time": "Today 04:30 PM",
+    "url": "https://admin.sibaq.in/",
+    "button": "View Now"
+  },
+  {
     "title": "SIBAQ 25 Elimination Round Schedule Published",
     "category": "General",
     "description": "The elimination round schedule for Section B of SIBAQ 25 is now available on the SIBAQ website. Please visit the Downloads Page to view the schedule.",
@@ -18,14 +26,6 @@
     "category": "General",
     "description": "Don’t miss the deadline! Ensure all your items are registered by tomorrow to participate in the event. Late entries will not be entertained.",
     "time": "15-Nov-24 11:15PM"
-  },
-  {
-    "title": "Schedule for Debate Eng, Arb, Urd are out now",
-    "category": "Kullliyyah",
-    "description": "Check out the latest schedules for the debates in English, Arabic, and Urdu languages. Make sure to prepare and stay updated with the timings.",
-    "time": "Today 11:15PM",
-    "url": "/downloads",
-    "button": "View Now"
   }
   
 ]
