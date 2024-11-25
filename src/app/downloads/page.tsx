@@ -3,58 +3,80 @@ import Link from "next/link";
 const data = {
   general: [
     {
+      title: "SCHEDULE",
+      date: "Group 1 - Section B",
+      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section B.pdf",
+    },
+    {
+      title: "SCHEDULE",
+      date: "Group 2 - Section B",
+      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 2 - Section B.pdf",
+    },
+    {
+      title: "SCHEDULE",
+      date: "Group 3 - Section B",
+      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 3 - Section B.pdf",
+    }
+    ,
+    {
+      title: "SCHEDULE",
+      date: "Section B",
+      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Section B.pdf",
+    }
+    ,
+    {
       title: "Brochure",
-      date: "24-11-2024",
+      date: "24-11-2025",
       path: "/downloads/sibaq-25-brochure.pdf",
     },
     {
       title: "Theme Brochure",
-      date: "24-11-2024",
+      date: "24-11-2025",
       path: "/downloads/sibaq-theme-brochure.pdf",
     },
     {
       title: "Concept Note",
-      date: "16-11-2024",
+      date: "16-11-2025",
       path: "/downloads/general-concept-note.pdf",
     },
     {
       title: "By Law",
-      date: "16-11-2024",
+      date: "16-11-2025",
       path: "/downloads/general-bylaw.pdf",
     },
     {
       title: "Program List",
-      date: "16-11-2024",
+      date: "16-11-2025",
       path: "/downloads/general-program-list.pdf",
     },
   ],
   niics: [
     {
       title: "Concept Note",
-      date: "16-11-2024",
+      date: "16-11-2025",
       path: "/downloads/niics-concept-note.pdf",
     },
-    { title: "By Law", date: "16-11-2024", path: "/downloads/niics-bylaw.pdf" },
+    { title: "By Law", date: "16-11-2025", path: "/downloads/niics-bylaw.pdf" },
     {
       title: "Program List",
-      date: "16-11-2024",
+      date: "16-11-2025",
       path: "/downloads/niics-program-list.pdf",
     },
   ],
   zahrawiyya: [
     {
       title: "Concept Note",
-      date: "16-11-2024",
+      date: "16-11-2025",
       path: "/downloads/zahrawiyya-concept-note.pdf",
     },
     {
       title: "By Law",
-      date: "16-11-2024",
+      date: "16-11-2025",
       path: "/downloads/zahrawiyya-bylaw.pdf",
     },
     {
       title: "Program List",
-      date: "16-11-2024",
+      date: "16-11-2025",
       path: "/downloads/zahrawiyya-program-list.pdf",
     },
   ],
@@ -100,7 +122,7 @@ export default function Downloads() {
                     <h3
                       className={`text-2xl leading-6 font-medium text-${color}`}
                     >
-                      <span className="text-sm">SIBAQ 2024</span>
+                      <span className="text-sm">SIBAQ 2025</span>
                       <br /> {item.title}
                     </h3>
                     <div className="flex items-center gap-1">
