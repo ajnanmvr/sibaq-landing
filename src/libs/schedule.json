@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Poem Writing Malayalam",
+    "host": "DUDC Thootha",
+    "venue": "Non Stage",
+    "startTime": "05:00 AM",
+    "endTime": "06:00 AM",
+    "category": "Aliyah"
+  },
+  {
+    "title": "News Reading and Writing Arabic",
+    "host": "DUDC Thootha",
+    "venue": "Non Stage",
+    "startTime": "06:00 AM",
+    "endTime": "07:00 AM",
+    "category": "Kulliyyah"
+  },
+  {
+    "title": "Short Story Writing English",
+    "host": "DUDC Thootha",
+    "venue": "1",
+    "startTime": "07:00 AM",
+    "endTime": "08:00 AM",
+    "category": "Bidayah"
+  },
+  {
+    "title": "Debate Competition",
+    "host": "DUDC Thootha",
+    "venue": "2",
+    "startTime": "08:00 AM",
+    "endTime": "09:00 AM",
+    "category": "Aliyah"
+  },
+  {
+    "title": "Creative Writing Spanish",
+    "host": "DUDC Thootha",
+    "venue": "Non Stage",
+    "startTime": "09:00 AM",
+    "endTime": "10:00 AM",
+    "category": "Kulliyyah"
+  },
+  {
+    "title": "Poetry Recitation French",
+    "host": "DUDC Thootha",
+    "venue": "1",
+    "startTime": "11:00 AM",
+    "endTime": "12:00 PM",
+    "category": "Bidayah"
+  },
+  {
+    "title": "Public Speaking Hindi",
+    "host": "DUDC Thootha",
+    "venue": "2",
+    "startTime": "01:00 PM",
+    "endTime": "02:00 PM",
+    "category": "Aliyah"
+  },
+  {
+    "title": "Drama Performance Tamil",
+    "host": "DUDC Thootha",
+    "venue": "1",
+    "startTime": "02:00 PM",
+    "endTime": "03:00 PM",
+    "category": "Kulliyya"
+  }
+]
