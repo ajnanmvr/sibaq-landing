@@ -1,7 +1,7 @@
 import autoColor from "@/utils/autoColor";
 import Link from "next/link";
 const data = {
-  general: [
+  Scheule: [
     {
       title: "SCHEDULE",
       date: "Group 1 - Section B",
@@ -23,7 +23,10 @@ const data = {
       date: "Section B",
       path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Section B.pdf",
     }
-    ,
+    
+  ],
+  general: [
+  
     {
       title: "Brochure",
       date: "24-11-2025",
