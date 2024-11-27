@@ -4,6 +4,26 @@ const data = {
   Scheule: [
     {
       title: "SCHEDULE",
+      date: "Group 1 - Section A",
+      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section A - W,V,X Category - KMO Islamic Academy, Koduvally.pdf",
+    },
+    {
+      title: "SCHEDULE",
+      date: "Group 2 - Section A",
+      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 2 - Section A - W,V,X Category - Daruthaqwa Islamic Academy, Pulikkanni.pdf",
+    },
+    {
+      title: "SCHEDULE",
+      date: "Group 3 - Section A",
+      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 3 - Section A - W,V,X Category - Noorul Hidaya Islamic Academy, Pattambi.pdf",
+    },
+    {
+      title: "SCHEDULE",
+      date: "All Groups - Section A",
+      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section A - W,V,X Category.pdf",
+    },
+    {
+      title: "SCHEDULE",
       date: "Group 1 - Section B",
       path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section B.pdf",
     },
