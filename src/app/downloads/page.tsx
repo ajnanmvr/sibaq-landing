@@ -1,7 +1,7 @@
 import autoColor from "@/utils/autoColor";
 import Link from "next/link";
 const data = {
-  Scheule: [
+  SCHEDULE: [
     {
       title: "SCHEDULE",
       date: "Group 1 - Section A",
