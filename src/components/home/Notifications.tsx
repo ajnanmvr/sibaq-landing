@@ -21,7 +21,7 @@ export default function Notifications() {
 
   return (
     <div className="flex justify-center gap-2 md:gap-4 items-center my-10 flex-wrap px-8">
-      {NotificationData.map((notification, key) => (
+      {NotificationData.slice(0, 4).map((notification, key) => (
         <div
           key={key}
           data-aos="fade-in"

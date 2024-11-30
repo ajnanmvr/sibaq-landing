@@ -15,7 +15,7 @@ export default function Notifications() {
 
   return (
     <div className="flex justify-center flex-col md:flex-row gap-3 items-center my-10">
-      {NotificationData.map((notification, key) => (
+      {NotificationData.slice(0, 4).map((notification, key) => (
         <div
           key={key}
           onClick={() => openPopup(notification)}
