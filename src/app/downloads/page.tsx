@@ -75,6 +75,11 @@ const data = {
   ],
   niics: [
     {
+      title: "SCHEDULE",
+      date: "NIICS Category X",
+      path: "/downloads/SIBAQ 25 - NIICS X Category Schedule.pdf",
+    },
+    {
       title: "Concept Note",
       date: "16-11-2025",
       path: "/downloads/niics-concept-note.pdf",
