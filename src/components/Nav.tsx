@@ -104,8 +104,8 @@ export default function Nav() {
                   />
                 </svg>
               </Link>
-              {/* <Link
-                href={"/result"}
+               <Link
+                href="https://result.sibaq.in/"
                 onClick={() => {
                   setNavHover(false);
                   setNavClicked(false);
@@ -130,7 +130,7 @@ export default function Nav() {
                     fill={path.includes("/result") ? "white" : "#EA8F23"}
                   />
                 </svg>
-              </Link> */}
+              </Link> 
               <Link
                 href={"/updates"}
                 onClick={() => {
