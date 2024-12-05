@@ -42,11 +42,15 @@ The project is organized as follows:
 │   ├── graphql/           # GraphQL queries and mutations  
 │   ├── hooks/             # Custom React hooks  
 │   ├── libs/              # Utility and configuration files  
-│   │   ├── constants.ts   # Application constants  
+│   │   ├── constants.ts       # Application constants  
+│   │   ├── downloads.json     # Downloads data  
+│   │   ├── eliminationHosts.ts# Elimination hosts configuration  
 │   │   ├── notifications.json # Notifications data  
-│   │   ├── socialMediaLinks.ts # Social media links configuration  
-│   │   └── types.ts       # TypeScript types  
+│   │   ├── schedule.json      # Schedule data  
+│   │   ├── socialMediaLinks.ts# Social media links configuration  
+│   │   └── types.ts           # TypeScript types  
 │   └── utils/             # Shared utility functions  
+│       └── autoColor.ts       # Auto color utility  
 ├── .env.local             # Local environment variables  
 ├── .eslintrc.json         # ESLint configuration  
 ├── .gitignore             # Git ignored files and folders  
@@ -55,9 +59,9 @@ The project is organized as follows:
 ├── package.json           # Project metadata and dependencies  
 ├── postcss.config.mjs     # PostCSS configuration  
 ├── README.md              # Project documentation  
-├── tailwind.config.js     # Tailwind CSS configuration  
+├── tailwind.config.ts     # Tailwind CSS configuration  
 ├── tsconfig.json          # TypeScript configuration  
-└── yarn.lock              # Yarn lockfile for dependencies  
+└── yarn.lock              # Yarn lockfile for dependencies
 ```  
 
 ## Branch Strategy  
