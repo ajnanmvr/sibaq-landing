@@ -23,7 +23,7 @@ export default function Nav() {
         onMouseLeave={() => setNavHover(false)}
       >
         <div
-          className={`bg-white group rounded-[3rem] shadow-menu-icon ${
+          className={`bg-white group transition-all rounded-[3rem] shadow-menu-icon ${
             isNavOpen ? " h-[100svh] md:h-min md:w-96 p-12" : "w-auto m-8 p-4"
           }`}
         >
