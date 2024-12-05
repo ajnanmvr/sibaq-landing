@@ -1,0 +1,110 @@
+{
+  "SCHEDULE": [
+    {
+      "title": "SCHEDULE",
+      "date": "Group 1 - Section A",
+      "path": "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section A - W,V,X Category - KMO Islamic Academy, Koduvally.pdf"
+    },
+    {
+      "title": "SCHEDULE",
+      "date": "Group 2 - Section A",
+      "path": "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 2 - Section A - W,V,X Category - Daruthaqwa Islamic Academy, Pulikkanni.pdf"
+    },
+    {
+      "title": "SCHEDULE",
+      "date": "Group 3 - Section A",
+      "path": "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 3 - Section A - W,V,X Category - Noorul Hidaya Islamic Academy, Pattambi.pdf"
+    },
+    {
+      "title": "SCHEDULE",
+      "date": "All Groups - Section A",
+      "path": "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section A - W,V,X Category.pdf"
+    },
+    {
+      "title": "SCHEDULE",
+      "date": "Group 1 - Section B",
+      "path": "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section B.pdf"
+    },
+    {
+      "title": "SCHEDULE",
+      "date": "Group 2 - Section B",
+      "path": "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 2 - Section B.pdf"
+    },
+    {
+      "title": "SCHEDULE",
+      "date": "Group 3 - Section B",
+      "path": "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 3 - Section B.pdf"
+    },
+    {
+      "title": "SCHEDULE",
+      "date": "Section B",
+      "path": "/downloads/SIBAQ 25 - Elimination Round Schedule - Section B.pdf"
+    }
+  ],
+  "general": [
+    {
+      "title": "Brochure",
+      "date": "24-11-2025",
+      "path": "/downloads/sibaq-25-brochure.pdf"
+    },
+    {
+      "title": "Theme Brochure",
+      "date": "24-11-2025",
+      "path": "/downloads/sibaq-theme-brochure.pdf"
+    },
+    {
+      "title": "Concept Note",
+      "date": "16-11-2025",
+      "path": "/downloads/general-concept-note.pdf"
+    },
+    {
+      "title": "By Law",
+      "date": "16-11-2025",
+      "path": "/downloads/general-bylaw.pdf"
+    },
+    {
+      "title": "Program List",
+      "date": "16-11-2025",
+      "path": "/downloads/general-program-list.pdf"
+    }
+  ],
+  "niics": [
+    {
+      "title": "SCHEDULE",
+      "date": "NIICS Category X",
+      "path": "/downloads/SIBAQ 25 - NIICS X Category Schedule.pdf"
+    },
+    {
+      "title": "Concept Note",
+      "date": "16-11-2025",
+      "path": "/downloads/niics-concept-note.pdf"
+    },
+    {
+      "title": "By Law",
+      "date": "16-11-2025",
+      "path": "/downloads/niics-bylaw.pdf"
+    },
+    {
+      "title": "Program List",
+      "date": "16-11-2025",
+      "path": "/downloads/niics-program-list.pdf"
+    }
+  ],
+  "zahrawiyya": [
+    {
+      "title": "Concept Note",
+      "date": "16-11-2025",
+      "path": "/downloads/zahrawiyya-concept-note.pdf"
+    },
+    {
+      "title": "By Law",
+      "date": "16-11-2025",
+      "path": "/downloads/zahrawiyya-bylaw.pdf"
+    },
+    {
+      "title": "Program List",
+      "date": "16-11-2025",
+      "path": "/downloads/zahrawiyya-program-list.pdf"
+    }
+  ]
+}
