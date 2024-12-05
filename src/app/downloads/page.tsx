@@ -1,5 +1,4 @@
 import autoColor from "@/utils/autoColor";
-import Link from "next/link";
 import data from "@/libs/downloads.json";
 import { COLOURS } from "@/libs/constanants";
 export default function Downloads() {
@@ -18,7 +17,8 @@ export default function Downloads() {
             {items.map((item, index) => {
               const color = COLOURS[index % COLOURS.length];
               return (
-                <Link
+                <a
+                target="_blank"
                   key={index}
                   href={item.path}
                   className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}
@@ -48,7 +48,7 @@ export default function Downloads() {
                       <p className="opacity-60 text-sm">{item.date}</p>
                     </div>
                   </div>
-                </Link>
+                </a>
               );
             })}
           </div>
