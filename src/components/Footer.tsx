@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { socialMediaLinks } from "@/libs/socialMediaLinks";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="mt-16 w-full">
       <hr className="h-[0.100rem] bg-black opacity-10 mx-10 md:mx-28" />
@@ -72,6 +72,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
