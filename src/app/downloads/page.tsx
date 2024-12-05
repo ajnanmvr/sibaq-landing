@@ -40,7 +40,7 @@ export default function Downloads() {
                     <h3
                       className={`text-2xl leading-6 font-medium text-${color}`}
                     >
-                      <span className="text-sm">SIBAQ 2024</span>
+                      <span className="text-sm">SIBAQ 2025</span>
                       <br /> {item.title}
                     </h3>
                     <div className="flex items-center gap-1">
