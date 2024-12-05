@@ -1,118 +1,7 @@
 import autoColor from "@/utils/autoColor";
-import Link from "next/link";
-const data = {
-  SCHEDULE: [
-    {
-      title: "SCHEDULE",
-      date: "Group 1 - Section A",
-      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section A - W,V,X Category - KMO Islamic Academy, Koduvally.pdf",
-    },
-    {
-      title: "SCHEDULE",
-      date: "Group 2 - Section A",
-      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 2 - Section A - W,V,X Category - Daruthaqwa Islamic Academy, Pulikkanni.pdf",
-    },
-    {
-      title: "SCHEDULE",
-      date: "Group 3 - Section A",
-      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 3 - Section A - W,V,X Category - Noorul Hidaya Islamic Academy, Pattambi.pdf",
-    },
-    {
-      title: "SCHEDULE",
-      date: "All Groups - Section A",
-      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section A - W,V,X Category.pdf",
-    },
-    {
-      title: "SCHEDULE",
-      date: "Group 1 - Section B",
-      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 1 - Section B.pdf",
-    },
-    {
-      title: "SCHEDULE",
-      date: "Group 2 - Section B",
-      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 2 - Section B.pdf",
-    },
-    {
-      title: "SCHEDULE",
-      date: "Group 3 - Section B",
-      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Group 3 - Section B.pdf",
-    }
-    ,
-    {
-      title: "SCHEDULE",
-      date: "Section B",
-      path: "/downloads/SIBAQ 25 - Elimination Round Schedule - Section B.pdf",
-    }
-    
-  ],
-  general: [
-  
-    {
-      title: "Brochure",
-      date: "24-11-2025",
-      path: "/downloads/sibaq-25-brochure.pdf",
-    },
-    {
-      title: "Theme Brochure",
-      date: "24-11-2025",
-      path: "/downloads/sibaq-theme-brochure.pdf",
-    },
-    {
-      title: "Concept Note",
-      date: "16-11-2025",
-      path: "/downloads/general-concept-note.pdf",
-    },
-    {
-      title: "By Law",
-      date: "16-11-2025",
-      path: "/downloads/general-bylaw.pdf",
-    },
-    {
-      title: "Program List",
-      date: "16-11-2025",
-      path: "/downloads/general-program-list.pdf",
-    },
-  ],
-  niics: [
-    {
-      title: "SCHEDULE",
-      date: "NIICS Category X",
-      path: "/downloads/SIBAQ 25 - NIICS X Category Schedule.pdf",
-    },
-    {
-      title: "Concept Note",
-      date: "16-11-2025",
-      path: "/downloads/niics-concept-note.pdf",
-    },
-    { title: "By Law", date: "16-11-2025", path: "/downloads/niics-bylaw.pdf" },
-    {
-      title: "Program List",
-      date: "16-11-2025",
-      path: "/downloads/niics-program-list.pdf",
-    },
-  ],
-  zahrawiyya: [
-    {
-      title: "Concept Note",
-      date: "16-11-2025",
-      path: "/downloads/zahrawiyya-concept-note.pdf",
-    },
-    {
-      title: "By Law",
-      date: "16-11-2025",
-      path: "/downloads/zahrawiyya-bylaw.pdf",
-    },
-    {
-      title: "Program List",
-      date: "16-11-2025",
-      path: "/downloads/zahrawiyya-program-list.pdf",
-    },
-  ],
-  
-};
+import data from "@/libs/downloads.json";
+import { COLOURS } from "@/libs/constanants";
 export default function Downloads() {
-  const colors = ["yellow", "blue", "green", "red"];
-
   return (
     <div className="md:px-52 flex flex-col justify-center items-center pt-20">
       {Object.entries(data).map(([section, items]) => (
@@ -126,9 +15,10 @@ export default function Downloads() {
           <hr className="border-2 border-blue rounded-full md:w-full w-2/3" />
           <div className="w-full px-5 lg:px-0 py-12 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
             {items.map((item, index) => {
-              const color = colors[index % colors.length];
+              const color = COLOURS[index % COLOURS.length];
               return (
-                <Link
+                <a
+                target="_blank"
                   key={index}
                   href={item.path}
                   className={`group h-64 w-full lg:w-60 p-6 flex flex-col gap-3 relative rounded-3xl bg-${color} border border-${color}/50 hover:border-${color} bg-opacity-10`}
@@ -158,7 +48,7 @@ export default function Downloads() {
                       <p className="opacity-60 text-sm">{item.date}</p>
                     </div>
                   </div>
-                </Link>
+                </a>
               );
             })}
           </div>
