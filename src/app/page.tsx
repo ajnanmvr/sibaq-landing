@@ -7,12 +7,14 @@ import AboutSibaq from "@/components/home/AboutSibaq";
 import HomeArea from "@/components/home/HeroSection";
 // import TimeLine from "@/components/home/TimeLine";
 import HostDetails from "@/components/home/HostDetails";
+import PosterCampaign from "@/components/campaign/PosterCampaign";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center flex-wrap">
       <HomeArea />
       <CountDown />
+      <PosterCampaign/>
       <Notifications />
       <AboutSibaq />
       <CounterCards />
