@@ -122,7 +122,7 @@ const PosterCampaign = () => {
               <img
                 src={croppedImage}
                 alt=""
-                className="rounded-t-full absolute top-[10.7rem] left-[48px] w-[4.8rem] sm:top-[9.2rem] sm:left-[2.53rem] sm:w-[4.17rem]"
+                className="rounded-t-full absolute top-[10.7rem] left-[48px] w-[4.75rem] sm:top-[9.2rem] sm:left-[2.53rem] sm:w-[4.14rem]"
               />
             ) : (
               <></>
