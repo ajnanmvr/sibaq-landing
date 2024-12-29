@@ -11,3 +11,10 @@ export type TPopupProps = {
   onClose: () => void;
   data: TNotification | null;
 };
+
+export type CroppedArea = {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+};
