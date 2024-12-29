@@ -6,7 +6,7 @@ function page() {
   return (
     <>
       <Header
-        pageTitle="Poster Campign"
+        pageTitle="Poster Campaign"
         keywords={["Festival", "Downloads", "Files", "Forms", "Criteria"]}
       />
       <PosterCampaign />

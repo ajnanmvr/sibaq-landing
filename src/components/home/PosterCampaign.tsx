@@ -5,6 +5,9 @@ import html2canvas from "html2canvas";
 import localFont from "next/font/local";
 import Modal from "../Model";
 import { CroppedArea } from "@/libs/types";
+import InstagramIcon from "@/assets/vector/social-media/instagram.svg";
+import FacebookIcon from "@/assets/vector/social-media/facebook.svg";
+import WhatsappIcon from "@/assets/vector/social-media/whatsapp.svg";
 
 const nippo = localFont({ src: "../../fonts/nippo.ttf" });
 
@@ -165,7 +168,7 @@ const PosterCampaign = () => {
                           image={selectedImage}
                           crop={crop}
                           zoom={zoom}
-                          aspect={4 / 5} // Aspect ratio (square)
+                          aspect={4 / 5}
                           onCropChange={setCrop}
                           onZoomChange={setZoom}
                           onCropComplete={handleCropComplete}
