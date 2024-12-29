@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Mobile from "@/assets/static/campaign/mobile.jpg";
 import Desktop from "@/assets/static/campaign/desktop.jpg";
+import Link from "next/link";
 function CampaignAd() {
   return (
-    <div className="px-10 md:px-28">
+    <Link href={"/poster-campign"} className="px-10 md:px-28">
       <Image
         className="rounded-[40px] hidden md:block"
         src={Desktop}
@@ -14,7 +15,7 @@ function CampaignAd() {
         src={Mobile}
         alt="Campaign Advertisement for desktop"
       />
-    </div>
+    </Link>
   );
 }
 
