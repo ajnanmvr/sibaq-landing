@@ -59,8 +59,8 @@ export default function DHDetails() {
             className="order-1 md:order-none shadow-logo-round rounded-full w-24 md:w-40 "
           />
           <h3 className="text-ruby-red md:text-left font-regular text-[2.5rem] leading-[2.6rem] md:text-[3.1rem] md:leading-[3rem] tracking-tighter md:w-[28rem]">
-            Celebrating Forty <br />
-            Years of Legacy
+            Forty Years <br />
+            and Beyond
           </h3>
         </div>
       </div>

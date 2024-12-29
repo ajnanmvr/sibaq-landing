@@ -13,12 +13,14 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center flex-wrap">
       <HomeArea />
       <CountDown />
+      {/* <PosterCampaign/> */}
       <PosterCampaign />
       <Notifications />
       <AboutSibaq />
       <CounterCards />
       <DHDetails />
-      <TimeLine />
+      {/* <TimeLine /> */}
+      {/* <HostDetails /> */}
       <FooterContact />
     </main>
   );

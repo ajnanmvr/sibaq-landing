@@ -47,7 +47,7 @@ export default function SingleNotification({
             href={data.url}
             className="text-blue underline mt-4 inline-block"
           >
-            Apply Now
+            View
           </Link>
         )}
       </div>

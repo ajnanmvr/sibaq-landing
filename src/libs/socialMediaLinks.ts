@@ -13,7 +13,7 @@ export const socialMediaLinks = [
   },
   {
     platform: "Instagram",
-    url: "https://www.instagram.com/sibaq_darulhuda/",
+    url: "https://www.instagram.com/sibaq.darulhuda/",
     icon: InstagramIcon,
     color: "purple",
   },

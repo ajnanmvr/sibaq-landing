@@ -23,7 +23,7 @@ export default function Nav() {
         onMouseLeave={() => setNavHover(false)}
       >
         <div
-          className={`bg-white group rounded-[3rem] shadow-menu-icon ${
+          className={`bg-white group transition-all rounded-[3rem] shadow-menu-icon ${
             isNavOpen ? " h-[100svh] md:h-min md:w-96 p-12" : "w-auto m-8 p-4"
           }`}
         >
@@ -104,8 +104,8 @@ export default function Nav() {
                   />
                 </svg>
               </Link>
-              {/* <Link
-                href={"/result"}
+               <Link
+                href="https://result.sibaq.in/"
                 onClick={() => {
                   setNavHover(false);
                   setNavClicked(false);
@@ -130,7 +130,7 @@ export default function Nav() {
                     fill={path.includes("/result") ? "white" : "#EA8F23"}
                   />
                 </svg>
-              </Link> */}
+              </Link> 
               <Link
                 href={"/updates"}
                 onClick={() => {
