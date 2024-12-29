@@ -114,7 +114,7 @@ const PosterCampaign = () => {
           <div className="container poster bg-white relative ">
             <img src="/campaign-poster.jpg" alt="" className="w-full" />
             <p
-              className={`${nippo.className} capitalize text-[0.7rem] tracking-tight text-wrap leading-3 text-gray-600 absolute top-[263px] left-[170px] w-[100px] sm:top-[220px] sm:left-[145px] sm:w-[87px]`}
+              className={`${nippo.className} capitalize text-[0.7rem] tracking-tight text-wrap leading-3 text-gray-600 absolute top-[258px] left-[164px] w-[100px] sm:top-[220px] sm:left-[141px] sm:w-[87px]`}
             >
               {inputValue}
             </p>
@@ -122,7 +122,7 @@ const PosterCampaign = () => {
               <img
                 src={croppedImage}
                 alt=""
-                className="rounded-t-full absolute top-[10.5rem] left-[49px] w-[5.3rem] sm:top-[9rem] sm:left-[2.62rem] sm:w-[4.51rem]"
+                className="rounded-t-full absolute top-[10.7rem] left-[48px] w-[4.8rem] sm:top-[9.2rem] sm:left-[2.53rem] sm:w-[4.17rem]"
               />
             ) : (
               <></>
