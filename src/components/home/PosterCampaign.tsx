@@ -1,19 +1,12 @@
 "use client";
-
 import React, { useState, useCallback } from "react";
 import Cropper from "react-easy-crop";
 import html2canvas from "html2canvas";
 import localFont from "next/font/local";
 import Modal from "../Model";
+import { CroppedArea } from "@/libs/types";
 
 const nippo = localFont({ src: "../../fonts/nippo.ttf" });
-
-interface CroppedArea {
-  x: number;
-  y: number;
-  width: number;
-  height: number;
-}
 
 const PosterCampaign = () => {
   const [inputValue, setInputValue] = useState("");
@@ -110,7 +103,8 @@ const PosterCampaign = () => {
 
   return (
     <div className="flex flex-col sm:flex-row my-3 mx-2 space-y-8 sm:space-y-0 p-10 bg-white shadow-lg rounded-3xl justify-between items-center w-96 sm:w-[40rem] ">
-      <div className="container poster w-[20rem] bg-white bg-contain bg-no-repeat bg-center relative rounded-3xl overflow-hidden sm:w-1/2">
+      <div className="overflow-hidden w-[20rem] sm:w-1/2 rounded-3xl">
+      <div className="container poster bg-white relative ">
         <img
           src="/campaign-poster.jpg"
           alt=""
@@ -130,6 +124,7 @@ const PosterCampaign = () => {
         ) : (
           <div className="absolute top-[10.5rem] left-[49px] w-[5.3rem] sm:top-[7.3rem] sm:left-[2.1rem] sm:w-[3.78rem]"></div>
         )}
+      </div>
       </div>
       <div className="flex flex-col w-[22rem] justify-start px-4 sm:pr-0 sm:pl-8">
         <h1 className={`${nippo.className} text-2xl text-center leading-7`}>

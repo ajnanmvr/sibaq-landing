@@ -14,7 +14,6 @@ export default function Home() {
       <HomeArea />
       <CountDown />
       <PosterCampaign/>
-      <PosterCampaign />
       <Notifications />
       <AboutSibaq />
       <CounterCards />
