@@ -6,12 +6,14 @@ import Notifications from "@/components/home/Notifications";
 import AboutSibaq from "@/components/home/AboutSibaq";
 import HomeArea from "@/components/home/HeroSection";
 import TimeLine from "@/components/home/TimeLine";
+import PosterCampaign from "@/components/home/PosterCampaign";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center flex-wrap">
       <HomeArea />
       <CountDown />
+      <PosterCampaign />
       <Notifications />
       <AboutSibaq />
       <CounterCards />
