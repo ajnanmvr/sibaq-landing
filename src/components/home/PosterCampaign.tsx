@@ -104,27 +104,27 @@ const PosterCampaign = () => {
   return (
     <div className="flex flex-col sm:flex-row my-3 mx-2 space-y-8 sm:space-y-0 p-10 bg-white shadow-lg rounded-3xl justify-between items-center w-96 sm:w-[40rem] ">
       <div className="overflow-hidden w-[20rem] sm:w-1/2 rounded-3xl">
-      <div className="container poster bg-white relative ">
-        <img
-          src="/campaign-poster.jpg"
-          alt=""
-          className=" top-0 left-0 w-full"
-        />
-        <p
-          className={`${nippo.className} capitalize text-[0.7rem] tracking-tight text-wrap leading-3 text-gray-600 absolute top-[263px] left-[170px] w-[100px] sm:top-[185px] sm:left-[120px] sm:w-[87px]`}
-        >
-          {inputValue}
-        </p>
-        {croppedImage ? (
+        <div className="container poster bg-white relative ">
           <img
-            src={croppedImage}
+            src="/campaign-poster.jpg"
             alt=""
-            className="rounded-t-full absolute top-[10.5rem] left-[49px] w-[5.3rem] sm:top-[7.3rem] sm:left-[2.1rem] sm:w-[3.78rem]"
+            className=" top-0 left-0 w-full"
           />
-        ) : (
-          <div className="absolute top-[10.5rem] left-[49px] w-[5.3rem] sm:top-[7.3rem] sm:left-[2.1rem] sm:w-[3.78rem]"></div>
-        )}
-      </div>
+          <p
+            className={`${nippo.className} capitalize text-[0.7rem] tracking-tight text-wrap leading-3 text-gray-600 absolute top-[263px] left-[170px] w-[100px] sm:top-[185px] sm:left-[120px] sm:w-[87px]`}
+          >
+            {inputValue}
+          </p>
+          {croppedImage ? (
+            <img
+              src={croppedImage}
+              alt=""
+              className="rounded-t-full absolute top-[10.5rem] left-[49px] w-[5.3rem] sm:top-[7.3rem] sm:left-[2.1rem] sm:w-[3.78rem]"
+            />
+          ) : (
+            <div className="absolute top-[10.5rem] left-[49px] w-[5.3rem] sm:top-[7.3rem] sm:left-[2.1rem] sm:w-[3.78rem]"></div>
+          )}
+        </div>
       </div>
       <div className="flex flex-col w-[22rem] justify-start px-4 sm:pr-0 sm:pl-8">
         <h1 className={`${nippo.className} text-2xl text-center leading-7`}>
