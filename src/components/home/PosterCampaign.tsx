@@ -5,10 +5,7 @@ import html2canvas from "html2canvas";
 import localFont from "next/font/local";
 import Modal from "../Model";
 import { CroppedArea } from "@/libs/types";
-import InstagramIcon from "@/assets/vector/social-media/instagram.svg";
-import FacebookIcon from "@/assets/vector/social-media/facebook.svg";
-import WhatsappIcon from "@/assets/vector/social-media/whatsapp.svg";
-import NewImage from "next/image";
+
 
 const nippo = localFont({ src: "../../fonts/nippo.ttf" });
 
@@ -164,7 +161,7 @@ const PosterCampaign = () => {
                 {selectedImage && (
                   <div className="w-3/4 relative h-96 rounded-lg">
                     <div className=" relative h-72">
-                      <div className="crop-container dark:bg-white">
+                      <div className="crop-container">
                         <Cropper
                           image={selectedImage}
                           crop={crop}
@@ -179,7 +176,7 @@ const PosterCampaign = () => {
                     <button
                       type="button"
                       onClick={applyCrop}
-                      className="py-2 px-4 bg-green text-white rounded-lg mt-4 w-full dark:bg-red"
+                      className="py-2 px-4 bg-green text-white rounded-lg mt-4 w-full"
                     >
                       Apply Crop
                     </button>
@@ -192,7 +189,7 @@ const PosterCampaign = () => {
             <div className="mt-4 flex justify-center space-x-2 flex-row text-center sm:pt-2">
               <button
                 onClick={downloadPoster}
-                className="px-7 py-2 bg-green dark:bg-red text-white rounded-full flex justify-center items-center gap-3"
+                className="px-7 py-2 bg-green text-white rounded-full flex justify-center items-center gap-3"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="fill-white" viewBox="0 0 512 512" width="15" height="15">
                   <g>
@@ -203,7 +200,7 @@ const PosterCampaign = () => {
                 Download
               </button>
               <a
-                className="px-[0.625rem] py-2 bg-pink-500 text-white rounded-full dark:bg-blue"
+                className="px-[0.625rem] py-2 bg-pink-500 text-white rounded-full"
                 onClick={clearPoster}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
