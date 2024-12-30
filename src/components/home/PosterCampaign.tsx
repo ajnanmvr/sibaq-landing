@@ -89,11 +89,11 @@ const PosterCampaign = () => {
     if (!posterElement) return;
 
     html2canvas(posterElement, {
-      scale: 3, // Increase resolution
-      useCORS: true, // Avoid cross-origin issues
+      scale: 3,
+      useCORS: true,
     }).then((canvas) => {
       const link = document.createElement("a");
-      link.href = canvas.toDataURL("image/png", 1.0); // High-quality PNG
+      link.href = canvas.toDataURL("image/png", 1.0);
       link.download = "poster.png";
       link.click();
     });
@@ -202,20 +202,6 @@ const PosterCampaign = () => {
                 </svg>
                 Download
               </button>
-              {/* <button
-                onClick={downloadPoster}
-                  className="py-3 px-1 bg-blue-500 text-white rounded-full dark:bg-green"
-                  
-                >
-                  <NewImage src={WhatsappIcon} alt="Whatsapp" className="w-10 h-6 mx-auto"/>
-                </button> */}
-              {/*<a
-                  className="py-1 px-1 bg-blue-700 text-white rounded-full dark:bg-orange-500"
-                  href="whatsapp://send?text=The text to share!"
-                  data-action="share/whatsapp/share"
-                >
-                 <NewImage src={WhatsappIcon} alt="Whatsapp" />
-               </a>*/}
               <a
                 className="px-[0.625rem] py-2 bg-pink-500 text-white rounded-full dark:bg-blue"
                 onClick={clearPoster}
