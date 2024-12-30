@@ -179,7 +179,7 @@ const PosterCampaign = () => {
                     <button
                       type="button"
                       onClick={applyCrop}
-                      className="py-2 px-4 bg-green-500 text-white rounded-lg mt-4 w-full dark:bg-red"
+                      className="py-2 px-4 bg-green text-white rounded-lg mt-4 w-full dark:bg-red"
                     >
                       Apply Crop
                     </button>
@@ -188,7 +188,7 @@ const PosterCampaign = () => {
               </div>
             </Modal>
           </form>
-          {!croppedImage && (
+          {croppedImage && (
             <div className="mt-4 flex justify-center space-x-2 flex-row text-center sm:pt-2">
               <button
                 onClick={downloadPoster}
