@@ -88,19 +88,13 @@ const PosterCampaign = () => {
     html2canvas(posterElement, {
       scale: 3,
       useCORS: true,
-
+      allowTaint: true,
+      
     }).then((canvas) => {
-      canvas.toBlob((blob) => {
-        if (!blob) return;
-        const link = document.createElement("a");
-        const url = URL.createObjectURL(blob);
-        link.href = url;
-        link.download = "poster.png";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-      }, "image/png", 1.0);
+      const link = document.createElement("a");
+      link.href = canvas.toDataURL("image/png", 1.0);
+      link.download = "poster.png";
+      link.click();
     });
   };
 
