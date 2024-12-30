@@ -192,7 +192,7 @@ const PosterCampaign = () => {
             <div className="mt-4 flex justify-center space-x-2 flex-row text-center sm:pt-2">
               <button
                 onClick={downloadPoster}
-                className="px-7 py-2 bg-green-500 dark:bg-red text-white rounded-full flex justify-center items-center gap-3"
+                className="px-7 py-2 bg-green dark:bg-red text-white rounded-full flex justify-center items-center gap-3"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="fill-white" viewBox="0 0 512 512" width="15" height="15">
                   <g>
