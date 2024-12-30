@@ -188,8 +188,8 @@ const PosterCampaign = () => {
               </div>
             </Modal>
           </form>
-          {croppedImage && (
-            <div className="mt-4 flex justify-start space-x-2 flex-row text-center sm:pt-2">
+          {!croppedImage && (
+            <div className="mt-4 flex justify-center space-x-2 flex-row text-center sm:pt-2">
               <button
                 onClick={downloadPoster}
                 className="px-7 py-2 bg-green-500 dark:bg-red text-white rounded-full flex justify-center items-center gap-3"
