@@ -4,7 +4,7 @@ import Desktop from "@/assets/static/campaign/desktop.jpg";
 import Link from "next/link";
 function CampaignAd() {
   return (
-    <Link href={"/poster-campign"} className="px-10 md:px-28">
+    <Link href={"/campaign"} className="px-10 md:px-28">
       <Image
         className="rounded-[40px] hidden md:block"
         src={Desktop}
