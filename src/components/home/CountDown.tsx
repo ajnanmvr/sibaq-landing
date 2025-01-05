@@ -54,7 +54,7 @@ export default function CountDown() {
           Grand Finale
         </p>
         <p className="font-light tracking-widest uppercase md:hidden">
-          starts in
+          ends in
         </p>
         <Link
           href=""
