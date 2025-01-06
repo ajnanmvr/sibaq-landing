@@ -1,4 +1,4 @@
-import CountDown from "@/components/home/CountDown";
+// import CountDown from "@/components/home/CountDown";
 import CounterCards from "@/components/home/CounterCards";
 import DHDetails from "@/components/home/DHDetails";
 import FooterContact from "@/components/home/Contact";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center flex-wrap">
       <HomeArea />
-      <CountDown />
+      {/* <CountDown /> */}
       {/* <Notifications /> */}
       <AboutSibaq />
       <CounterCards />
